@@ -5,9 +5,98 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.nav-top, .nav-top1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight:900;
+}
+.nav1-link{
+  text-decoration: none;
+}
+.nav-top{
+  position: fixed;
+  background-color: #003220;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.top-navbar{
+  background-color: #003220;
+  max-width: 1030px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.contact-info{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.contact-info li{
+  margin-right: 10px;
+}
+
+.contact-info li.middle{
+  margin-right: 550px;
+}
+.contact-info li.right {
+  justify-content: flex-end;
+}
+
+.contact-info .fa-phone,
+.contact-info .fa-envelope,
+.contact-info .fa-clock {
+  background-color: #dbffd9;
+  color: black;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.nav1-link {
+  transition: 0.5s ease;
+}
+
+.nav1-link:hover {
+  color: #00b300;
+
+}
+.contact-info li{
+  display: flex;
+  align-items: center;
+
+}
+.contact-info a{
+  color: #dbffd9;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
