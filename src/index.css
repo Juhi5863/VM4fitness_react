@@ -202,10 +202,9 @@ code {
 }
 .contact-testimonial-section{
   display: flex;
+  flex-direction: row;
   padding: 10px;
   gap: 20px;
-  height: 600px;
-  min-height: 600px;
   background-color: #003220;
   padding-top: 40px;
   max-width: 1030px;
@@ -268,13 +267,16 @@ code {
   justify-content: space-between;
   margin-bottom: 15px;
 }
+.multi-select {
+
+}
 .form-group input[type="text"],
 .form-group input[type="number"],
 .form-group input[type="tel"],
 .form-group input[type="number"],
 .form-group select,
 .form-group textarea{
-  width: 48%;
+  width: 45%;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -524,6 +526,9 @@ code {
   flex: 1;
   max-width: 100%;
   position: relative;
+}
+#testimonial {
+  width: 30%;
 }
 
 .slider2 {
