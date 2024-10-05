@@ -1,16 +1,11 @@
 import { MdCall } from "react-icons/md";
 import {useState} from "react";
+import {isMobile} from "../Utility";
 
 
 function  InformationBanner(){
 
-    const [windowDimensions, setWindowDimensions] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight,
-    });
-    const isMobile = () =>{
-        return windowDimensions.width < 800;
-    }
+
     return (
         <>
             <section className="nav-top">
