@@ -4,6 +4,7 @@ import  slide1 from '../Assests/slide1.webp'
 import  slide2 from '../Assests/slide2.webp'
 import  slide3 from '../Assests/slide3.webp'
 import {Testimonial} from "../Components/Testimonial";
+import Profile from "../Components/Profile";
 
 
 
@@ -24,6 +25,7 @@ function  Home(){
             </div>
         </Carousel>
         <Testimonial></Testimonial>
+        <Profile></Profile>
     </div>
 }
 

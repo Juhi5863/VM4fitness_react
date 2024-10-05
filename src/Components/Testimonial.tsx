@@ -2,6 +2,11 @@ import {useState} from "react";
 import {MultiSelect} from "primereact/multiselect";
 import 'primereact/resources/themes/lara-light-cyan/theme.css';
 import {isMobile} from "../Utility";
+import  facebook from "../Assests/facebook.webp"
+import  linkdin from "../Assests/linkdin.webp"
+import  twitter from "../Assests/twitter.webp"
+import  instagram from "../Assests/insta.svg"
+
 
 export function Testimonial (){
     const [options, setOptions] = useState([{name: 'Option 1️⃣', id: 1},{name: 'Option 2️⃣', id: 2}]);
@@ -149,24 +154,24 @@ export function Testimonial (){
                             <li>
                                 <a href="https://www.facebook.com/vm4fitness/" target="_blank"
                                    rel="noopener noreferrer">
-                                    <img src="images/facebook.webp" alt="facebook"/>
+                                    <img src={facebook} alt="facebook"/>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/vm4fitness/" target="_blank"
                                    rel="noopener noreferrer">
-                                    <img src="images/insta.svg" alt="insta"/>
+                                    <img src={instagram} alt="insta"/>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/company/vm4fitness/" target="_blank"
                                    rel="noopener noreferrer">
-                                    <img src="images/linkdin.webp" alt="linkedin"/>
+                                    <img src={linkdin} alt="linkedin"/>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/vm4fitness" target="_blank" rel="noopener noreferrer">
-                                    <img src="images/twitter.webp" alt="twitter"/>
+                                    <img src={twitter} alt="twitter"/>
                                 </a>
                             </li>
                         </ul>
