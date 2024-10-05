@@ -600,7 +600,7 @@ code {
 .slide-section {
   background-color: white;
   position: relative;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   overflow: hidden;
@@ -646,6 +646,7 @@ code {
 }
 
 .profile-heading {
+  text-align: left;
   font-size: 1.5em;
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
@@ -693,7 +694,6 @@ code {
   margin-bottom: 10px;
 }
 .profile-details{
-  list-style: none;
   padding-left: 0px;
   align-items: flex-start;
   gap: 20px;
