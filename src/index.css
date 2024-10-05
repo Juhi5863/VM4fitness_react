@@ -49,7 +49,7 @@ code {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   padding: 0;
   margin: 0;
 }
@@ -58,10 +58,9 @@ code {
 }
 
 .contact-info li.middle{
-  margin-right: 550px;
+  flex: auto;
 }
 .contact-info li.right {
-  justify-content: flex-end;
 }
 
 .contact-info .fa-phone,
@@ -100,3 +99,25 @@ code {
   gap: 6px;
 }
 
+
+.hamburger {
+  display: block;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.hamburger.active .bar:nth-child(1),
+.hamburger.active .bar:nth-child(2),
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(0deg);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 4px 0;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
