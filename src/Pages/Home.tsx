@@ -5,6 +5,11 @@ import  slide2 from '../Assests/slide2.webp'
 import  slide3 from '../Assests/slide3.webp'
 import {Testimonial} from "../Components/Testimonial";
 import Profile from "../Components/Profile";
+import {Understand} from "../Components/Understand";
+import {Service} from "../Components/Service";
+import { Blog } from "../Components/Blog";
+import {Achievment} from "../Components/Achievment";
+
 
 
 
@@ -26,6 +31,10 @@ function  Home(){
         </Carousel>
         <Testimonial></Testimonial>
         <Profile></Profile>
+        <Understand></Understand>
+        <Service></Service>
+        <Blog></Blog>
+        <Achievment></Achievment>
     </div>
 }
 

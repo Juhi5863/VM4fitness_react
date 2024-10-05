@@ -10,7 +10,7 @@ import {MdLens} from "react-icons/md";
 
 function  Profile(){
     return <div >
-        <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={false} infiniteLoop={true} interval={3000}
+        <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true} interval={6000}
                   showStatus={false} stopOnHover={false} className="slide-section">
             <div className="slide-about">
                 <div className="slide-profile">
