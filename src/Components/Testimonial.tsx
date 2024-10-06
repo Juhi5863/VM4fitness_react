@@ -6,10 +6,23 @@ import  facebook from "../Assests/facebook.webp"
 import  linkdin from "../Assests/linkdin.webp"
 import  twitter from "../Assests/twitter.webp"
 import  instagram from "../Assests/insta.svg"
+import img1 from '../Assests/2.1.webp'
+import img2 from '../Assests/2.2.webp'
+import img3 from '../Assests/2.3.webp'
+import img4 from '../Assests/2.4.webp'
+import img5 from '../Assests/2.5.webp'
+import img6 from '../Assests/2.6.webp'
+import img7 from '../Assests/2.7.webp'
+import img8 from '../Assests/2.8.webp'
+import img9 from '../Assests/2.9.webp'
+import {Carousel} from "react-responsive-carousel";
+import slide1 from "../Assests/slide1.webp";
+import slide2 from "../Assests/slide2.webp";
+import slide3 from "../Assests/slide3.webp";
 
 
 export function Testimonial (){
-    const [options, setOptions] = useState([{name: 'Option 1️⃣', id: 1},{name: 'Option 2️⃣', id: 2}]);
+    const [options, setOptions] = useState([{name: 'Other'},{name: 'Diabetes', id: 1},{name: 'Digestion Issues', id: 2},{name: 'Digestion Issues', id: 3},{name: 'Fatty Liver', id: 4},{name: 'Gall Bladder Issues', id: 5},{name: 'High BP', id: 6},{name: 'Kidney Stones', id: 7},{name: 'Low BP', id: 8},{name: 'PCOD', id: 9},{name: 'Uric Acid', id: 10},{name: 'Thyroid Issues', id: 11}]);
     const [selectedValue, setSelectedValues] = useState([]);
 
     function onSelect() {
@@ -51,98 +64,16 @@ export function Testimonial (){
                                 <option value="male">Male</option>
                             </select>
 
-
-                            {/*<div className="multi-container">*/}
-                            {/*    <div className="select-btn">*/}
-                            {/*        <span className="btn-text">Any of the below issues you face?</span>*/}
-                            {/*        <span className="arrow-down">*/}
-                            {/*                <i className="fa-solid fa-chevron-down"></i>*/}
-                            {/*            </span>*/}
-                            {/*    </div>*/}
-
-                            {/*    <ul className="list-items">*/}
-                            {/*        <li className="item-list">*/}
-                            {/*            <label className="checkbox-container">*/}
-                            {/*                /!*<input type="checkbox" name="issues[]" value="Diabetes" onChange={selectIssue("Dibates")}/>*!/*/}
-                            {/*                <span className="checkbox"></span>*/}
-                            {/*                <span className="item-text">Diabetes</span>*/}
-                            {/*            </label>*/}
-                            {/*        </li>*/}
-                            {/*        <li className="item-list">*/}
-                            {/*            <label className="checkbox-container">*/}
-                            {/*                <input type="checkbox" name="issues[]" value="Digestion Issues"/>*/}
-                            {/*                <span className="checkbox"></span>*/}
-                            {/*                <span className="item-text">Digestion Issues</span>*/}
-                            {/*            </label>*/}
-                            {/*        </li>*/}
-                            {/*        <li className="item-list">*/}
-                            {/*            <label className="checkbox-container">*/}
-                            {/*                <input type="checkbox" name="issues[]" value="Fatty Liver"/>*/}
-                            {/*                <span className="checkbox"></span>*/}
-                            {/*                <span className="item-text">Fatty Liver</span>*/}
-                            {/*            </label>*/}
-                            {/*        </li>*/}
-                            {/*        <li className="item-list">*/}
-                            {/*            <label className="checkbox-container">*/}
-                            {/*                <input type="checkbox" name="issues[]" value="Gall Bladder Issues"/>*/}
-                            {/*                <span className="checkbox"></span>*/}
-                            {/*                <span className="item-text">Gall Bladder Issues</span>*/}
-                            {/*            </label>*/}
-                            {/*        </li>*/}
-                            {/*        <li className="item-list">*/}
-                            {/*            <label className="checkbox-container">*/}
-                            {/*                <input type="checkbox" name="issues[]" value="High BP"/>*/}
-                            {/*                <span className="checkbox"></span>*/}
-                            {/*                <span className="item-text">High BP</span>*/}
-                            {/*            </label>*/}
-                            {/*        </li>*/}
-                            {/*        <li className="item-list">*/}
-                            {/*            <label className="checkbox-container">*/}
-                            {/*                <input type="checkbox" name="issues[]" value="Kidney Stones"/>*/}
-                            {/*                <span className="checkbox"></span>*/}
-                            {/*                <span className="item-text">Kidney Stones</span>*/}
-                            {/*            </label>*/}
-                            {/*        </li>*/}
-                            {/*        <li className="item-list">*/}
-                            {/*            <label className="checkbox-container">*/}
-                            {/*                <input type="checkbox" name="issues[]" value="Low BP"/>*/}
-                            {/*                <span className="checkbox"></span>*/}
-                            {/*                <span className="item-text">Low BP</span>*/}
-                            {/*            </label>*/}
-                            {/*        </li>*/}
-                            {/*        <li className="item-list">*/}
-                            {/*            <label className="checkbox-container">*/}
-                            {/*                <input type="checkbox" name="issues[]" value="PCOD"/>*/}
-                            {/*                <span className="checkbox"></span>*/}
-                            {/*                <span className="item-text">PCOD</span>*/}
-                            {/*            </label>*/}
-                            {/*        </li>*/}
-                            {/*        <li className="item-list">*/}
-                            {/*            <label className="checkbox-container">*/}
-                            {/*                <input type="checkbox" name="issues[]" value="Uric Acid"/>*/}
-                            {/*                <span className="checkbox"></span>*/}
-                            {/*                <span className="item-text">Uric Acid</span>*/}
-                            {/*            </label>*/}
-                            {/*        </li>*/}
-                            {/*        <li className="item-list">*/}
-                            {/*            <label className="checkbox-container">*/}
-                            {/*                <input type="checkbox" name="issues[]" value="Thyroid Issues"/>*/}
-                            {/*                <span className="checkbox"></span>*/}
-                            {/*                <span className="item-text">Thyroid Issues</span>*/}
-                            {/*            </label>*/}
-                            {/*        </li>*/}
-                            {/*    </ul>*/}
-                            {/*</div>*/}
                             <MultiSelect value={selectedValue} onChange={(e) => setSelectedValues(e.value)} options={options} optionLabel="name"
-                                         placeholder="Select Cities" maxSelectedLabels={3} className="w-full md:w-20rem"
-                            style={{width: "46%", backgroundColor: "rgba(255, 255, 255, 0.1)", height: "38px",
-                                lineHeight: "13px",border: "none"}}/>
+                                         placeholder="Select issues you face?" maxSelectedLabels={3} className="w-full md:w-20rem"
+                            style={{width: "45%", backgroundColor: "rgba(255, 255, 255, 0.1)", height: "38px",
+                                lineHeight: "13px",border: "none", color: "white"}}/>
 
                         </div>
 
                         <div className="form-group">
                             <textarea name="concerns" id="" placeholder="Your Health Goals & Concerns*"
-                                      required></textarea>
+                                      ></textarea>
                         </div>
 
                         <div className="contact-footer">
@@ -183,49 +114,46 @@ export function Testimonial (){
                        <div id="testimonial">
                            <div className="testimonial-slider">
                                <h2 className="testi">What our clients say</h2>
-                               <div className="slider2">
-                                   <div className="slides2">
-                                       <div className="slide2">
-                                           <img src="images/2.1.webp" alt="Client 1"/>
-                                           <p className="paragraph">Great service, highly recommend!</p>
-                                       </div>
-                                       <div className="slide2">
-                                           <img src="images/2.2.webp" alt="Client 2"/>
-                                           <p className="paragraph">Fantastic experience, will come back again!</p>
-                                       </div>
-                                       <div className="slide2">
-                                           <img src="images/2.3.webp" alt="Client 4"/>
-                                           <p className="paragraph">Excellent service and support!</p>
-                                       </div>
-                                       <div className="slide2">
-                                           <img src="images/2.4.webp" alt="Client 5"/>
-                                           <p className="paragraph">Highly professional and reliable!</p>
-                                       </div>
-                                       <div className="slide2">
-                                           <img src="images/2.5.webp" alt="Client 5"/>
-                                           <p className="paragraph">Highly professional and reliable!</p>
-                                       </div>
-                                       <div className="slide2">
-                                           <img src="images/2.6.webp" alt="Client 5"/>
-                                           <p className="paragraph">Highly professional and reliable!</p>
-                                       </div>
-                                       <div className="slide2">
-                                           <img src="images/2.7.webp" alt="Client 5"/>
-                                           <p className="paragraph">Highly professional and reliable!</p>
-                                       </div>
-                                       <div className="slide2">
-                                           <img src="images/2.8.webp" alt="Client 5"/>
-                                           <p className="paragraph">Highly professional and reliable!</p>
-                                       </div>
-                                       <div className="slide2">
-                                           <img src="images/2.9.webp" alt="Client 5"/>
-                                           <p className="paragraph">Highly professional and reliable!</p>
-                                       </div>
-
+                               <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true}
+                                         interval={3000} showStatus={false} stopOnHover={false}>
+                                   <div className="slide2">
+                                       <img src={img1} alt="Client 1"/>
+                                       <p className="paragraph">Great service, highly recommend!</p>
                                    </div>
-                                   <button className="prev-button2"><i className="fa-solid fa-chevron-left"></i></button>
-                                   <button className="next-button2"><i className="fa-solid fa-chevron-right"></i></button>
-                               </div>
+                                   <div className="slide2">
+                                       <img src={img2} alt="Client 2"/>
+                                       <p className="paragraph">Fantastic experience, will come back again!</p>
+                                   </div>
+                                   <div className="slide2">
+                                       <img src={img3} alt="Client 4"/>
+                                       <p className="paragraph">Excellent service and support!</p>
+                                   </div>
+                                   <div className="slide2">
+                                       <img src={img4} alt="Client 5"/>
+                                       <p className="paragraph">Highly professional and reliable!</p>
+                                   </div>
+                                   <div className="slide2">
+                                       <img src={img5} alt="Client 5"/>
+                                       <p className="paragraph">Highly professional and reliable!</p>
+                                   </div>
+                                   <div className="slide2">
+                                       <img src={img6} alt="Client 5"/>
+                                       <p className="paragraph">Highly professional and reliable!</p>
+                                   </div>
+                                   <div className="slide2">
+                                       <img src={img7} alt="Client 5"/>
+                                       <p className="paragraph">Highly professional and reliable!</p>
+                                   </div>
+                                   <div className="slide2">
+                                       <img src={img8} alt="Client 5"/>
+                                       <p className="paragraph">Highly professional and reliable!</p>
+                                   </div>
+                                   <div className="slide2">
+                                       <img src={img9} alt="Client 5"/>
+                                       <p className="paragraph">Highly professional and reliable!</p>
+                                   </div>
+                               </Carousel>
+
                            </div>
                        </div>
 

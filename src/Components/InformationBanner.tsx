@@ -1,4 +1,8 @@
 import { MdCall } from "react-icons/md";
+import { GoMail } from "react-icons/go";
+import { GoClockFill } from "react-icons/go";
+
+
 import {useState} from "react";
 import {isMobile} from "../Utility";
 
@@ -24,12 +28,12 @@ function  InformationBanner(){
                                 </div>
                                 :
                                 <>
-                        <li className="middle"><a href="mailto:mimansa@vm4fitness.com" className="nav1-link"><i
-                            className="fa-regular fa-envelope"></i> mimansa@vm4fitness.com</a></li>
+                        <li className="middle"><a href="mailto:mimansa@vm4fitness.com" className="nav1-link"> <GoMail className="fa-regular fa-envelope" />
+                            mimansa@vm4fitness.com</a></li>
 
                         <li className="right"><a href="https://calendly.com/vik4fitness/consultation-appointment"
-                                                 target="_blank" rel="noopener noreferrer" className="nav1-link"><i
-                            className="fa-regular fa-clock"></i> 10:00 AM – 10:00 PM IST</a></li>
+                                                 target="_blank" rel="noopener noreferrer" className="nav1-link"> <GoClockFill className="fa-regular fa-clock" />
+                            10:00 AM – 10:00 PM IST</a></li>
                                 </>
                         }
 

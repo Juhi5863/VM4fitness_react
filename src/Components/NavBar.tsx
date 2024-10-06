@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {isMobile} from "../Utility";
+import img from '../Assests/VM4fitness3.webp'
 
 const Navbar=()=>{
     return (
         <section className="nav-top1">
             <nav className="navbar fixed-top">
-                <a href="#home" className="nav-branding"><img src="images/VM4fitness3.webp" loading="lazy" alt="Logo"/>
+                <a href="#home" className="nav-branding"><img src={img} loading="lazy" alt="Logo"/>
                     <span>VM4fitness</span>
                 </a>
 

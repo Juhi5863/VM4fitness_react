@@ -1,5 +1,8 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import img1 from '../Assests/blog1.webp'
+import img2 from '../Assests/blog2.webp'
+import img3 from '../Assests/blog3.webp'
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -23,9 +26,9 @@ const responsive = {
 export function Blog() {
     return (
         <>
-            <div className="blog-sec">
+            <div className="blog-sec" style={{borderRadius: "5"}}>
             <div  style={{width: '60%', margin: "auto"}}>
-                <h2 className="service-header">Our Services</h2>
+                <h2 className="service-header" style={{color: "white"}}>Latest Buzz</h2>
 
                 <Carousel
                     additionalTransfrom={0}
@@ -86,7 +89,7 @@ export function Blog() {
                             <div className="blog-image-content">
                                 <span className="blog-overlay"></span>
                                 <div className="blog-box-image">
-                                    <img src="images/blog1.webp" alt=""/>
+                                    <img src={img1} alt=""/>
                                 </div>
                             </div>
                             <div className="blog-img-content">
@@ -102,12 +105,12 @@ export function Blog() {
                             <div className="blog-image-content">
                                 <span className="blog-overlay"></span>
                                 <div className="blog-box-image">
-                                    <img src="images/blog2.webp" alt=""></img>
+                                    <img src={img2} alt=""></img>
                                 </div>
                             </div>
                             <div className="blog-img-content">
                                 <p className="blog-description">
-                                    Embrace Your Journey: How a Life-Changing Diet Empowers Women's Weight Loss
+                                    Embrace Your Journey: How a Life-Changing Diet Empowers Weight Loss
 
                                 </p>
                                 <button className="blog-button" data-modal-id="2">Read More</button>
@@ -120,7 +123,7 @@ export function Blog() {
                             <div className="blog-image-content">
                                 <span className="blog-overlay"></span>
                                 <div className="blog-box-image">
-                                    <img src="images/blog3.webp" alt=""></img>
+                                    <img src={img3} alt=""></img>
                                 </div>
                             </div>
                             <div className="blog-img-content">

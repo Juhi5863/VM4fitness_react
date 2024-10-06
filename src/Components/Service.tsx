@@ -1,30 +1,22 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-const responsive = {
-    superLargeDesktop: {
-        // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 3000 },
-        items: 3
-    },
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 3
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 2
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1
-    }
-};
+import img1 from '../Assests/Healthy Weightloss.webp'
+import img2 from '../Assests/Diabetes Reversal.webp'
+import img3 from '../Assests/Fatty Liver Reversal.webp'
+import img4 from '../Assests/Gut Health.webp'
+import img5 from '../Assests/Cholesterol Health.webp'
+import img6 from '../Assests/High BP Issues.webp'
+import img7 from '../Assests/PCOD Reversal.webp'
+import img8 from '../Assests/Thyroid Reversal.webp'
+import img9 from '../Assests/Uric Acid Reversal.webp'
+
+
 
 export function Service() {
     return (
         <>
             <div  style={{width: '60%', margin: "auto"}}>
-                <h2 className="service-header">Our Services</h2>
+                <h2 className="service-header">Our Service </h2>
 
                 <Carousel
                     additionalTransfrom={0}
@@ -87,7 +79,7 @@ export function Service() {
                                 <div className="image-content">
                                     <span className="overlay"></span>
                                     <div className="box-image">
-                                        <img src="images/Healthy Weightloss.webp" alt="" className="box-img"/>
+                                        <img src={img1} alt="" className="box-img"/>
 
                                     </div>
                                     <div className="img-content">
@@ -105,7 +97,7 @@ export function Service() {
                                 <div className="image-content">
                                     <span className="overlay"></span>
                                     <div className="box-image">
-                                        <img src="images/Diabetes Reversal.webp" alt="" className="box-img"/>
+                                        <img src={img2} alt="" className="box-img"/>
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Diabetes Reversal</h2>
@@ -122,7 +114,7 @@ export function Service() {
                                 <div className="image-content">
                                     <span className="overlay"></span>
                                     <div className="box-image">
-                                        <img src="images/Fatty Liver Reversal.webp" alt="" className="box-img"/>
+                                        <img src={img3} alt="" className="box-img"/>
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Fatty Liver Reversal</h2>
@@ -139,7 +131,7 @@ export function Service() {
                                 <div className="image-content">
                                     <span className="overlay"></span>
                                     <div className="box-image">
-                                        <img src="images/Gut Health.webp" alt="" className="box-img"/>
+                                        <img src={img4} alt="" className="box-img"/>
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Gut Health</h2>
@@ -156,7 +148,7 @@ export function Service() {
                                 <div className="image-content">
                                     <span className="overlay"></span>
                                     <div className="box-image">
-                                        <img src="images/Cholesterol Health.webp" alt="" className="box-img"/>
+                                        <img src={img5} alt="" className="box-img"/>
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Cholesterol control</h2>
@@ -173,7 +165,7 @@ export function Service() {
                                 <div className="image-content">
                                     <span className="overlay"></span>
                                     <div className="box-image">
-                                        <img src="images/High BP Issues.webp" alt="" className="box-img"/>
+                                        <img src={img6} alt="" className="box-img"/>
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">High BP Regulation</h2>
@@ -190,7 +182,7 @@ export function Service() {
                                 <div className="image-content">
                                     <span className="overlay"></span>
                                     <div className="box-image">
-                                        <img src="images/PCOD Reversal.webp" alt="" className="box-img"/>
+                                        <img src={img7} alt="" className="box-img"/>
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">PCOD Reversal</h2>
@@ -207,7 +199,7 @@ export function Service() {
                                 <div className="image-content">
                                     <span className="overlay"></span>
                                     <div className="box-image">
-                                        <img src="images/Thyroid Reversal.webp" alt="" className="box-img"/>
+                                        <img src={img8} alt="" className="box-img"/>
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Thyroid Reversal</h2>
@@ -224,7 +216,7 @@ export function Service() {
                                 <div className="image-content">
                                     <span className="overlay"></span>
                                     <div className="box-image">
-                                        <img src="images/Uric Acid Reversal.webp" alt="" className="box-img"/>
+                                        <img src={img9} alt="" className="box-img"/>
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Uric Acid Reversal</h2>

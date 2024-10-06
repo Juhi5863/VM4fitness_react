@@ -9,6 +9,11 @@ import {Understand} from "../Components/Understand";
 import {Service} from "../Components/Service";
 import { Blog } from "../Components/Blog";
 import {Achievment} from "../Components/Achievment";
+import {Youtube} from "../Components/Youtube";
+import {Contact} from "../Components/Contact";
+import {Frequent} from "../Components/Frequent";
+import {FooterOne} from "../Components/FooterOne";
+import {TestimonialSec} from "../Components/TestimonialSec";
 
 
 
@@ -35,6 +40,12 @@ function  Home(){
         <Service></Service>
         <Blog></Blog>
         <Achievment></Achievment>
+        <Youtube></Youtube>
+        <Contact></Contact>
+        <Frequent></Frequent>
+        <TestimonialSec></TestimonialSec>
+        <FooterOne></FooterOne>
+
     </div>
 }
 

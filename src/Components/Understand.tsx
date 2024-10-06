@@ -9,7 +9,7 @@ export function Understand (){
         <>
             <section className="und-sec">
                 <div className="und-container">
-                    <h2 className="und-heading">Understand Our Program</h2>
+                    <h2 className="und-heading" style={{margin: 0}}>Understand Our Program</h2>
                     <div className="und-content">
                         <div className="und-column">
                             <div className="und-item">
