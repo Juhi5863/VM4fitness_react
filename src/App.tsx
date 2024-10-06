@@ -22,7 +22,7 @@ function App() {
           <Route path="/contact" element={<ContactPage/>} />
           <Route path="/faq" element={<FAQ/>} />
             <Route path="/privacy" element={<Privacy/>}></Route>
-            <Route path="/blog" element={<Blog1/>}></Route>
+            <Route path="/blog/blog1" element={<Blog1/>}></Route>
         </Routes>
         <FooterOne></FooterOne>
           <div className="whatsapp-btn-container">

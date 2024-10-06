@@ -97,7 +97,7 @@ export function Blog() {
                                 <p className="blog-description">
                                     Revitalize Your Body: The Emotional Journey of a 7-Day Weight Loss Diet Plan
                                 </p>
-                                <a href="../Pages/Blogs/Blog1.tsx" target="_blank">
+                                <a href="/blog/blog1" target="_blank">
                                     <button className="blog-button" data-modal-id="1">Read More</button>
                                 </a>
                             </div>
