@@ -10,7 +10,6 @@ export function Blog1(){
                 </div>
             </section>
 
-
             <section id="blog1-section">
                 <div className="blog1-sec">
                     <div className="Headings-Blog1">

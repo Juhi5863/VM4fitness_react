@@ -58,7 +58,7 @@ code {
   padding: 20px;
 
 }
-.slider {
+.privacy-slider {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -66,14 +66,9 @@ code {
   padding-top: 100px;
 }
 
-.slides {
-  display: flex;
-  transition: transform 1s ease-in-out;
-  width: 100%;
-  margin: auto;
-}
 
-.slide {
+
+.privacy-slide-image {
   min-width: 100%;
   box-sizing: border-box;
 }
@@ -123,11 +118,29 @@ a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 1430px) and (min-width: 800px) {
+  .navbar {
+    width: 95%!important;
+  }
+  .top-navbar {
+    width: 95%!important;
+  }
+  .contact-testimonial-section {
+    width: 95%!important;
+  }
+  .default-div {
+    width: 95%!important;
+  }
+}
+
 @media (max-width: 800px) {
+  .trending-container {
+    flex-flow: column!important;
+  }
   .container-contact {
     flex-direction: column!important;
   }
-  .slide{
+  .privacy-slide-image{
     height : 200px;
   }
   .contactInfo {

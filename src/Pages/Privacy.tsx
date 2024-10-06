@@ -4,9 +4,9 @@ export function Privacy(){
         <>
 
             <section id="home">
-                <div className="slider">
+                <div className="privacy-slider">
                     <div className="slides-privacy">
-                        <img src={img}  className="slide" alt=""/>
+                        <img src={img}  className="privacy-slide-image" alt=""/>
 
                     </div>
 
