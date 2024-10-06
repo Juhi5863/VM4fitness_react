@@ -4,7 +4,7 @@
 use of a switch that will determine what page will be rendered based on the
 active path */
 import React from "react";
-import "./Blog.css";
+// import "./Blog.css";
 
 // Render all home elements
 export default class Blog2 extends React.Component {

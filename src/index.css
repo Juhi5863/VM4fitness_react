@@ -2222,6 +2222,9 @@ a:-webkit-any-link {
   padding: 20px;
   background-color: #003220;
 }
+.Collapsible__trigger{
+  cursor: pointer;
+}
 .faq-div{
   max-width: 1000px;
   margin: 0 auto;
@@ -2491,13 +2494,12 @@ a:-webkit-any-link {
   background: #dbffd9;
   color: #000; }
 .Collapsible__trigger:after {
-  font-family: 'FontAwesome';
   content: '▼';
   position: absolute;
   right: 10px;
   top: 10px;
   display: block;
-  transition: transform 300ms; }
+  transition: transform 0ms; }
 .Collapsible__trigger.is-open:after {
   transform: rotateZ(180deg); }
 .Collapsible__trigger.is-disabled {
@@ -2506,7 +2508,7 @@ a:-webkit-any-link {
 
 .CustomTriggerCSS {
   background-color: lightcoral;
-  transition: background-color 200ms ease; }
+  transition: background-color 0ms ease; }
 
 .CustomTriggerCSS--open {
   background-color: darkslateblue; }
