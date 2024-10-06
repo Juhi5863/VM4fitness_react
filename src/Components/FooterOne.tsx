@@ -2,6 +2,7 @@ import img1 from '../Assests/facebook.webp'
 import img2 from '../Assests/insta.svg'
 import img3 from '../Assests/linkdin.webp'
 import img4 from '../Assests/twitter.webp'
+import {isMobile} from "../Utility";
 export function FooterOne(){
     return (
         <>
@@ -16,17 +17,14 @@ export function FooterOne(){
                 </div>
             </section>
 
+            {isMobile() ?
+                <>
             <footer id="footer2-sec">
                 <div className="footer2-container">
-                    <div className="contact-footer2">
-                        <a href="#contact">CONTACT US</a>
-                    </div>
-
-                    <div className="footer2-privacy">
-                        <a href="privacy.html" target="_blank" rel="noopener noreferrer">PRIVACY POLICY</a>
-                    </div>
-
-                    <div className="col-md-51">
+                    <div className="contact-footer2" style={{display: "flex"}}>
+                        <a href="/contact" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>CONTACT US</a>
+                        <a href="/faq" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>FAQ</a>
+                        <a href="privacy.html" target="_blank" rel="noopener noreferrer" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>PRIVACY POLICY</a>
                         <ul className="social-media-list">
                             <li>
                                 <a href="https://www.facebook.com/vm4fitness/" target="_blank"
@@ -51,9 +49,42 @@ export function FooterOne(){
                 </div>
             </footer>
 
-            <section className="footer3">
-                <p>© Copyright 2024. All Rights Reserved</p>
-            </section>
+            </>
+                : <>
+                    <footer id="footer2-sec">
+                        <div className="footer2-container">
+                            <div className="contact-footer2" style={{display: "flex"}}>
+                                <a href="/contact" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>CONTACT US</a>
+                                <a href="/faq" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>FAQ</a>
+                                <a href="privacy.html" target="_blank" rel="noopener noreferrer" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>PRIVACY POLICY</a>
+                                <ul className="social-media-list">
+                                    <li>
+                                        <a href="https://www.facebook.com/vm4fitness/" target="_blank"
+                                           rel="noopener noreferrer"><img src={img1} alt="facebook"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/vm4fitness/" target="_blank"
+                                           rel="noopener noreferrer"><img src={img2}  alt="insta"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/vm4fitness/" target="_blank"
+                                           rel="noopener noreferrer"><img src={img3}  alt="linkdin"/></a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank" rel="noopener noreferrer"><img src={img4}
+                                                                                                  alt="twitter"/></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </footer>
+
+                    </>}
+    <section className="footer3">
+        <p>© Copyright 2024. All Rights Reserved</p>
+    </section>
         </>
     )
 }

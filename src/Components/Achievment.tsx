@@ -3,6 +3,7 @@ import img2 from '../Assests/31.webp'
 import img3 from '../Assests/33.webp'
 import img4 from '../Assests/34.webp'
 import {isMobile, isTablet} from "../Utility";
+import CountUp from "react-countup";
 
 export function Achievment(){
     return (
@@ -19,7 +20,7 @@ export function Achievment(){
                                 </div>
 
                                 <div className="achive-headings pt10">
-                                    <h3 className="h3-heading" data-target="5">5+</h3>
+                                    <h3 className="h3-heading" data-target="5"><CountUp end={5} duration={5} />+</h3>
                                     <p className="p-para">Year of Experience</p>
                                 </div>
                             </div>
@@ -30,7 +31,7 @@ export function Achievment(){
                                     </div>
 
                                     <div className="achive-headings pt10">
-                                        <h3 className="h3-heading" data-target="3000">3000+</h3>
+                                        <h3 className="h3-heading" data-target="3000"><CountUp end={3000} duration={4} />+</h3>
                                         <p className="p-para">Satisfied Customers</p>
                                     </div>
                                 </div>
@@ -42,7 +43,7 @@ export function Achievment(){
                                     </div>
 
                                     <div className="achive-headings pt10">
-                                        <h3 className="h3-heading" data-target="15000">15000+</h3>
+                                        <h3 className="h3-heading" data-target="15000"><CountUp end={15000} duration={6} />+</h3>
                                         <p className="p-para">Number of Kgs lost </p>
                                     </div>
                                 </div>
@@ -53,7 +54,7 @@ export function Achievment(){
                                     <img src={img4} className="weight-loss-icon" alt=""/>
                                 </div>
                                 <div className="achive-headings pt10">
-                                    <h3 className="h3-heading" data-target="9">9+</h3>
+                                    <h3 className="h3-heading" data-target="9"><CountUp end={9} duration={5} />+</h3>
                                     <p className="p-para">Country</p>
                                 </div>
                             </div>
@@ -69,7 +70,7 @@ export function Achievment(){
                                 </div>
 
                                 <div className="achive-headings">
-                                    <h3 className="h3-heading" data-target="5">5+</h3>
+                                    <h3 className="h3-heading" data-target="5"><CountUp end={5} duration={5} />+</h3>
                                     <p className="p-para">Year of Experience</p>
                                 </div>
                             </div>
@@ -80,7 +81,7 @@ export function Achievment(){
                                 </div>
 
                                 <div className="achive-headings">
-                                    <h3 className="h3-heading" data-target="3000">3000+</h3>
+                                    <h3 className="h3-heading" data-target="3000"><CountUp end={3000} duration={4} />+</h3>
                                     <p className="p-para">Satisfied Customers</p>
                                 </div>
                             </div>
@@ -91,7 +92,7 @@ export function Achievment(){
                                 </div>
 
                                 <div className="achive-headings">
-                                    <h3 className="h3-heading" data-target="15000">15000+</h3>
+                                    <h3 className="h3-heading" data-target="15000"><CountUp end={15000} duration={6} />+</h3>
                                     <p className="p-para">Number of Kgs lost </p>
                                 </div>
                             </div>
@@ -101,7 +102,7 @@ export function Achievment(){
                                     <img src={img4} className="weight-loss-icon" alt=""/>
                                 </div>
                                 <div className="achive-headings">
-                                    <h3 className="h3-heading" data-target="9">9+</h3>
+                                    <h3 className="h3-heading" data-target="9"><CountUp end={9} duration={5} />+</h3>
                                     <p className="p-para">Country</p>
                                 </div>
                             </div>

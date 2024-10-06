@@ -9,13 +9,14 @@ import img6 from '../Assests/High BP Issues.webp'
 import img7 from '../Assests/PCOD Reversal.webp'
 import img8 from '../Assests/Thyroid Reversal.webp'
 import img9 from '../Assests/Uric Acid Reversal.webp'
+import {isMobile} from "../Utility";
 
 
 
 export function Service() {
     return (
         <>
-            <div  style={{width: '60%', margin: "auto"}}>
+            <div className="default-div">
                 <h2 className="service-header">Our Service </h2>
 
                 <Carousel
@@ -68,7 +69,7 @@ export function Service() {
                     shouldResetAutoplay
                     showDots={false}
                     sliderClass=""
-                    slidesToSlide={3}
+                    slidesToSlide={isMobile() ? 1 : 3 }
                     swipeable
 
                 >

@@ -41,10 +41,7 @@ function  Home(){
         <Blog></Blog>
         <Achievment></Achievment>
         <Youtube></Youtube>
-        <Contact></Contact>
-        <Frequent></Frequent>
         <TestimonialSec></TestimonialSec>
-        <FooterOne></FooterOne>
 
     </div>
 }

@@ -52,7 +52,7 @@ export function Testimonial (){
                     <form className="appointment-form" method="post" action="send_mail.php">
                         <div className="form-group">
                             <input type="text" name="name" placeholder="Name *" required/>
-                            <input type="tel" name="whatsapp" placeholder="WhatsApp Number *" required/>
+                            <input type="number" name="whatsapp" placeholder="WhatsApp Number *" required/>
                             <input type="number" name="weight" placeholder="Enter Weight (kg) *" required/>
                             <input type="number" name="height" placeholder="Enter Height (cm) *" required/>
                         </div>
@@ -65,9 +65,7 @@ export function Testimonial (){
                             </select>
 
                             <MultiSelect value={selectedValue} onChange={(e) => setSelectedValues(e.value)} options={options} optionLabel="name"
-                                         placeholder="Select issues you face?" maxSelectedLabels={3} className="w-full md:w-20rem"
-                            style={{width: "45%", backgroundColor: "rgba(255, 255, 255, 0.1)", height: "38px",
-                                lineHeight: "13px",border: "none", color: "white"}}/>
+                                         placeholder="Select issues you face?" maxSelectedLabels={3} className="w-full md:w-20rem multi-select-react"/>
 
                         </div>
 
@@ -78,35 +76,35 @@ export function Testimonial (){
 
                         <div className="contact-footer">
                             <button type="submit" className="submit-button">Submit</button>
+                            <div className="col-md-51">
+                                <ul className="social-media-list">
+                                    <li>
+                                        <a href="https://www.facebook.com/vm4fitness/" target="_blank"
+                                           rel="noopener noreferrer">
+                                            <img src={facebook} alt="facebook"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/vm4fitness/" target="_blank"
+                                           rel="noopener noreferrer">
+                                            <img src={instagram} alt="insta"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/vm4fitness/" target="_blank"
+                                           rel="noopener noreferrer">
+                                            <img src={linkdin} alt="linkedin"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/vm4fitness" target="_blank" rel="noopener noreferrer">
+                                            <img src={twitter} alt="twitter"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </form>
-                    <div className="col-md-51">
-                        <ul className="social-media-list">
-                            <li>
-                                <a href="https://www.facebook.com/vm4fitness/" target="_blank"
-                                   rel="noopener noreferrer">
-                                    <img src={facebook} alt="facebook"/>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/vm4fitness/" target="_blank"
-                                   rel="noopener noreferrer">
-                                    <img src={instagram} alt="insta"/>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/vm4fitness/" target="_blank"
-                                   rel="noopener noreferrer">
-                                    <img src={linkdin} alt="linkedin"/>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/vm4fitness" target="_blank" rel="noopener noreferrer">
-                                    <img src={twitter} alt="twitter"/>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
 
                 </div>
                 {
@@ -165,49 +163,45 @@ export function Testimonial (){
                     <div id="">
                         <div className="testimonial-slider">
                             <h2 className="testi">What our clients say</h2>
-                            <div className="slider2">
-                                <div className="slides2">
-                                    <div className="slide2">
-                                        <img src="images/2.1.webp" alt="Client 1"/>
-                                        <p className="paragraph">Great service, highly recommend!</p>
-                                    </div>
-                                    <div className="slide2">
-                                        <img src="images/2.2.webp" alt="Client 2"/>
-                                        <p className="paragraph">Fantastic experience, will come back again!</p>
-                                    </div>
-                                    <div className="slide2">
-                                        <img src="images/2.3.webp" alt="Client 4"/>
-                                        <p className="paragraph">Excellent service and support!</p>
-                                    </div>
-                                    <div className="slide2">
-                                        <img src="images/2.4.webp" alt="Client 5"/>
-                                        <p className="paragraph">Highly professional and reliable!</p>
-                                    </div>
-                                    <div className="slide2">
-                                        <img src="images/2.5.webp" alt="Client 5"/>
-                                        <p className="paragraph">Highly professional and reliable!</p>
-                                    </div>
-                                    <div className="slide2">
-                                        <img src="images/2.6.webp" alt="Client 5"/>
-                                        <p className="paragraph">Highly professional and reliable!</p>
-                                    </div>
-                                    <div className="slide2">
-                                        <img src="images/2.7.webp" alt="Client 5"/>
-                                        <p className="paragraph">Highly professional and reliable!</p>
-                                    </div>
-                                    <div className="slide2">
-                                        <img src="images/2.8.webp" alt="Client 5"/>
-                                        <p className="paragraph">Highly professional and reliable!</p>
-                                    </div>
-                                    <div className="slide2">
-                                        <img src="images/2.9.webp" alt="Client 5"/>
-                                        <p className="paragraph">Highly professional and reliable!</p>
-                                    </div>
-
+                            <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true}
+                                      interval={3000} showStatus={false} stopOnHover={false}>
+                                <div className="slide2">
+                                    <img src={img1} alt="Client 1"/>
+                                    <p className="paragraph">Great service, highly recommend!</p>
                                 </div>
-                                <button className="prev-button2"><i className="fa-solid fa-chevron-left"></i></button>
-                                <button className="next-button2"><i className="fa-solid fa-chevron-right"></i></button>
-                            </div>
+                                <div className="slide2">
+                                    <img src={img2} alt="Client 2"/>
+                                    <p className="paragraph">Fantastic experience, will come back again!</p>
+                                </div>
+                                <div className="slide2">
+                                    <img src={img3} alt="Client 4"/>
+                                    <p className="paragraph">Excellent service and support!</p>
+                                </div>
+                                <div className="slide2">
+                                    <img src={img4} alt="Client 5"/>
+                                    <p className="paragraph">Highly professional and reliable!</p>
+                                </div>
+                                <div className="slide2">
+                                    <img src={img5} alt="Client 5"/>
+                                    <p className="paragraph">Highly professional and reliable!</p>
+                                </div>
+                                <div className="slide2">
+                                    <img src={img6} alt="Client 5"/>
+                                    <p className="paragraph">Highly professional and reliable!</p>
+                                </div>
+                                <div className="slide2">
+                                    <img src={img7} alt="Client 5"/>
+                                    <p className="paragraph">Highly professional and reliable!</p>
+                                </div>
+                                <div className="slide2">
+                                    <img src={img8} alt="Client 5"/>
+                                    <p className="paragraph">Highly professional and reliable!</p>
+                                </div>
+                                <div className="slide2">
+                                    <img src={img9} alt="Client 5"/>
+                                    <p className="paragraph">Highly professional and reliable!</p>
+                                </div>
+                            </Carousel>
                         </div>
                     </div> : <></>
 

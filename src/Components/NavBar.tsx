@@ -8,17 +8,17 @@ const Navbar=()=>{
         <section className="nav-top1">
             <nav className="navbar fixed-top">
                 <a href="#home" className="nav-branding"><img src={img} loading="lazy" alt="Logo"/>
-                    <span>VM4fitness</span>
+                    <span className="heading">VM4fitness</span>
                 </a>
 
                 <ul className="nav-menu" >
                     {isMobile() ? <></>:
                         <>
-                            <li className="nav-item"><a href="#home" className="nav-link">HOME</a></li>
-                            <li className="nav-item"><a href="#testimonial" className="nav-link">TESTIMONIAL</a></li>
-                            <li className="nav-item"><a href="#service" className="nav-link">SERVICE</a></li>
-                            <li className="nav-item"><a href="#slide-section" className="nav-link">ABOUT US</a></li>
-                            <li className="nav-item"><a href="#faq-section" className="nav-link">FAQ</a></li>
+                            <li className="nav-item"><a href="/" className="nav-link">HOME</a></li>
+                            <li className="nav-item"><a href="/#testimonial" className="nav-link">TESTIMONIAL</a></li>
+                            <li className="nav-item"><a href="/#service" className="nav-link">SERVICE</a></li>
+                            <li className="nav-item"><a href="/#slide-section" className="nav-link">ABOUT US</a></li>
+                            <li className="nav-item"><a href="/faq" className="nav-link">FAQ</a></li>
                         </>}
 
                     <li className="nav-item"><a href="https://calendly.com/vik4fitness/consultation-appointment"

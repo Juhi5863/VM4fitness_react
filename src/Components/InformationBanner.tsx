@@ -3,25 +3,44 @@ import { GoMail } from "react-icons/go";
 import { GoClockFill } from "react-icons/go";
 
 
-import {useState} from "react";
+import React, {useState} from "react";
 import {isMobile} from "../Utility";
 
 
 function  InformationBanner(){
 
+    const [menu, setMenu] = useState(false);
+    function openHamburger() {
+        setMenu(!menu);
+    }
 
     return (
         <>
+            {
+                menu && isMobile()?
+                <div className="hamburger-menu">
+                    <ul className="nav-menu" >
+
+                                <li className="nav-item"><a href="/" className="nav-link">HOME</a></li>
+                                <li className="nav-item"><a href="/#testimonial" className="nav-link">TESTIMONIAL</a></li>
+                                <li className="nav-item"><a href="/#service" className="nav-link">SERVICE</a></li>
+                                <li className="nav-item"><a href="/#slide-section" className="nav-link">ABOUT US</a></li>
+                                <li className="nav-item"><a href="/faq" className="nav-link">FAQ</a></li>
+                    </ul>
+                </div>
+                : <></>
+            }
+
             <section className="nav-top">
                 <nav className="top-navbar fixed-top">
-                    <ul className="contact-info">
+                    <div className="contact-info">
                         <li className="left"><a href="tel:+918396952909" className="nav1-link">
                             <MdCall className="fa-regular fa-envelope"/>
                             +91-8396952909</a></li>
                         {
                             isMobile() ?
 
-                                <div className="hamburger">
+                                <div className="hamburger" onClick={() => {openHamburger()}}>
                                     <span className="bar"></span>
                                     <span className="bar"></span>
                                     <span className="bar"></span>
@@ -37,7 +56,7 @@ function  InformationBanner(){
                                 </>
                         }
 
-                    </ul>
+                    </div>
                 </nav>
 
 

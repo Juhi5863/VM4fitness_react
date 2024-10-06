@@ -1,3 +1,5 @@
+import Collapsible from "react-collapsible";
+
 export function Frequent(){
     return (
         <>
@@ -8,20 +10,15 @@ export function Frequent(){
                     </h2>
 
                     <div className="feq-conatiner">
-                        <div className="faq-item">
-                            <button className="faq-question">How does this program work?
-                                <i className="fa-solid fa-circle-chevron-down"></i>
-                            </button>
-                            <div className="faq-anw">
-                                <p>
-                                    The Healthy Weight Loss Program has a holistic approach which takes care of the
-                                    different
-                                    pillars of health. Firstly, we analyze your lifestyle and health parameters, based
-                                    on which we
-                                    custom-design the program for you.
-                                </p>
-                            </div>
-                        </div>
+                        <Collapsible trigger="How does this program work?">
+                            <p>
+                                The Healthy Weight Loss Program has a holistic approach which takes care of the
+                                different
+                                pillars of health. Firstly, we analyze your lifestyle and health parameters, based
+                                on which we
+                                custom-design the program for you.
+                            </p>
+                        </Collapsible>
 
                         <div className="faq-item">
                             <button className="faq-question">Are there any recommended exercises for weight loss?

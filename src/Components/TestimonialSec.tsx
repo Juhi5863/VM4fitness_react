@@ -9,6 +9,7 @@ import img6 from '../Assests/2.6.webp'
 import img7 from '../Assests/2.7.webp'
 import img8 from '../Assests/2.8.webp'
 import img9 from '../Assests/2.9.webp'
+import {isMobile} from "../Utility";
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -32,7 +33,7 @@ export function TestimonialSec (){
     return (
             <>
                 <div className="">
-                    <div  style={{width: '60%', margin: "auto", padding: '1%'}}>
+                    <div  style={{width: '66%', margin: "auto", padding: '1%'}}>
                         <h2 className="service-header">Testimonial</h2>
 
                         <Carousel
@@ -85,7 +86,7 @@ export function TestimonialSec (){
                             shouldResetAutoplay
                             showDots={false}
                             sliderClass=""
-                            slidesToSlide={3}
+                            slidesToSlide={isMobile() ? 1 : 3 }
                             swipeable
 
                         >
