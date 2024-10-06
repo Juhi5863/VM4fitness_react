@@ -9,6 +9,8 @@ import InformationBanner from "./Components/InformationBanner";
 import FAQ from "./Pages/FAQ";
 import {FooterOne} from "./Components/FooterOne";
 import img1 from "./Assests/logo.webp";
+import {Privacy} from "./Pages/Privacy";
+import {Blog1} from "./Pages/Blogs/Blog1"
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/contact" element={<ContactPage/>} />
           <Route path="/faq" element={<FAQ/>} />
+            <Route path="/privacy" element={<Privacy/>}></Route>
+            <Route path="/blog" element={<Blog1/>}></Route>
         </Routes>
         <FooterOne></FooterOne>
           <div className="whatsapp-btn-container">

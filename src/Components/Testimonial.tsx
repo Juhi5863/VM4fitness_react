@@ -6,15 +6,15 @@ import  facebook from "../Assests/facebook.webp"
 import  linkdin from "../Assests/linkdin.webp"
 import  twitter from "../Assests/twitter.webp"
 import  instagram from "../Assests/insta.svg"
-import img1 from '../Assests/2.1.webp'
-import img2 from '../Assests/2.2.webp'
-import img3 from '../Assests/2.3.webp'
-import img4 from '../Assests/2.4.webp'
-import img5 from '../Assests/2.5.webp'
-import img6 from '../Assests/2.6.webp'
-import img7 from '../Assests/2.7.webp'
-import img8 from '../Assests/2.8.webp'
-import img9 from '../Assests/2.9.webp'
+    import img1 from '../Assests/2.1.webp'
+    import img2 from '../Assests/2.2.webp'
+    import img3 from '../Assests/2.3.webp'
+    import img4 from '../Assests/2.4.webp'
+    import img5 from '../Assests/2.5.webp'
+    import img6 from '../Assests/2.6.webp'
+    import img7 from '../Assests/2.7.webp'
+    import img8 from '../Assests/2.8.webp'
+    import img9 from '../Assests/2.9.webp'
 import {Carousel} from "react-responsive-carousel";
 import slide1 from "../Assests/slide1.webp";
 import slide2 from "../Assests/slide2.webp";

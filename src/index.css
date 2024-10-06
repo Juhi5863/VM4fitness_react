@@ -46,9 +46,89 @@ code {
   padding-bottom: 10px;
   padding-top: 10px;
 }
+.default-div{
+  width: 66%;
+  margin: auto;
+}
+/* Privacy - policy section */
+.information-contain {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 100px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+  margin: auto;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.container-privacy {
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #dbffd9;
+  border-radius: 10px;
+}
+
+.content-privacy {
+  margin-bottom: 20px;
+}
+
+.heading-privacy {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.para-privacy, .privacy-list {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.privacy-list {
+  padding-left: 20px;
+}
+
+.privacy-list li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #f47b2f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 800px) {
   .container-contact {
     flex-direction: column!important;
+  }
+  .slide{
+    height : 200px;
   }
   .contactInfo {
     padding: 0!important;
@@ -1412,7 +1492,7 @@ code {
 
 /* footer-section 2 */
 .faq-section{
-  padding-top: 15px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 .faq-heading{
@@ -2126,7 +2206,7 @@ a:-webkit-any-link {
 }
 /* <!-- Frequently asked section --> */
 .faq-section{
-  padding: 40px;
+  padding: 20px;
   background-color: #003220;
 }
 .faq-div{

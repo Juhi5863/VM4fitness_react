@@ -81,7 +81,7 @@ export function Blog() {
                     shouldResetAutoplay
                     showDots={false}
                     sliderClass=""
-                    slidesToSlide={isMobile() ? 1 : 3 }
+                    slidesToSlide={isMobile() ? 1 : 3}
                     swipeable
 
                 >
@@ -97,24 +97,29 @@ export function Blog() {
                                 <p className="blog-description">
                                     Revitalize Your Body: The Emotional Journey of a 7-Day Weight Loss Diet Plan
                                 </p>
-                                <button className="blog-button" data-modal-id="1">Read More</button>
+                                <a href="../Pages/Blogs/Blog1.tsx" target="_blank">
+                                    <button className="blog-button" data-modal-id="1">Read More</button>
+                                </a>
                             </div>
                         </div>
                     </div>
+
                     <div className="blog-slide">
                         <div className="blog-box">
                             <div className="blog-image-content">
                                 <span className="blog-overlay"></span>
                                 <div className="blog-box-image">
-                                    <img src={img2} alt=""></img>
+                                    <img src={img2} alt=""/>
                                 </div>
                             </div>
                             <div className="blog-img-content">
                                 <p className="blog-description">
-                                    Embrace Your Journey: How a Life-Changing Diet Empowers Weight Loss
+                                    Embrace Your Journey: How a Life-Changing Diet Empowers Women's Weight Loss
 
                                 </p>
-                                <button className="blog-button" data-modal-id="2">Read More</button>
+                                <a href="blog2.html" target="_blank">
+                                    <button className="blog-button" data-modal-id="1">Read More</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -124,14 +129,16 @@ export function Blog() {
                             <div className="blog-image-content">
                                 <span className="blog-overlay"></span>
                                 <div className="blog-box-image">
-                                    <img src={img3} alt=""></img>
+                                    <img src={img3} alt=""/>
                                 </div>
                             </div>
                             <div className="blog-img-content">
                                 <p className="blog-description">
                                     Choosing Emotional Wellness Over Weight Loss Tablets and Drinks
                                 </p>
-                                <button className="blog-button" data-modal-id="3">Read More</button>
+                                <a href="blog3.html" target="_blank">
+                                    <button className="blog-button" data-modal-id="1">Read More</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -141,7 +148,7 @@ export function Blog() {
                             <div className="blog-image-content">
                                 <span className="blog-overlay"></span>
                                 <div className="blog-box-image">
-                                    <img src="images/VM_Logo.webp" alt=""></img>
+                                    <img src="images/VM_Logo.webp" alt=""/>
                                 </div>
                             </div>
                             <div className="blog-img-content">
@@ -157,7 +164,7 @@ export function Blog() {
                             <div className="blog-image-content">
                                 <span className="blog-overlay"></span>
                                 <div className="blog-box-image">
-                                    <img src="images/VM_Logo.webp" alt=""></img>
+                                    <img src="images/VM_Logo.webp" alt=""/>
                                 </div>
                             </div>
                             <div className="blog-img-content">
@@ -175,7 +182,7 @@ export function Blog() {
                             <div className="blog-image-content">
                                 <span className="blog-overlay"></span>
                                 <div className="blog-box-image">
-                                    <img src="images/VM_Logo.webp" alt=""></img>
+                                    <img src="images/VM_Logo.webp" alt=""/>
                                 </div>
                             </div>
                             <div className="blog-img-content">
@@ -188,60 +195,6 @@ export function Blog() {
                         </div>
                     </div>
 
-                    <div className="blog-slide">
-                        <div className="blog-box">
-                            <div className="blog-image-content">
-                                <span className="blog-overlay"></span>
-                                <div className="blog-box-image">
-                                    <img src="images/VM_Logo.webp" alt=""></img>
-                                </div>
-                            </div>
-                            <div className="blog-img-content">
-                                <p className="blog-description">
-                                    Discover 12 delicious homemade gut health drinks to maintain optimal gut health.
-                                    Explore recipes for nourishing beverages packed with probiotics & nutrients.
-                                </p>
-                                <button className="blog-button" data-modal-id="7">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="blog-slide">
-                        <div className="blog-box">
-                            <div className="blog-image-content">
-                                <span className="blog-overlay"></span>
-                                <div className="blog-box-image">
-                                    <img src="images/VM_Logo.webp" alt=""></img>
-                                </div>
-                            </div>
-                            <div className="blog-img-content">
-                                <p className="blog-description">
-                                    Discover 12 delicious homemade gut health drinks to maintain optimal gut health.
-                                    Explore recipes for nourishing beverages packed with probiotics & nutrients.
-                                </p>
-                                <button className="blog-button" data-modal-id="8">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="blog-slide">
-                        <div className="blog-box">
-                            <div className="blog-image-content">
-                                <span className="blog-overlay"></span>
-                                <div className="blog-box-image">
-                                    <img src="images/VM_Logo.webp" alt=""></img>
-                                </div>
-                            </div>
-                            <div className="blog-img-content">
-                                <p className="blog-description">
-                                    Discover 12 delicious homemade gut health drinks to maintain optimal gut health.
-                                    Explore recipes for nourishing beverages packed with probiotics & nutrients.
-                                </p>
-                                <button className="blog-button" data-modal-id="9">Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                    
 
                 </Carousel>
             </div>

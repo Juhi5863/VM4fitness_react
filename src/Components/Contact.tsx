@@ -1,17 +1,27 @@
+import { FaLocationDot } from "react-icons/fa6";
+import { MdLocalPhone } from "react-icons/md";
+import { GoMail } from "react-icons/go";
 import img1 from '../Assests/logo.webp'
+import  img2 from '../Assests/contact_banner.jpg'
+import React from "react";
 export function Contact(){
     return (
         <>
+            <section id="home">
+                <div className="slider-contact">
+                    <div className="slides">
+                        <img src={img2} className="slide" alt=""/>
+                    </div>
+                </div>
+            </section>
             <section id="contact" className="contact-sec">
                 <div className="contact-items">
-                    <div className="content-contact">
-                        <h2 className="contact-head">Contact Us</h2>
-                    </div>
                     <div className="container-contact">
                         <div className="contactInfo">
                             <div className="contant-box">
                                 <div className="icon-contact">
-                                    <i className="fa-solid fa-location-dot"></i>
+                                     <FaLocationDot className="fa-solid fa-location-dot" />
+
                                 </div>
                                 <div className="text">
                                     <a href="tel:+918396952909">
@@ -23,7 +33,7 @@ export function Contact(){
 
                             <div className="contant-box">
                                 <div className="icon-contact">
-                                    <i className="fa-solid fa-phone phone"></i>
+                                    <MdLocalPhone className="fa-solid fa-phone phone" />
                                 </div>
                                 <div className="text">
                                     <a href="tel:+918396952909">
@@ -35,7 +45,8 @@ export function Contact(){
 
                             <div className="contant-box">
                                 <div className="icon-contact">
-                                    <i className="fa-solid fa-envelope email1"></i>
+                                    {/*<i className="fa-solid fa-envelope email1"></i>*/}
+                                    <GoMail className="fa-regular fa-envelope" />
                                 </div>
                                 <div className="text">
                                     <a href="mailto:mimansa@vm4fitness.com">
@@ -46,9 +57,10 @@ export function Contact(){
                             </div>
                         </div>
 
-                        <div onClick={() => window.open('https://calendly.com/vik4fitness/consultation-appointment','mywindow')}
+                        <div
+                            onClick={() => window.open('https://calendly.com/vik4fitness/consultation-appointment', 'mywindow')}
 
-                             rel="noopener noreferrer" className="contact-link">
+                            rel="noopener noreferrer" className="contact-link">
                             <div className="contactForm">
                                 <h2 className="contact-heading">Let's Connect and Achieve Your Fitness Goals
                                     Together!</h2>
@@ -62,11 +74,12 @@ export function Contact(){
                                     today <i className="fa-solid fa-arrow-right"></i></p>
                                 </a>
 
-                            </div> </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </section>
         </>
-)
+    )
 }

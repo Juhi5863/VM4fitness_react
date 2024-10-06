@@ -24,7 +24,7 @@ export function FooterOne(){
                     <div className="contact-footer2" style={{display: "flex"}}>
                         <a href="/contact" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>CONTACT US</a>
                         <a href="/faq" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>FAQ</a>
-                        <a href="privacy.html" target="_blank" rel="noopener noreferrer" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>PRIVACY POLICY</a>
+                        <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>PRIVACY POLICY</a>
                         <ul className="social-media-list">
                             <li>
                                 <a href="https://www.facebook.com/vm4fitness/" target="_blank"
@@ -56,7 +56,7 @@ export function FooterOne(){
                             <div className="contact-footer2" style={{display: "flex"}}>
                                 <a href="/contact" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>CONTACT US</a>
                                 <a href="/faq" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>FAQ</a>
-                                <a href="privacy.html" target="_blank" rel="noopener noreferrer" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>PRIVACY POLICY</a>
+                                <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>PRIVACY POLICY</a>
                                 <ul className="social-media-list">
                                     <li>
                                         <a href="https://www.facebook.com/vm4fitness/" target="_blank"
