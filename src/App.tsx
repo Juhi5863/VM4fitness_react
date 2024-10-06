@@ -4,8 +4,11 @@ import './App.css';
 import NavBar from "./Components/NavBar";
 import {Route, Routes} from "react-router-dom";
 import Home from "./Pages/Home";
-import About from "./Pages/About";
+import ContactPage from "./Pages/ContactPage";
 import InformationBanner from "./Components/InformationBanner";
+import FAQ from "./Pages/FAQ";
+import {FooterOne} from "./Components/FooterOne";
+import img1 from "./Assests/logo.webp";
 
 function App() {
   return (
@@ -14,9 +17,16 @@ function App() {
         <NavBar></NavBar>
         <Routes >
           <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<ContactPage/>} />
+          <Route path="/faq" element={<FAQ/>} />
         </Routes>
-
+        <FooterOne></FooterOne>
+          <div className="whatsapp-btn-container">
+              <a href="https://api.whatsapp.com/send?phone=918396952909&text=Hello%20VM4fitness%2C%0A%0AI%20need%20to%20lose%20weight.%20May%20I%20know%20about%20your%20Weightloss%20program%3F"
+                 target="_blank" rel="noopener noreferrer" className="whatsapp-btn floating btn">
+                  <img src={img1} alt="WhatsApp" className="img-logo"/>
+              </a>
+          </div>
       </>
   )
 }

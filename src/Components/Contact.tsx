@@ -46,8 +46,9 @@ export function Contact(){
                             </div>
                         </div>
 
-                        <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
-                           rel="noopener noreferrer" className="contact-link">
+                        <div onClick={() => window.open('https://calendly.com/vik4fitness/consultation-appointment','mywindow')}
+
+                             rel="noopener noreferrer" className="contact-link">
                             <div className="contactForm">
                                 <h2 className="contact-heading">Let's Connect and Achieve Your Fitness Goals
                                     Together!</h2>
@@ -60,14 +61,8 @@ export function Contact(){
                                    rel="noopener noreferrer"><p className="contact-para cont-paraa">Get in touch with us
                                     today <i className="fa-solid fa-arrow-right"></i></p>
                                 </a>
-                                <div className="whatsapp-btn-container">
-                                    <a href="https://api.whatsapp.com/send?phone=918396952909&text=Hello%20VM4fitness%2C%0A%0AI%20need%20to%20lose%20weight.%20May%20I%20know%20about%20your%20Weightloss%20program%3F"
-                                       target="_blank" rel="noopener noreferrer" className="whatsapp-btn floating btn">
-                                        <img src={img1} alt="WhatsApp" className="img-logo"/>
-                                    </a>
-                                </div>
 
-                            </div> </a>
+                            </div> </div>
                     </div>
                 </div>
 

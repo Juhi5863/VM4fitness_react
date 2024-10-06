@@ -3,6 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import img1 from '../Assests/blog1.webp'
 import img2 from '../Assests/blog2.webp'
 import img3 from '../Assests/blog3.webp'
+import {isMobile} from "../Utility";
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -27,7 +28,7 @@ export function Blog() {
     return (
         <>
             <div className="blog-sec" style={{borderRadius: "5"}}>
-            <div  style={{width: '60%', margin: "auto"}}>
+            <div className="default-div">
                 <h2 className="service-header" style={{color: "white"}}>Latest Buzz</h2>
 
                 <Carousel
@@ -80,7 +81,7 @@ export function Blog() {
                     shouldResetAutoplay
                     showDots={false}
                     sliderClass=""
-                    slidesToSlide={3}
+                    slidesToSlide={isMobile() ? 1 : 3 }
                     swipeable
 
                 >

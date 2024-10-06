@@ -1,9 +1,12 @@
+import {isMobile} from "../Utility";
+
 export function Youtube(){
     return (
         <>
             <section id="trending-section">
                 <div className="youtube-container">
                     <h2 className="youtube-head">Trending on YouTube</h2>
+                    { isMobile() ? <></>:<>
                     <div className="trending-container">
                         <div className="video-card">
                             <iframe width="300" height="205" src="https://www.youtube.com/embed/rkeg27zFcfw"
@@ -28,7 +31,9 @@ export function Youtube(){
                         </div>
 
                     </div>
-                    <a href="https://www.youtube.com/@vm4fitness" target="_blank" rel="noopener noreferrer">
+
+                    </>}
+                    <a href="https://www.youtube.com/@vm4fitness" target="_blank" rel="noopener noreferrer" className="view-more-video">
                         <button className="youtube-button">View More Video</button>
                     </a>
                 </div>
