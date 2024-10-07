@@ -12,6 +12,7 @@ import img1 from "./Assests/logo.webp";
 import {Privacy} from "./Pages/Privacy";
 import {Blog1} from "./Pages/Blogs/Blog1"
 import Blog2 from "./Pages/Blogs/Blog2";
+import {Blog3} from "./Pages/Blogs/Blog3";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/privacy" element={<Privacy/>}></Route>
             <Route path="/blog/blog1" element={<Blog1/>}></Route>
             <Route path="/blog/blog2" element={<Blog2/>}></Route>
+            <Route path="/blog/blog3" element={<Blog3/>}></Route>
         </Routes>
         <FooterOne></FooterOne>
           <div className="whatsapp-btn-container">

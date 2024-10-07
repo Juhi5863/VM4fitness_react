@@ -4,6 +4,8 @@ import img1 from '../Assests/blog1.webp'
 import img2 from '../Assests/blog2.webp'
 import img3 from '../Assests/blog3.webp'
 import {isMobile} from "../Utility";
+
+
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -29,7 +31,7 @@ export function Blog() {
         <>
             <div className="blog-sec" style={{borderRadius: "5"}}>
             <div className="default-div">
-                <h2 className="service-header" style={{color: "white"}}>Latest Buzz</h2>
+                <h2  style={{color: "black", textAlign: "center", paddingTop: 20}}>Latest Buzz</h2>
 
                 <Carousel
                     additionalTransfrom={0}
@@ -117,7 +119,7 @@ export function Blog() {
                                     Embrace Your Journey: How a Life-Changing Diet Empowers Women's Weight Loss
 
                                 </p>
-                                <a href="blog2.html" target="_blank">
+                                <a href="/blog/blog2"  target="_blank">
                                     <button className="blog-button" data-modal-id="1">Read More</button>
                                 </a>
                             </div>
@@ -136,7 +138,7 @@ export function Blog() {
                                 <p className="blog-description">
                                     Choosing Emotional Wellness Over Weight Loss Tablets and Drinks
                                 </p>
-                                <a href="blog3.html" target="_blank">
+                                <a href="/blog/blog3" target="_blank">
                                     <button className="blog-button" data-modal-id="1">Read More</button>
                                 </a>
                             </div>

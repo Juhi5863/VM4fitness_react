@@ -16,7 +16,8 @@ import {isMobile} from "../Utility";
 export function Service() {
     return (
         <>
-            <div className="default-div">
+            <div style={{background: "#003220"}}>
+            <div className="default-div" style={{background: "#003220", paddingTop: 40}}>
                 <h2 className="service-header">Our Service </h2>
 
                 <Carousel
@@ -230,7 +231,7 @@ export function Service() {
                 </Carousel>
             </div>
 
-
+            </div>
         </>
     )
 }

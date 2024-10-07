@@ -4,14 +4,16 @@ import { GoMail } from "react-icons/go";
 import img1 from '../Assests/logo.webp'
 import  img2 from '../Assests/contact_banner.jpg'
 import React from "react";
+import img from "../Assests/banner-Privacy-Policy-1.jpg";
 export function Contact(){
     return (
         <>
             <section id="home">
-                <div className="slider-contact">
+                <div className="slider" style={{paddingTop: 0}}>
                     <div className="slides">
-                        <img src={img2} className="slide" alt=""/>
+                        <img src={img2} className="slide" style={{width:"-webkit-fill-available"}} alt=""/>
                     </div>
+
                 </div>
             </section>
             <section id="contact" className="contact-sec">
@@ -20,7 +22,7 @@ export function Contact(){
                         <div className="contactInfo">
                             <div className="contant-box">
                                 <div className="icon-contact">
-                                     <FaLocationDot className="fa-solid fa-location-dot" />
+                                    <FaLocationDot className="fa-solid fa-location-dot"/>
 
                                 </div>
                                 <div className="text">
@@ -33,7 +35,7 @@ export function Contact(){
 
                             <div className="contant-box">
                                 <div className="icon-contact">
-                                    <MdLocalPhone className="fa-solid fa-phone phone" />
+                                    <MdLocalPhone className="fa-solid fa-phone phone"/>
                                 </div>
                                 <div className="text">
                                     <a href="tel:+918396952909">
@@ -46,7 +48,7 @@ export function Contact(){
                             <div className="contant-box">
                                 <div className="icon-contact">
                                     {/*<i className="fa-solid fa-envelope email1"></i>*/}
-                                    <GoMail className="fa-regular fa-envelope" />
+                                    <GoMail className="fa-regular fa-envelope"/>
                                 </div>
                                 <div className="text">
                                     <a href="mailto:mimansa@vm4fitness.com">
@@ -70,7 +72,8 @@ export function Contact(){
                                     guidance, or want to learn more about our programs, our team is ready to help.
                                 </p>
                                 <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
-                                   rel="noopener noreferrer"><p className="contact-para cont-paraa">Get in touch with us
+                                   rel="noopener noreferrer"><p className="contact-para cont-paraa">Get in touch
+                                    with us
                                     today <i className="fa-solid fa-arrow-right"></i></p>
                                 </a>
 
@@ -80,6 +83,7 @@ export function Contact(){
                 </div>
 
             </section>
+
         </>
     )
 }

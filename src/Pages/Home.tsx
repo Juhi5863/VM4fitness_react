@@ -35,13 +35,14 @@ function  Home(){
             </div>
         </Carousel>
         <Testimonial></Testimonial>
+
+        <TestimonialSec></TestimonialSec>
         <Profile></Profile>
         <Understand></Understand>
         <Service></Service>
-        <Blog></Blog>
         <Achievment></Achievment>
         <Youtube></Youtube>
-        <TestimonialSec></TestimonialSec>
+        <Blog></Blog>
 
     </div>
 }

@@ -1,42 +1,32 @@
-
-
-/* This main class will handle the rendering of all routes through the
-use of a switch that will determine what page will be rendered based on the
-active path */
+import img from "../../Assests/blog3.webp";
+import {FaHeart} from "react-icons/fa";
 import React from "react";
-import "./Blog.css";
-import img from "../../Assests/blog2.webp";
-import { FaHeart } from "react-icons/fa";
-import { BsInstagram , BsFacebook, BsTwitterX, BsLinkedin, BsYoutube} from "react-icons/bs";
+import {BsFacebook, BsInstagram, BsLinkedin, BsYoutube} from "react-icons/bs";
 
-
-
-// Render all home elements
-export default class Blog2 extends React.Component {
-    render() {
-        return (
-<>
-
+export function  Blog3(){
+    return (
+        <>
             <section id="home" style={{marginTop: 100}}>
                 <div className="Blog2" style={{paddingTop: 0}}>
                     <div className="slides-blog2">
-                        <img src={img} className="slide-blog" style={{width: "-webkit-fill-available", height: 700}} alt=""/>
+                        <img src={img} className="slide-blog" style={{width: "-webkit-fill-available", height: 700}}
+                             alt=""/>
                     </div>
 
                 </div>
             </section>
-        <div style={{}}>
-            <div className="section">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-12 col-md-4 col-lg-3 blog-sidebar">
+            <div style={{}}>
+                <div className="section">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-12 col-md-4 col-lg-3 blog-sidebar">
                                 <div className="sidebar-module">
                                     <h4>Archives</h4>
                                     <ol className="list-unstyled">
-                                        <li><a href="#heading1">Unique Journey</a></li>
-                                        <li><a href="#heading2">Holistic Nutrition</a></li>
-                                        <li><a href="#heading3">Transformative Nutrition</a></li>
-                                        <li><a href="#heading4">December 2013</a></li>
+                                        <li><a href="#heading">Heading</a></li>
+                                        <li><a href="#">February 2014</a></li>
+                                        <li><a href="#">January 2014</a></li>
+                                        <li><a href="#">December 2013</a></li>
                                         <li><a href="#">November 2013</a></li>
                                         <li><a href="#">October 2013</a></li>
                                         <li><a href="#">September 2013</a></li>
@@ -48,29 +38,24 @@ export default class Blog2 extends React.Component {
                                     </ol>
                                     <h4>Elsewhere</h4>
                                     <ol className="list-unstyled" style={{display: "inline-flex", gap: 20}}>
-                                        <li><a href="https://www.instagram.com/vm4fitness/"
-                                               target="_blank"><BsInstagram/></a></li>
+                                        <li><a href="https://www.instagram.com/vm4fitness/"target="_blank"><BsInstagram/></a></li>
                                         {/*<li><a href="#"><BsTwitterX /></a></li>*/}
-                                        <li><a href="https://www.facebook.com/vm4fitness/" target="_blank"><BsFacebook/></a>
-                                        </li>
-                                        <li><a href="https://www.linkedin.com/company/vm4fitness/"
-                                               target="_blank"><BsLinkedin/></a></li>
-                                        <li><a href="https://www.linkedin.com/company/vm4fitness/"
-                                               target="_blank"><BsYoutube/>
-                                        </a></li>
+                                        <li><a href="https://www.facebook.com/vm4fitness/" target="_blank"><BsFacebook/></a></li>
+                                        <li><a href="https://www.linkedin.com/company/vm4fitness/"target="_blank"><BsLinkedin/></a></li>
+                                        <li><a href="https://www.linkedin.com/company/vm4fitness/"target="_blank"><BsYoutube/></a></li>
                                     </ol>
                                 </div>
-                        </div>
-                        <div className="col-sm-12 col-md-8 blog-main">
-                            <div className="blog-post" style={{textAlign: "justify"}}>
-                                <h2 className="blog-post-title">Embrace Your Journey: How This Life-Changing Diet
-                                    Empowers Women in Their Weight Loss!</h2>
-                                <p className="blog-post-meta">
-                                    <FaHeart color='red'/> September 4, 2024 by <a href="#">VM4fitness</a>
-                                </p>
-                                <p>
-                                    Packed with Probiotics
-                                </p>
+                            </div>
+                            <div className="col-sm-12 col-md-8 blog-main">
+                                <div className="blog-post" style={{textAlign: "justify"}}>
+                                    <h2 className="blog-post-title">Embrace Your Journey: How This Life-Changing Diet
+                                        Empowers Women in Their Weight Loss!</h2>
+                                    <p className="blog-post-meta">
+                                        <FaHeart color='red'/> September 4, 2024 by <a href="#">VM4fitness</a>
+                                    </p>
+                                    <p>
+                                        Packed with Probiotics
+                                    </p>
                                     <hr/>
                                     <p>
                                         In the quest for health and well-being, many women are turning to transformative
@@ -156,7 +141,7 @@ export default class Blog2 extends React.Component {
                                         tied to a specific weight or size but to health, happiness, and well-being.
                                     </p>
 
-                                    <h2 id="heading1">2. Choosing the Right Diet: A Holistic Approach
+                                    <h2 id="heading">2. Choosing the Right Diet: A Holistic Approach
                                     </h2>
                                     <p>
                                     </p>
@@ -214,7 +199,7 @@ export default class Blog2 extends React.Component {
                                         and preferences.
                                     </p>
 
-                                    <h2 id="heading2">3. The Empowering Benefits of a Life-Changing Diet
+                                    <h2 id="heading">3. The Empowering Benefits of a Life-Changing Diet
 
                                     </h2>
                                     <p>
@@ -283,18 +268,18 @@ export default class Blog2 extends React.Component {
                                         capable of facing any challenge that comes their way.
                                     </p>
 
-                                    <h2 id="heading">3. Staying Motivated Throughout the Journey
+                                    <h2 id="heading">4. Staying Motivated Throughout the Journey
                                     </h2>
                                     <p>
                                     </p>
 
                                     <h3>Setting Realistic and Achievable Goals</h3>
 
-                                        <p>
+                                    <p>
                                         One of the biggest mistakes women make when starting a weight loss journey is
                                         setting unrealistic goals. Losing a significant amount of weight in a short
                                         period is not only unhealthy, but it can also lead to burnout and frustration.
-                                        </p>
+                                    </p>
 
                                     <p>
                                         Instead, focus on setting small, achievable goals that build up over time. This
@@ -332,7 +317,6 @@ export default class Blog2 extends React.Component {
                                         encouragement during the tougher moments. Knowing that you are not alone in your
                                         journey is an empowering feeling in itself.
                                     </p>
-
 
 
                                     Hormonal Changes and Weight Loss Challenges
@@ -412,11 +396,11 @@ export default class Blog2 extends React.Component {
                                 </div>
                             </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-</>
-        );
-    }
+
+        </>
+    )
 }

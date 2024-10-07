@@ -10,6 +10,8 @@ import img7 from '../Assests/2.7.webp'
 import img8 from '../Assests/2.8.webp'
 import img9 from '../Assests/2.9.webp'
 import {isMobile} from "../Utility";
+import {BsInstagram} from "react-icons/bs";
+import React from "react";
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -34,7 +36,7 @@ export function TestimonialSec (){
             <>
                 <div className="">
                     <div  style={{width: '66%', margin: "auto", padding: '1%'}}>
-                        <h2 className="service-header">Testimonial</h2>
+                        <h2 className="" style={{textAlign: "center"}}>Testimonials</h2>
 
                         <Carousel
                             additionalTransfrom={0}
@@ -86,64 +88,88 @@ export function TestimonialSec (){
                             shouldResetAutoplay
                             showDots={false}
                             sliderClass=""
-                            slidesToSlide={isMobile() ? 1 : 3 }
+                            slidesToSlide={isMobile() ? 1 : 3}
                             swipeable
 
                         >
+                            {/*<div className="flip-box">*/}
+                            {/*    <div className="flip-box-inner">*/}
+                            {/*        <div className="flip-box-front">*/}
+                            {/*            <img src="img_paris.jpg" alt="Paris" style={{width: 300, height: 200}}/>*/}
+                            {/*        </div>*/}
+                            {/*        <div className="flip-box-back">*/}
+                            {/*            <h2>Paris</h2>*/}
+                            {/*            <p>What an amazing city</p>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
+
+                            {/*<div className="flip-box">*/}
+                            {/*    <div className="testimonial-slide flip-box-inner">*/}
+                            {/*        <div className="testimonial-box flip-box-front">*/}
+                            {/*            <img src={img1} alt="Testimonial Image" className="testimonial-img"*/}
+                            {/*                 style={{color: "white"}}/>*/}
+                            {/*            <h2 className="testimonial-name">Divya Tiwari From Bengalore</h2>*/}
+                            {/*        </div>*/}
+                            {/*        <div className="flip-box-back">*/}
+                            {/*            <h2 style={{padding: 10}}>Divya Tiwari From Bengalore</h2>*/}
+                            {/*            <button style={{borderRadius: 5}}><a href="https://www.instagram.com/vm4fitness/"*/}
+                            {/*               target="_blank">Read More</a> </button>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
+
+
+
+
                             <div className="testimonial-slide">
-                                <div className="testimonial-box">
-                                    <img src={img1} alt="Testimonial Image" className="testimonial-img" style={{color: "white"}}/>
-                                    <h2 className="testimonial-name">Divya Tiwari From Bengalore</h2>
+                                    <div className="testimonial-box">
+                                        <img src={img2} alt="Testimonial Image" className="testimonial-img"/>
+                                        <h2 className="testimonial-name">Kamla From Delhi</h2>
+                                    </div>
                                 </div>
-                            </div>
                             <div className="testimonial-slide">
-                                <div className="testimonial-box">
-                                    <img src={img2} alt="Testimonial Image" className="testimonial-img"/>
-                                    <h2 className="testimonial-name">Kamla From Delhi</h2>
+                                    <div className="testimonial-box">
+                                        <img src={img3} alt="Testimonial Image" className="testimonial-img"/>
+                                        <h2 className="testimonial-name">Mayank Agarwal form Prayagraj</h2>
+                                    </div>
                                 </div>
-                            </div>
                             <div className="testimonial-slide">
-                                <div className="testimonial-box">
-                                    <img src={img3} alt="Testimonial Image" className="testimonial-img"/>
-                                    <h2 className="testimonial-name">Mayank Agarwal form Prayagraj</h2>
+                                    <div className="testimonial-box">
+                                        <img src={img4} alt="Testimonial Image" className="testimonial-img"/>
+                                        <h2 className="testimonial-name">Sahil Kamran From Aligarh</h2>
+                                    </div>
                                 </div>
-                            </div>
                             <div className="testimonial-slide">
-                                <div className="testimonial-box">
-                                    <img src={img4} alt="Testimonial Image" className="testimonial-img"/>
-                                    <h2 className="testimonial-name">Sahil Kamran From Aligarh</h2>
+                                    <div className="testimonial-box">
+                                        <img src={img5} alt="Testimonial Image" className="testimonial-img"/>
+                                        <h2 className="testimonial-name">Surbhi Purwar From Bengalore</h2>
+                                    </div>
                                 </div>
-                            </div>
                             <div className="testimonial-slide">
-                                <div className="testimonial-box">
-                                    <img src={img5} alt="Testimonial Image" className="testimonial-img"/>
-                                    <h2 className="testimonial-name">Surbhi Purwar From Bengalore</h2>
+                                    <div className="testimonial-box">
+                                        <img src={img6} alt="Testimonial Image" className="testimonial-img"/>
+                                        <h2 className="testimonial-name">Saikat Sinha From Kolkata</h2>
+                                    </div>
                                 </div>
-                            </div>
                             <div className="testimonial-slide">
-                                <div className="testimonial-box">
-                                    <img src={img6} alt="Testimonial Image" className="testimonial-img"/>
-                                    <h2 className="testimonial-name">Saikat Sinha From Kolkata</h2>
+                                    <div className="testimonial-box">
+                                        <img src={img7} alt="Testimonial Image" className="testimonial-img"/>
+                                        <h2 className="testimonial-name">Shakti Pandey From Dehradun</h2>
+                                    </div>
                                 </div>
-                            </div>
                             <div className="testimonial-slide">
-                                <div className="testimonial-box">
-                                    <img src={img7} alt="Testimonial Image" className="testimonial-img"/>
-                                    <h2 className="testimonial-name">Shakti Pandey From Dehradun</h2>
+                                    <div className="testimonial-box">
+                                        <img src={img8} alt="Testimonial Image" className="testimonial-img"/>
+                                        <h2 className="testimonial-name">Shrey Pahwa From Haryana</h2>
+                                    </div>
                                 </div>
-                            </div>
                             <div className="testimonial-slide">
-                                <div className="testimonial-box">
-                                    <img src={img8} alt="Testimonial Image" className="testimonial-img"/>
-                                    <h2 className="testimonial-name">Shrey Pahwa From Haryana</h2>
+                                    <div className="testimonial-box">
+                                        <img src={img9} alt="Testimonial Image" className="testimonial-img"/>
+                                        <h2 className="testimonial-name">Deepti From Dhanbad</h2>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="testimonial-slide">
-                                <div className="testimonial-box">
-                                    <img src={img9}alt="Testimonial Image" className="testimonial-img"/>
-                                    <h2 className="testimonial-name">Deepti From Dhanbad</h2>
-                                </div>
-                            </div>
 
 
                         </Carousel>

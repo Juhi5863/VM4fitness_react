@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import {MultiSelect} from "primereact/multiselect";
 import 'primereact/resources/themes/lara-light-cyan/theme.css';
 import {isMobile} from "../Utility";
@@ -19,6 +19,7 @@ import {Carousel} from "react-responsive-carousel";
 import slide1 from "../Assests/slide1.webp";
 import slide2 from "../Assests/slide2.webp";
 import slide3 from "../Assests/slide3.webp";
+import {BsFacebook, BsInstagram, BsLinkedin, BsYoutube} from "react-icons/bs";
 
 
 export function Testimonial (){
@@ -78,29 +79,15 @@ export function Testimonial (){
                             <button type="submit" className="submit-button">Submit</button>
                             <div className="col-md-51">
                                 <ul className="social-media-list">
-                                    <li>
-                                        <a href="https://www.facebook.com/vm4fitness/" target="_blank"
-                                           rel="noopener noreferrer">
-                                            <img src={facebook} alt="facebook"/>
-                                        </a>
+                                    <li><a href="https://www.instagram.com/vm4fitness/"
+                                           target="_blank"><BsInstagram/></a></li>
+                                    {/*<li><a href="#"><BsTwitterX /></a></li>*/}
+                                    <li><a href="https://www.facebook.com/vm4fitness/" target="_blank"><BsFacebook/></a>
                                     </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/vm4fitness/" target="_blank"
-                                           rel="noopener noreferrer">
-                                            <img src={instagram} alt="insta"/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/company/vm4fitness/" target="_blank"
-                                           rel="noopener noreferrer">
-                                            <img src={linkdin} alt="linkedin"/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/vm4fitness" target="_blank" rel="noopener noreferrer">
-                                            <img src={twitter} alt="twitter"/>
-                                        </a>
-                                    </li>
+                                    <li><a href="https://www.linkedin.com/company/vm4fitness/"
+                                           target="_blank"><BsLinkedin/></a></li>
+                                    <li><a href="https://www.linkedin.com/company/vm4fitness/"
+                                           target="_blank"><BsYoutube/></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -108,12 +95,13 @@ export function Testimonial (){
 
                 </div>
                 {
-                   isMobile() ? <></> :
-                       <div id="testimonial">
-                           <div className="testimonial-slider">
-                               <h2 className="testi">What our clients say</h2>
-                               <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true}
-                                         interval={3000} showStatus={false} stopOnHover={false}>
+                    isMobile() ? <></> :
+                        <div id="testimonial">
+                            <div className="testimonial-slider">
+                                <h2 className="testi">What our clients say</h2>
+                                <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true}
+                                          infiniteLoop={true}
+                                          interval={3000} showStatus={false} stopOnHover={false}>
                                    <div className="slide2">
                                        <img src={img1} alt="Client 1"/>
                                        <p className="paragraph">Great service, highly recommend!</p>

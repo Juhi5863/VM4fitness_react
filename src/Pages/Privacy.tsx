@@ -7,7 +7,6 @@ export function Privacy(){
                 <div className="privacy-slider">
                     <div className="slides-privacy">
                         <img src={img}  className="privacy-slide-image" alt=""/>
-
                     </div>
 
                 </div>
