@@ -35,7 +35,7 @@ export function TestimonialSec (){
     return (
             <>
                 <div className="" id="user-testimonial-section">
-                    <div  style={{width: '66%', margin: "auto", padding: '1%'}}>
+                    <div className="default-div">
                         <h2 className="" style={{textAlign: "center"}}>Testimonials</h2>
 
                         <Carousel
@@ -125,7 +125,12 @@ export function TestimonialSec (){
                             <div className="testimonial-slide">
                                 <div className="testimonial-box">
                                     <img src={img2} alt="Testimonial Image" className="testimonial-img"/>
-                                    <button className="testimonial-img-button testimonial-btn fourth">Button 4</button>
+                                    {
+                                        isMobile() ? <></> :
+                                            <button className="testimonial-img-button testimonial-btn fourth">Button
+                                                4</button>
+
+                                    }
 
                                     <h2 className="testimonial-name">Kamla From Delhi</h2>
                                 </div>

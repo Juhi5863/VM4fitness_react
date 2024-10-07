@@ -10,7 +10,7 @@ export function Blog1(){
             <section id="home" style={{marginTop: 105}}>
                 <div className="Blog2" style={{paddingTop: 0}}>
                     <div className="slides-blog2">
-                        <img src={img} className="slide-blog" style={{width: "-webkit-fill-available", height: 700}}
+                        <img src={img} className="slide-blog"
                              alt=""/>
                     </div>
 
@@ -52,7 +52,7 @@ export function Blog1(){
                             </div>
 
                             <div className="col-sm-12 col-md-8 blog-main">
-                                <div className="blog-post" style={{textAlign: "justify"}}>
+                                <div className="blog-post">
                                     <h2 className="blog-post-title">Revitalize Your Body: The Emotional Journey of a
                                         7-Day Weight Loss Diet Plan</h2>
                                     <p className="blog-post-meta">

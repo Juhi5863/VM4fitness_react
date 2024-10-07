@@ -183,10 +183,23 @@ a:hover {
     width: 95%!important;
   }
 }
-
+.blog-post {
+  text-align: justify;
+}
+.slide-blog {
+  width: 100%;
+  height: 700px
+}
 @media (max-width: 800px) {
+  .blog-post {
+    text-align: inherit!important;
+  }
+  .slide-blog {
+    height: 200px
+  }
   .trending-container {
     flex-flow: column!important;
+    width: 100% !important;
   }
   .container-contact {
     flex-direction: column!important;
@@ -2494,7 +2507,7 @@ a:-webkit-any-link {
   height: auto;
   border-radius : 5px
 }
-
+@media (min-width: 800px)
 .testimonial-img:hover {
   filter: blur(3px);
   -webkit-filter: blur(3px);

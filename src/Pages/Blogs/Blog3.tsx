@@ -47,7 +47,7 @@ export function  Blog3(){
                                 </div>
                             </div>
                             <div className="col-sm-12 col-md-8 blog-main">
-                                <div className="blog-post" style={{textAlign: "justify"}}>
+                                <div className="blog-post">
                                     <h2 className="blog-post-title">Embrace Your Journey: How This Life-Changing Diet
                                         Empowers Women in Their Weight Loss!</h2>
                                     <p className="blog-post-meta">

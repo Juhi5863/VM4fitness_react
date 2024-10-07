@@ -6,12 +6,13 @@ import  slide3 from '../Assests/slide3.webp'
 import mimansa from '../Assests/Mimansa.webp'
 import vikaram from '../Assests/Vikram.webp'
 import {MdLens} from "react-icons/md";
+import {isMobile} from "../Utility";
 
 
 function  Profile(){
     return <div  style={{background: "#003220"}}>
         <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true} interval={6000}
-                  showStatus={false} stopOnHover={false} className="slide-section">
+                  showStatus={false} stopOnHover={false} swipeable={isMobile() ? false : true} className="slide-section">
             <div className="slide-about">
                 <div className="slide-profile">
                     <img src={mimansa} className="slide-img" alt="Profile Image"/>
