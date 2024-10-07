@@ -105,6 +105,11 @@ export function Service() {
                                     <span className="overlay"></span>
                                     <div className="box-image">
                                         <img src={img2} alt="" className="box-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Diabetes Reversal</h2>
@@ -122,6 +127,11 @@ export function Service() {
                                     <span className="overlay"></span>
                                     <div className="box-image">
                                         <img src={img3} alt="" className="box-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Fatty Liver Reversal</h2>
@@ -139,6 +149,11 @@ export function Service() {
                                     <span className="overlay"></span>
                                     <div className="box-image">
                                         <img src={img4} alt="" className="box-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Gut Health</h2>
@@ -156,6 +171,11 @@ export function Service() {
                                     <span className="overlay"></span>
                                     <div className="box-image">
                                         <img src={img5} alt="" className="box-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Cholesterol control</h2>
@@ -173,6 +193,11 @@ export function Service() {
                                     <span className="overlay"></span>
                                     <div className="box-image">
                                         <img src={img6} alt="" className="box-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">High BP Regulation</h2>
@@ -190,6 +215,11 @@ export function Service() {
                                     <span className="overlay"></span>
                                     <div className="box-image">
                                         <img src={img7} alt="" className="box-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">PCOD Reversal</h2>
@@ -207,6 +237,11 @@ export function Service() {
                                     <span className="overlay"></span>
                                     <div className="box-image">
                                         <img src={img8} alt="" className="box-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Thyroid Reversal</h2>
@@ -224,6 +259,11 @@ export function Service() {
                                     <span className="overlay"></span>
                                     <div className="box-image">
                                         <img src={img9} alt="" className="box-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Uric Acid Reversal</h2>
