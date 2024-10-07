@@ -20,12 +20,36 @@ import slide1 from "../Assests/slide1.webp";
 import slide2 from "../Assests/slide2.webp";
 import slide3 from "../Assests/slide3.webp";
 import {BsFacebook, BsInstagram, BsLinkedin, BsYoutube} from "react-icons/bs";
+import {MenuItem, TextField} from "@mui/material";
 
 
 export function Testimonial (){
     const [options, setOptions] = useState([{name: 'Other'},{name: 'Diabetes', id: 1},{name: 'Digestion Issues', id: 2},{name: 'Digestion Issues', id: 3},{name: 'Fatty Liver', id: 4},{name: 'Gall Bladder Issues', id: 5},{name: 'High BP', id: 6},{name: 'Kidney Stones', id: 7},{name: 'Low BP', id: 8},{name: 'PCOD', id: 9},{name: 'Uric Acid', id: 10},{name: 'Thyroid Issues', id: 11}]);
     const [selectedValue, setSelectedValues] = useState([]);
 
+    const [formFields, setFormFields] = useState({
+        name : "",
+        whatsaap : "",
+        height : "",
+        weight : "",
+        category : "",
+        issues : "",
+        concern : ""
+    })
+    const currencies = [
+        {
+            value: 'Male',
+            label: 'Male',
+        },
+        {
+            value: 'Female',
+            label: 'Female',
+        }
+    ];
+    function onSubmi(e : any){
+        console.log(formFields)
+        e.preventDefault();
+    }
     function onSelect() {
 
     }
@@ -36,6 +60,11 @@ export function Testimonial (){
     return (
         <>
         <section className="section3">
+            {/* eslint-disable-next-line react/jsx-no-undef */}
+
+                {/*<TextField id="standard-basic" label="Standard" variant="standard" />*/}
+
+
             <div className="contact-testimonial-section">
                 <div className="schedule-appointment-container">
                     <div className="schedule-appointment">
@@ -50,33 +79,72 @@ export function Testimonial (){
                         </p>
                     </div>
 
-                    <form className="appointment-form" method="post" action="send_mail.php">
+                    <form className="appointment-form" method="post" action="">
                         <div className="form-group">
-                            <input type="text" name="name" placeholder="Name *" required/>
-                            <input type="number" name="whatsapp" placeholder="WhatsApp Number *" required/>
-                            <input type="number" name="weight" placeholder="Enter Weight (kg) *" required/>
-                            <input type="number" name="height" placeholder="Enter Height (cm) *" required/>
+                            <TextField id="standard-basic" label="Name" variant="standard" onChange={(e) => setFormFields({
+                                ...formFields,
+                                name:e.target.value
+                            })} value={formFields.name} type="text" name="name" placeholder="Name *" required/>
+                            <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
+                                ...formFields,
+                                whatsaap:e.target.value
+                            })} value={formFields.whatsaap} type="number" name="whatsapp" placeholder="WhatsApp Number *" required/>
+                            <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
+                                ...formFields,
+                                weight:e.target.value
+                            })} value={formFields.weight} type="number" name="weight" placeholder="Enter Weight (kg) *" required/>
+                            <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
+                                ...formFields,
+                                height:e.target.value
+                            })} value={formFields.height} type="number" name="height" placeholder="Enter Height (cm) *" required/>
                         </div>
 
                         <div className="form-group">
-                            <select name="category" id="">
-                                <option value="" disabled selected>Select Gender</option>
-                                <option value="female">Female</option>
-                                <option value="male">Male</option>
-                            </select>
-
-                            <MultiSelect value={selectedValue} onChange={(e) => setSelectedValues(e.value)} options={options} optionLabel="name"
+                            <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
+                                ...formFields,
+                                category:e.target.value
+                            })} value={formFields.category} name="category">
+                                <MenuItem value="" disabled selected>Select Gender</MenuItem>
+                                <MenuItem value="female">Female</MenuItem>
+                                <MenuItem value="male">Male</MenuItem>
+                            </TextField>
+                            <TextField
+                                id="standard-select-currency-native"
+                                select
+                                label="Native select"
+                                defaultValue="EUR"
+                                slotProps={{
+                                    select: {
+                                        native: true,
+                                    },
+                                }}
+                                helperText="Please select your currency"
+                                variant="standard"
+                            >
+                                {currencies.map((option) => (
+                                    <option key={option.value} value={option.value}>
+                                        {option.label}
+                                    </option>
+                                ))}
+                            </TextField>
+                            <MultiSelect onChange={(e) => setFormFields({
+                                ...formFields,
+                                issues:e.value
+                            })} value={formFields.issues} options={options} optionLabel="name"
                                          placeholder="Select issues you face?" maxSelectedLabels={3} className="w-full md:w-20rem multi-select-react"/>
 
                         </div>
 
                         <div className="form-group">
-                            <textarea name="concerns" id="" placeholder="Your Health Goals & Concerns*"
+                            <textarea onChange={(e) => setFormFields({
+                                ...formFields,
+                                concern:e.target.value
+                            })} value={formFields.concern} name="concerns" id="" placeholder="Your Health Goals & Concerns*"
                                       ></textarea>
                         </div>
 
                         <div className="contact-footer">
-                            <button type="submit" className="submit-button">Submit</button>
+                            <button onClick={(e) => onSubmi(e)} type="submit" className="submit-button">Submit</button>
                             <div className="col-md-51">
                                 <ul className="social-media-list">
                                     <li><a href="https://www.instagram.com/vm4fitness/"
