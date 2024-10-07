@@ -1,8 +1,18 @@
 import img from '../Assests/banner-Privacy-Policy-1.jpg';
+import {Helmet} from "react-helmet";
+import React from "react";
 export function Privacy(){
     return (
         <>
 
+            <Helmet>
+                <title>Privacy</title>
+                <meta name="description"
+                      content="At VM4Fitness, we value your privacy. This Privacy Policy explains how we collect, use, and
+                            protect your personal information when you visit our website."/>
+                <meta name="keywords"
+                      content="vm4fitness,fitness,training,nutrition,guidance,wellness-programs,sustainable,fitness,Healthly weight-loss,Diabetes-Reversal,Fatty-Liver Reversal,Gut Health,Cholesterol control,High BP Regulation,PCOD Reversal,Thyroid Reversal,Uric Acid Reversal"/>
+            </Helmet>
             <section id="home">
                 <div className="privacy-slider">
                     <div className="slides-privacy">
@@ -19,7 +29,7 @@ export function Privacy(){
                         <h2 className="heading-privacy">Introduction</h2>
                         <p className="para-privacy">
                             At VM4Fitness, we value your privacy. This Privacy Policy explains how we collect, use, and
-                            protect your personal information when you visit our website
+                            protect your personal information when you visit our website.
                             <a href="/" target="_blank" rel="noopener noreferrer">www.vm4fitness.com</a>.
                             Please read this to understand how we handle your data.
                         </p>

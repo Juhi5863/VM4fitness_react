@@ -34,7 +34,7 @@ const responsive = {
 export function TestimonialSec (){
     return (
             <>
-                <div className="" id="user-testimonial-section">
+                <div className="" id="user-testimonial-section" style={{paddingTop: 20}}>
                     <div className="default-div">
                         <h2 className="" style={{textAlign: "center"}}>Testimonials</h2>
 
@@ -127,9 +127,8 @@ export function TestimonialSec (){
                                     <img src={img2} alt="Testimonial Image" className="testimonial-img"/>
                                     {
                                         isMobile() ? <></> :
-                                            <button className="testimonial-img-button testimonial-btn fourth">Button
-                                                4</button>
-
+                                            <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
                                     }
 
                                     <h2 className="testimonial-name">Kamla From Delhi</h2>
@@ -138,42 +137,77 @@ export function TestimonialSec (){
                             <div className="testimonial-slide">
                                 <div className="testimonial-box">
                                     <img src={img3} alt="Testimonial Image" className="testimonial-img"/>
+                                    {
+                                        isMobile() ? <></> :
+                                            <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                            </button>
+                                    }
                                     <h2 className="testimonial-name">Mayank Agarwal form Prayagraj</h2>
                                     </div>
                                 </div>
                             <div className="testimonial-slide">
                                     <div className="testimonial-box">
                                         <img src={img4} alt="Testimonial Image" className="testimonial-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                         <h2 className="testimonial-name">Sahil Kamran From Aligarh</h2>
                                     </div>
                                 </div>
                             <div className="testimonial-slide">
                                     <div className="testimonial-box">
                                         <img src={img5} alt="Testimonial Image" className="testimonial-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                         <h2 className="testimonial-name">Surbhi Purwar From Bengalore</h2>
                                     </div>
                                 </div>
                             <div className="testimonial-slide">
                                     <div className="testimonial-box">
                                         <img src={img6} alt="Testimonial Image" className="testimonial-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                         <h2 className="testimonial-name">Saikat Sinha From Kolkata</h2>
                                     </div>
                                 </div>
                             <div className="testimonial-slide">
                                     <div className="testimonial-box">
                                         <img src={img7} alt="Testimonial Image" className="testimonial-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                         <h2 className="testimonial-name">Shakti Pandey From Dehradun</h2>
                                     </div>
                                 </div>
                             <div className="testimonial-slide">
                                     <div className="testimonial-box">
                                         <img src={img8} alt="Testimonial Image" className="testimonial-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                         <h2 className="testimonial-name">Shrey Pahwa From Haryana</h2>
                                     </div>
                                 </div>
                             <div className="testimonial-slide">
                                     <div className="testimonial-box">
                                         <img src={img9} alt="Testimonial Image" className="testimonial-img"/>
+                                        {
+                                            isMobile() ? <></> :
+                                                <button onClick={() => window.open('https://calendly.com/vik4fitness/consultation-appointment', 'mywindow')} className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                         <h2 className="testimonial-name">Deepti From Dhanbad</h2>
                                     </div>
                                 </div>

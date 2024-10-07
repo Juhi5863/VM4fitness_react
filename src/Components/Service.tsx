@@ -10,13 +10,14 @@ import img7 from '../Assests/PCOD Reversal.webp'
 import img8 from '../Assests/Thyroid Reversal.webp'
 import img9 from '../Assests/Uric Acid Reversal.webp'
 import {isMobile} from "../Utility";
+import React from "react";
 
 
 
 export function Service() {
     return (
         <>
-            <div style={{background: "#003220"}}>
+            <div style={{background: "#003220"}} id="user-service">
             <div className="default-div" style={{background: "#003220", paddingTop: 40}}>
                 <h2 className="service-header">Our Service </h2>
 
@@ -74,15 +75,19 @@ export function Service() {
                     swipeable
 
                 >
-                    <div className="service-slide">
+                    <div className="service-slide" >
                         <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
                            rel="noopener noreferrer">
                             <div className="box">
                                 <div className="image-content">
                                     <span className="overlay"></span>
                                     <div className="box-image">
-                                        <img src={img1} alt="" className="box-img"/>
-
+                                        <img src={img1} alt="" className="box-img "/>
+                                        {/*{*/}
+                                        {/*    isMobile() ? <></> :*/}
+                                        {/*        <button className="testimonial-img-button testimonial-btn fourth">Read More*/}
+                                        {/*        </button>*/}
+                                        {/*}*/}
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Healthy Weightloss</h2>

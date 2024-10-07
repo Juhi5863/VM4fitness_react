@@ -3,19 +3,30 @@
 /* This main class will handle the rendering of all routes through the
 use of a switch that will determine what page will be rendered based on the
 active path */
-import React from "react";
+import React, {useEffect} from "react";
 import "./Blog.css";
 import img from "../../Assests/blog2.webp";
 import { FaHeart } from "react-icons/fa";
 import { BsInstagram , BsFacebook, BsTwitterX, BsLinkedin, BsYoutube} from "react-icons/bs";
+import {Helmet} from "react-helmet";
 
 
 
 // Render all home elements
-export default class Blog2 extends React.Component {
-    render() {
+export default function Blog2() {
+    // useEffect(() => {
+    //     document.title = 'Embrace Your Journey: How a Life-Changing Diet Empowers Women\'s Weight Loss';
+    // }, []);
+
         return (
 <>
+    <Helmet>
+        <title>Embrace Your Journey: How a Life-Changing Diet Empowers Women\'s Weight Loss</title>
+        <meta name="description"
+              content="Embrace Your Journey: How a Life-Changing Diet Empowers Women\'s Weight Loss"/>
+        <meta name="keywords"
+              content="vm4fitness,fitness,training,nutrition,guidance,wellness-programs,sustainable,fitness,Healthly weight-loss,Diabetes-Reversal,Fatty-Liver Reversal,Gut Health,Cholesterol control,High BP Regulation,PCOD Reversal,Thyroid Reversal,Uric Acid Reversal"/>
+    </Helmet>
 
             <section id="home" style={{marginTop: 100}}>
                 <div className="Blog2" style={{paddingTop: 0}}>
@@ -418,5 +429,5 @@ export default class Blog2 extends React.Component {
         </div>
 </>
         );
-    }
+
 }

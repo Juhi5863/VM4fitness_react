@@ -9,21 +9,21 @@ export function Youtube(){
 
                     <div className="trending-container">
                         <div className="video-card">
-                            <iframe style={{width:"100%", height:"7%"}} src="https://www.youtube.com/embed/rkeg27zFcfw"
+                            <iframe style={{width:"100%", height:"200px"}} src="https://www.youtube.com/embed/rkeg27zFcfw"
                                     title="Saikat Client Interview" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                             <h3 className="video-title">Saikat Client Interview</h3>
                         </div>
                         <div className="video-card">
-                            <iframe style={{width:"100%", height:"7%"}} src="https://www.youtube.com/embed/fsD0Sjtb-9w"
+                            <iframe style={{width:"100%", height:"200px"}} src="https://www.youtube.com/embed/fsD0Sjtb-9w"
                                     title="Testimonial ( Surbhi Purwar)" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                             <h3 className="video-title">Surbhi Purwar Client Interview</h3>
                         </div>
                         <div className="video-card">
-                            <iframe style={{width:"100%", height:"7%"}} src="https://www.youtube.com/embed/ShVe0T4rF-4"
+                            <iframe style={{width:"100%", height:"200px"}} src="https://www.youtube.com/embed/ShVe0T4rF-4"
                                     title="Transformation (Mayank Agrawal)" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>

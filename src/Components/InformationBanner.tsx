@@ -35,7 +35,7 @@ function  InformationBanner(){
                 <nav className="top-navbar fixed-top">
                     <div className="contact-info">
                         <li className="left"><a href="tel:+918396952909" className="nav1-link">
-                            <MdCall className="fa-regular fa-envelope"/>
+                            <div className="fa-regular fa-envelope"><MdCall className="fa-regular fa-clock" style={{padding: 3}}/></div>
                             +91-8396952909</a></li>
                         {
                             isMobile() ?
@@ -47,12 +47,15 @@ function  InformationBanner(){
                                 </div>
                                 :
                                 <>
-                        <li className="middle"><a href="mailto:mimansa@vm4fitness.com" className="nav1-link"> <GoMail className="fa-regular fa-envelope" />
+                        <li className="middle"><a href="mailto:mimansa@vm4fitness.com" className="nav1-link">
+                            <div className="fa-regular fa-envelope"><GoMail className="icon"/></div>
                             mimansa@vm4fitness.com</a></li>
-
-                        <li className="right"><a href="https://calendly.com/vik4fitness/consultation-appointment"
-                                                 target="_blank" rel="noopener noreferrer" className="nav1-link"> <GoClockFill className="fa-regular fa-clock" />
-                            10:00 AM – 10:00 PM IST</a></li>
+                                    <li className="right"><a
+                                        href="https://calendly.com/vik4fitness/consultation-appointment"
+                                        target="_blank" rel="noopener noreferrer" className="nav1-link">
+                                        <div className="fa-regular fa-envelope"><GoClockFill
+                                            className="fa-regular fa-clock" /></div>
+                                        10:00 AM – 10:00 PM IST</a></li>
                                 </>
                         }
 

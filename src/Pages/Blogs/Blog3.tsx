@@ -1,11 +1,22 @@
 import img from "../../Assests/blog3.webp";
 import {FaHeart} from "react-icons/fa";
-import React from "react";
+import React, {useEffect} from "react";
 import {BsFacebook, BsInstagram, BsLinkedin, BsYoutube} from "react-icons/bs";
+import {Helmet} from "react-helmet";
 
 export function  Blog3(){
+    // useEffect(() => {
+    //     document.title = 'Choosing Emotional Wellness Over Weight Loss Tablets and Drinks';
+    // }, []);
     return (
         <>
+            <Helmet>
+                <title>Choosing Emotional Wellness Over Weight Loss Tablets and Drinks</title>
+                <meta name="description"
+                      content="Choosing Emotional Wellness Over Weight Loss Tablets and Drinks"/>
+                <meta name="keywords"
+                      content="vm4fitness,fitness,training,nutrition,guidance,wellness-programs,sustainable,fitness,Healthly weight-loss,Diabetes-Reversal,Fatty-Liver Reversal,Gut Health,Cholesterol control,High BP Regulation,PCOD Reversal,Thyroid Reversal,Uric Acid Reversal"/>
+            </Helmet>
             <section id="home" style={{marginTop: 100}}>
                 <div className="Blog2" style={{paddingTop: 0}}>
                     <div className="slides-blog2">

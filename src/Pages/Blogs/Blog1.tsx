@@ -1,12 +1,22 @@
 import img from "../../Assests/blog1.webp";
 import {FaHeart} from "react-icons/fa";
-import React from "react";
+import React, {useEffect} from "react";
 import { BsInstagram , BsFacebook, BsTwitterX, BsLinkedin, BsYoutube} from "react-icons/bs";
-
+import {Helmet} from "react-helmet";
 
 export function Blog1(){
+
+        // useEffect(() => {
+        //     document.title = 'Revitalize Your Body: The Emotional Journey of a 7-Day Weight Loss Diet Plan';
+        // }, []);
+
     return (
         <>
+            <Helmet>
+                <title>Revitalize Your Body: The Emotional Journey of a 7-Day Weight Loss Diet Plan</title>
+                <meta name="description" content="Revitalize Your Body: The Emotional Journey of a 7-Day Weight Loss Diet Plan" />
+                <meta name="keywords" content="react, meta tags, seo" />
+            </Helmet>
             <section id="home" style={{marginTop: 105}}>
                 <div className="Blog2" style={{paddingTop: 0}}>
                     <div className="slides-blog2">
