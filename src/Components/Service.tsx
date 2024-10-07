@@ -83,11 +83,11 @@ export function Service() {
                                     <span className="overlay"></span>
                                     <div className="box-image">
                                         <img src={img1} alt="" className="box-img "/>
-                                        {/*{*/}
-                                        {/*    isMobile() ? <></> :*/}
-                                        {/*        <button className="testimonial-img-button testimonial-btn fourth">Read More*/}
-                                        {/*        </button>*/}
-                                        {/*}*/}
+                                        {
+                                            isMobile() ? <></> :
+                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                                </button>
+                                        }
                                     </div>
                                     <div className="img-content">
                                         <h2 className="h2-name">Healthy Weightloss</h2>
