@@ -15,7 +15,7 @@ const Navbar=()=>{
                     {isMobile() ? <></>:
                         <>
                             <li className="nav-item"><a href="/" className="nav-link">HOME</a></li>
-                            <li className="nav-item"><a href="/#testimonial" className="nav-link">TESTIMONIAL</a></li>
+                            <li className="nav-item"><a href="/#user-testimonial-section" className="nav-link">TESTIMONIAL</a></li>
                             <li className="nav-item"><a href="/#service" className="nav-link">SERVICE</a></li>
                             <li className="nav-item"><a href="/#slide-section" className="nav-link">ABOUT US</a></li>
                             <li className="nav-item"><a href="/faq" className="nav-link">FAQ</a></li>
