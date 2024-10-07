@@ -34,7 +34,7 @@ const responsive = {
 export function TestimonialSec (){
     return (
             <>
-                <div className="">
+                <div className="" id="user-testimonial-section">
                     <div  style={{width: '66%', margin: "auto", padding: '1%'}}>
                         <h2 className="" style={{textAlign: "center"}}>Testimonials</h2>
 
@@ -125,6 +125,9 @@ export function TestimonialSec (){
                             <div className="testimonial-slide">
                                     <div className="testimonial-box">
                                         <img src={img2} alt="Testimonial Image" className="testimonial-img"/>
+                                        <button className="testimonial-img-button">
+                                            Test
+                                        </button>
                                         <h2 className="testimonial-name">Kamla From Delhi</h2>
                                     </div>
                                 </div>

@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px!important;
 }
 body {
   margin: 0;
@@ -2464,13 +2465,25 @@ a:-webkit-any-link {
   max-width: 350px;
   margin: 0 auto;
   padding: 15px;
-  border-radius : 12px
+  border-radius : 12px;
+  height: 300px;
 }
-
+.testimonial-img-button {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .testimonial-img {
   width: 100%;
   height: auto;
   border-radius : 5px
+}
+
+.testimonial-img:hover {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .testimonial-name {
