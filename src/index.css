@@ -175,6 +175,21 @@ a:hover {
 
 
   }
+  .achive-box {
+    flex-direction: row!important;
+    max-width: none!important;
+  }
+  .achive-box .h3-heading {
+    text-align: left!important;
+     }
+  .achive-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .trending-container {
+    width: 95%!important;
+  }
   .top-navbar {
     width: 95%!important;
   }
@@ -925,7 +940,6 @@ a:hover {
   flex: 2;
   margin-left: 20px;
   margin-right: 15px;
-  height: 400px;
   padding: 50px;
 }
 
@@ -1279,7 +1293,6 @@ a:hover {
   flex: 2;
   margin-left: 20px;
   margin-right: 15px;
-  height: 400px;
 }
 
 .profile-heading {
@@ -1468,7 +1481,7 @@ a:hover {
 }
 .achive-box .h3-heading{
   transition: color 0.6s ease;
-  text-align : center!important;
+  text-align : center;
   font-size: 30px;
 }
 .achive-icon {
@@ -2000,11 +2013,9 @@ a:hover {
 }
 .achive-wrapper{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 0px;
   padding-bottom: 50px;
-
+  flex-direction: row-reverse;
 }
 .achive-box{
   border-radius: 10px;
@@ -2515,6 +2526,9 @@ a:-webkit-any-link {
 .testimonial-box:hover .testimonial-img-button{
   display: flex;
 }
+.box-image:hover .testimonial-img-button{
+  display: flex;
+}
 .testimonial-box:hover .testimonial-btn:hover, .testimonial-btn:focus {
   color: #fff;
   outline: 0;
@@ -2531,10 +2545,16 @@ a:-webkit-any-link {
   border-radius : 15px
 }
 @media (min-width: 800px){
-.testimonial-img:hover {
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  .testimonial-img:hover {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  }
 }
+@media (min-width: 800px){
+  .box-img:hover {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  }
 }
 
 
