@@ -123,18 +123,17 @@ export function TestimonialSec (){
 
 
                             <div className="testimonial-slide">
-                                    <div className="testimonial-box">
-                                        <img src={img2} alt="Testimonial Image" className="testimonial-img"/>
-                                        <button className="testimonial-img-button">
-                                            Test
-                                        </button>
-                                        <h2 className="testimonial-name">Kamla From Delhi</h2>
-                                    </div>
+                                <div className="testimonial-box">
+                                    <img src={img2} alt="Testimonial Image" className="testimonial-img"/>
+                                    <button className="testimonial-img-button testimonial-btn fourth">Button 4</button>
+
+                                    <h2 className="testimonial-name">Kamla From Delhi</h2>
                                 </div>
+                            </div>
                             <div className="testimonial-slide">
-                                    <div className="testimonial-box">
-                                        <img src={img3} alt="Testimonial Image" className="testimonial-img"/>
-                                        <h2 className="testimonial-name">Mayank Agarwal form Prayagraj</h2>
+                                <div className="testimonial-box">
+                                    <img src={img3} alt="Testimonial Image" className="testimonial-img"/>
+                                    <h2 className="testimonial-name">Mayank Agarwal form Prayagraj</h2>
                                     </div>
                                 </div>
                             <div className="testimonial-slide">
