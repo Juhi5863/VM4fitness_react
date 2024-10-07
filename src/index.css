@@ -208,6 +208,21 @@ a:hover {
   height: 700px
 }
 @media (max-width: 800px) {
+  .submit-button {
+    width: auto!important;
+  }
+  .textarea-effect-16 {
+    width: 100%!important;
+  }
+
+  .textarea-effect-16:focus ~ .focus-border,
+  .has-content.effect-16 ~ .focus-border {
+    width: 100%!important;
+    transition: 0.4s;
+  }
+  .form-col-3 {
+    width: 100%!important;
+  } /* necessary to give position: relative to parent. */
   .blog-post {
     text-align: inherit!important;
   }
@@ -282,16 +297,8 @@ a:hover {
     justify-content: space-between;
     margin-bottom: 15px;
 }
-  .form-group input[type="text"], form-group input[type="tel"], .form-group input[type="email"], .form-group input[type="number"], .form-group input[type="mobile"], .form-group select, .form-group textarea {
-    width: 100%!important;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #dbffd9;
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
+
+
   .multi-select-react {
     width: 100%!important;
   }
@@ -325,12 +332,16 @@ a:hover {
   }
 }
 .multi-select-react {
-  width: 45%;
-  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  background-color: #003220;
   height: 38px;
-  line-height: 13px;
+  line-height: 6px;
   border: none;
   color: white;
+}
+.p-multiselect .p-multiselect-label.p-placeholder {
+  color: #333 !important;
+  margin-left: -10px;
 }
 .contact-info{
   display: flex;
@@ -502,6 +513,7 @@ a:hover {
   margin: 0;
   margin-top: -33px;
   padding-left: 0px;
+  z-index:0
 }
 .schedule-appointment{
   text-align: center;
@@ -547,9 +559,6 @@ a:hover {
   font-size: 25px;
   color: #ff914d;
 }
-.appointment-form{
-  margin-top: 40px;
-}
 .form-group{
   display: flex;
   flex-wrap: wrap;
@@ -558,22 +567,6 @@ a:hover {
 }
 .multi-select {
 
-}
-.form-group input[type="text"],
-.form-group input[type="number"],
-.form-group input[type="tel"],
-.form-group input[type="number"],
-.form-group select,
-.form-group textarea{
-  width: 45%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #dbffd9;
-  font-size: 14px;
-  margin-bottom: 15px;
-  cursor: pointer;
 }
 .multi-container{
   position: relative;
@@ -626,9 +619,6 @@ a:hover {
   width: 100%;
   cursor: pointer;
 }
-.checkbox-container input[type="checkbox"] {
-  display: none;
-}
 .checkbox-container .checkbox {
   width: 16px;
   height: 16px;
@@ -636,16 +626,6 @@ a:hover {
   margin-right: 10px;
   display: inline-block;
   position: relative;
-}
-.checkbox-container input[type="checkbox"]:checked + .checkbox {
-  background-color: #dbffd9;
-}
-.checkbox-container input[type="checkbox"]:checked + .checkbox::after {
-  content: '\2713';
-  color: rgb(26, 29, 232);
-  position: absolute;
-  top: 0;
-  /* left: 4px; */
 }
 .item-text {
   color: #dbffd9;
@@ -676,9 +656,6 @@ a:hover {
   display: flex;
   align-items: center;
 }
-.consultation-mode input[type="radio"] {
-  margin-right: 5px;
-}
 .contact-footer{
   display: flex;
   justify-content: space-between;
@@ -697,6 +674,8 @@ a:hover {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   text-align: center;
+  width: 250px;
+  /*margin: auto;*/
 }
 .submit-button:hover{
   background-color: #00b300;
@@ -774,15 +753,6 @@ a:hover {
 
 .contact-form-container label {
   margin-bottom: 5px;
-}
-
-.contact-form-container input,
-.contact-form-container textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .contact-form-container button {
@@ -2697,6 +2667,152 @@ a:-webkit-any-link {
   font-size: 12px;
   background-color: #CBB700;
   color: black; }
+
+
+/*Form Starts Here*/
+
+input[type="text"] {
+  font: 15px/24px "Muli", sans-serif;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+select {
+  font: 15px/24px "Muli", sans-serif;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+:focus {
+  outline: none;
+}
+
+.form-col-3 {
+  float: left;
+  width: 40%;
+  margin: 20px 3%;
+  position: relative;
+} /* necessary to give position: relative to parent. */
+.form-col-1 {
+  float: left;
+  width: 100%;
+  margin: 20px 3%;
+  position: relative;
+} /* necessary to give position: relative to parent. */
+input[type="text"] {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+select {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.effect-16 {
+  border: 0;
+  padding: 4px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  color: #fff;
+}
+.textarea-effect-16 {
+  border: 0;
+  padding: 4px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  color: #fff;
+  width: 92%
+}
+.select-effect-16 {
+  border: 0;
+  padding: 4px 0;
+  background-color: transparent;
+  color: #fff;
+}
+.focus-border {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.4s;
+  width: 100%;
+  background-color: #ccc;
+}
+.effect-16 ~ .focus-border {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4caf50;
+  transition: 0.4s;
+}
+.effect-16:focus ~ .focus-border,
+.has-content.effect-16 ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+.effect-16 ~ label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+.effect-16:focus ~ label,
+.has-content.effect-16 ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: #4caf50;
+  transition: 0.3s;
+}
+
+.textarea-effect-16 ~ .focus-border {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4caf50;
+  transition: 0.4s;
+}
+.textarea-effect-16:focus ~ .focus-border,
+.has-content.effect-16 ~ .focus-border {
+  width: 92%;
+  transition: 0.4s;
+}
+.textarea-effect-16 ~ label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 2px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+.textarea-effect-16:focus ~ label,
+.has-content.effect-16 ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: #4caf50;
+  transition: 0.3s;
+}
+
+
 
 
 
