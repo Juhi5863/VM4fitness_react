@@ -36,25 +36,9 @@ export function Testimonial (){
         issues : "",
         concern : ""
     })
-    const currencies = [
-        {
-            value: 'Male',
-            label: 'Male',
-        },
-        {
-            value: 'Female',
-            label: 'Female',
-        }
-    ];
     function onSubmi(e : any){
         console.log(formFields)
         e.preventDefault();
-    }
-    function onSelect() {
-
-    }
-    function onRemove() {
-
     }
 
     return (
@@ -78,89 +62,212 @@ export function Testimonial (){
                             out to you within 24 hrs.
                         </p>
                     </div>
+                    {
+                        isMobile() ?
 
-                    <form className="appointment-form" method="post" action="">
-                        <div className="form-group">
-                            <TextField id="standard-basic" label="Name" variant="standard" onChange={(e) => setFormFields({
-                                ...formFields,
-                                name:e.target.value
-                            })} value={formFields.name} type="text" name="name" placeholder="Name *" required/>
-                            <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
-                                ...formFields,
-                                whatsaap:e.target.value
-                            })} value={formFields.whatsaap} type="number" name="whatsapp" placeholder="WhatsApp Number *" required/>
-                            <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
-                                ...formFields,
-                                weight:e.target.value
-                            })} value={formFields.weight} type="number" name="weight" placeholder="Enter Weight (kg) *" required/>
-                            <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
-                                ...formFields,
-                                height:e.target.value
-                            })} value={formFields.height} type="number" name="height" placeholder="Enter Height (cm) *" required/>
-                        </div>
+                            <div className="appointment-form">
+                                <div className="row">
+                                    <div className="form-col-3 input-effect">
+                                        <input onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            name:e.target.value
+                                        })} value={formFields.name} className="effect-16" type="text" placeholder="" required/>
+                                        {
+                                            formFields.name == "" ? <label>Name</label> : <></>
+                                        }
 
-                        <div className="form-group">
-                            <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
-                                ...formFields,
-                                category:e.target.value
-                            })} value={formFields.category} name="category">
-                                <MenuItem value="" disabled selected>Select Gender</MenuItem>
-                                <MenuItem value="female">Female</MenuItem>
-                                <MenuItem value="male">Male</MenuItem>
-                            </TextField>
-                            <TextField
-                                id="standard-select-currency-native"
-                                select
-                                label="Native select"
-                                defaultValue="EUR"
-                                slotProps={{
-                                    select: {
-                                        native: true,
-                                    },
-                                }}
-                                helperText="Please select your currency"
-                                variant="standard"
-                            >
-                                {currencies.map((option) => (
-                                    <option key={option.value} value={option.value}>
-                                        {option.label}
-                                    </option>
-                                ))}
-                            </TextField>
-                            <MultiSelect onChange={(e) => setFormFields({
-                                ...formFields,
-                                issues:e.value
-                            })} value={formFields.issues} options={options} optionLabel="name"
-                                         placeholder="Select issues you face?" maxSelectedLabels={3} className="w-full md:w-20rem multi-select-react"/>
+                                        <span className="focus-border"></span>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                <div className="form-col-3 input-effect">
+                                        <input onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            whatsaap:e.target.value
+                                        })} value={formFields.whatsaap} className="effect-16" type="text" placeholder="" required/>
+                                        {
+                                            formFields.whatsaap == "" ? <label>Whatsapp Number</label> : <></>
+                                        }
+                                        <span className="focus-border"></span>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="form-col-3 input-effect">
+                                        <input onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            weight:e.target.value
+                                        })} value={formFields.weight} className="effect-16" type="text" placeholder="" required/>
+                                        {
+                                            formFields.weight == "" ? <label>Weight (kg)</label> : <></>
+                                        }
+                                        <span className="focus-border"></span>
+                                    </div>
+                                </div>
+                                <div className="row">
 
-                        </div>
+                                <div className="form-col-3 input-effect">
+                                        <input onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            height:e.target.value
+                                        })} value={formFields.height} className="effect-16" type="text" placeholder="" required/>
+                                        {
+                                            formFields.height == "" ? <label>Height (cm)</label> : <></>
+                                        }
+                                        <span className="focus-border"></span>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="form-col-3 input-effect">
+                                        <select onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            category:e.target.value
+                                        })} value={formFields.category} className="select-effect-16" required>
+                                            <option value="" disabled selected>Select Gender</option>
+                                            <option value="female">Female</option>
+                                            <option value="male">Male</option>
+                                        </select>
+                                        <span className="focus-border"></span>
+                                    </div>
+                                </div>
+                                <div className="row">
 
-                        <div className="form-group">
-                            <textarea onChange={(e) => setFormFields({
-                                ...formFields,
-                                concern:e.target.value
-                            })} value={formFields.concern} name="concerns" id="" placeholder="Your Health Goals & Concerns*"
-                                      ></textarea>
-                        </div>
+                                <div className="form-col-3 input-effect">
+                                        <MultiSelect onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            issues:e.value
+                                        })} value={formFields.issues} options={options} optionLabel="name"
+                                                     placeholder="Select issues you face?" maxSelectedLabels={3} className="w-full md:w-20rem multi-select-react"/>
+                                        <span className="focus-border"></span>
 
-                        <div className="contact-footer">
-                            <button onClick={(e) => onSubmi(e)} type="submit" className="submit-button">Submit</button>
-                            <div className="col-md-51">
-                                <ul className="social-media-list">
-                                    <li><a href="https://www.instagram.com/vm4fitness/"
-                                           target="_blank"><BsInstagram/></a></li>
-                                    {/*<li><a href="#"><BsTwitterX /></a></li>*/}
-                                    <li><a href="https://www.facebook.com/vm4fitness/" target="_blank"><BsFacebook/></a>
-                                    </li>
-                                    <li><a href="https://www.linkedin.com/company/vm4fitness/"
-                                           target="_blank"><BsLinkedin/></a></li>
-                                    <li><a href="https://www.linkedin.com/company/vm4fitness/"
-                                           target="_blank"><BsYoutube/></a></li>
-                                </ul>
+                                    </div>
+
+                                    <div className="form-col-1 input-effect">
+                                <textarea className="textarea-effect-16" onChange={(e) => setFormFields({
+                                    ...formFields,
+                                    concern:e.target.value
+                                })} value={formFields.concern} name="concerns" id="" placeholder="Your Health Goals & Concerns*"
+                                ></textarea>
+                                        <span className="focus-border"></span>
+                                    </div>
+
+                                </div>
+                                <div className="contact-footer">
+                                    <button onClick={(e) => onSubmi(e)} type="submit" className="submit-button">Submit</button>
+                                    <div className="col-md-51">
+                                        <ul className="social-media-list">
+                                            <li><a href="https://www.instagram.com/vm4fitness/"
+                                                   target="_blank"><BsInstagram/></a></li>
+                                            {/*<li><a href="#"><BsTwitterX /></a></li>*/}
+                                            <li><a href="https://www.facebook.com/vm4fitness/" target="_blank"><BsFacebook/></a>
+                                            </li>
+                                            <li><a href="https://www.linkedin.com/company/vm4fitness/"
+                                                   target="_blank"><BsLinkedin/></a></li>
+                                            <li><a href="https://www.linkedin.com/company/vm4fitness/"
+                                                   target="_blank"><BsYoutube/></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
-                        </div>
-                    </form>
+                            :
 
+                            <div className="appointment-form">
+                                <div className="row">
+                                    <div className="form-col-3 input-effect">
+                                        <input onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            name:e.target.value
+                                        })} value={formFields.name} className="effect-16" type="text" placeholder="" required/>
+                                        {
+                                            formFields.name == "" ? <label>Name</label> : <></>
+                                        }
+
+                                        <span className="focus-border"></span>
+                                    </div>
+                                    <div className="form-col-3 input-effect">
+                                        <input onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            whatsaap:e.target.value
+                                        })} value={formFields.whatsaap} className="effect-16" type="text" placeholder="" required/>
+                                        {
+                                            formFields.whatsaap == "" ? <label>Whatsapp Number</label> : <></>
+                                        }
+                                        <span className="focus-border"></span>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="form-col-3 input-effect">
+                                        <input onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            weight:e.target.value
+                                        })} value={formFields.weight} className="effect-16" type="text" placeholder="" required/>
+                                        {
+                                            formFields.weight == "" ? <label>Weight (kg)</label> : <></>
+                                        }
+                                        <span className="focus-border"></span>
+                                    </div>
+                                    <div className="form-col-3 input-effect">
+                                        <input onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            height:e.target.value
+                                        })} value={formFields.height} className="effect-16" type="text" placeholder="" required/>
+                                        {
+                                            formFields.height == "" ? <label>Height (cm)</label> : <></>
+                                        }
+                                        <span className="focus-border"></span>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="form-col-3 input-effect">
+                                        <select onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            category:e.target.value
+                                        })} value={formFields.category} className="select-effect-16" required>
+                                            <option value="" disabled selected>Select Gender</option>
+                                            <option value="female">Female</option>
+                                            <option value="male">Male</option>
+                                        </select>
+                                        <span className="focus-border"></span>
+                                    </div>
+                                    <div className="form-col-3 input-effect">
+                                        <MultiSelect onChange={(e) => setFormFields({
+                                            ...formFields,
+                                            issues:e.value
+                                        })} value={formFields.issues} options={options} optionLabel="name"
+                                                     placeholder="Select issues you face?" maxSelectedLabels={3} className="w-full md:w-20rem multi-select-react"/>
+                                        <span className="focus-border"></span>
+
+                                    </div>
+
+                                    <div className="form-col-1 input-effect">
+                                <textarea className="textarea-effect-16" style={{width: "92%"}} onChange={(e) => setFormFields({
+                                    ...formFields,
+                                    concern:e.target.value
+                                })} value={formFields.concern} name="concerns" id="" placeholder="Your Health Goals & Concerns*"
+                                ></textarea>
+                                        <span className="focus-border"></span>
+                                    </div>
+
+                                </div>
+                                <div className="contact-footer">
+                                    <button onClick={(e) => onSubmi(e)} type="submit" className="submit-button">Submit</button>
+                                    <div className="col-md-51">
+                                        <ul className="social-media-list">
+                                            <li><a href="https://www.instagram.com/vm4fitness/"
+                                                   target="_blank"><BsInstagram/></a></li>
+                                            {/*<li><a href="#"><BsTwitterX /></a></li>*/}
+                                            <li><a href="https://www.facebook.com/vm4fitness/" target="_blank"><BsFacebook/></a>
+                                            </li>
+                                            <li><a href="https://www.linkedin.com/company/vm4fitness/"
+                                                   target="_blank"><BsLinkedin/></a></li>
+                                            <li><a href="https://www.linkedin.com/company/vm4fitness/"
+                                                   target="_blank"><BsYoutube/></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                    }
                 </div>
                 {
                     isMobile() ? <></> :
