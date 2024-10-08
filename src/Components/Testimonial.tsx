@@ -29,18 +29,42 @@ export function Testimonial (){
 
     const [formFields, setFormFields] = useState({
         name : "",
-        whatsaap : "",
+        whatsapp : "",
         height : "",
         weight : "",
         category : "",
-        issues : "",
-        concern : ""
+        issues : [],
+        concerns : ""
     })
     function onSubmi(e : any){
         console.log(formFields)
         e.preventDefault();
-    }
+        const urlencoded = new URLSearchParams();
+        urlencoded.append("name", formFields.name);
+        urlencoded.append("whatsapp", formFields.whatsapp);
+        urlencoded.append("weight", formFields.weight);
+        urlencoded.append("height", formFields.height);
+        urlencoded.append("category", formFields.category);
 
+        formFields.issues.forEach((data:any) => {
+            urlencoded.append("issues[]", data.name);
+        })
+        urlencoded.append("concerns", formFields.concerns);
+
+        const requestOptions:any = {
+            method: "POST",
+            body: urlencoded,
+            redirect: "follow"
+        };
+        fetch("https://vm4fitness.com/send_mail.php", requestOptions)
+            .then((response) => response.text())
+            .then((result) => console.log(result))
+            .catch((error) => console.error(error));
+    }
+    function isNumeric(value: string) {
+        if (value == "") return true
+        return /^-?\d+$/.test(value);
+    }
     return (
         <>
         <section className="section3">
@@ -83,12 +107,13 @@ export function Testimonial (){
                                 <div className="form-col-3 input-effect">
                                         <input onChange={(e) => setFormFields({
                                             ...formFields,
-                                            whatsaap:e.target.value
-                                        })} value={formFields.whatsaap} className="effect-16" type="text" placeholder="" required/>
+                                            whatsapp:e.target.value
+                                        })} value={formFields.whatsapp} className="effect-16" type="text" placeholder="" required/>
                                         {
-                                            formFields.whatsaap == "" ? <label>Whatsapp Number</label> : <></>
+                                            formFields.whatsapp == "" ? <label>Whatsapp Number</label> : <></>
                                         }
                                         <span className="focus-border"></span>
+
                                     </div>
                                 </div>
                                 <div className="row">
@@ -144,8 +169,8 @@ export function Testimonial (){
                                     <div className="form-col-1 input-effect">
                                 <textarea className="textarea-effect-16" onChange={(e) => setFormFields({
                                     ...formFields,
-                                    concern:e.target.value
-                                })} value={formFields.concern} name="concerns" id="" placeholder="Your Health Goals & Concerns*"
+                                    concerns:e.target.value
+                                })} value={formFields.concerns} name="concerns" id="" placeholder="Your Health Goals & Concerns*"
                                 ></textarea>
                                         <span className="focus-border"></span>
                                     </div>
@@ -185,32 +210,48 @@ export function Testimonial (){
                                         <span className="focus-border"></span>
                                     </div>
                                     <div className="form-col-3 input-effect">
-                                        <input onChange={(e) => setFormFields({
-                                            ...formFields,
-                                            whatsaap:e.target.value
-                                        })} value={formFields.whatsaap} className="effect-16" type="text" placeholder="" required/>
+
+                                        <input onChange={(e) => {
+                                            if (isNumeric(e.target.value)) {
+                                                setFormFields({
+                                                    ...formFields,
+                                                    whatsapp: e.target.value
+                                                })
+                                            }
+                                        }} value={formFields.whatsapp} className="effect-16" type="text" placeholder="" required/>
                                         {
-                                            formFields.whatsaap == "" ? <label>Whatsapp Number*</label> : <></>
+                                            formFields.whatsapp == "" ? <label>Whatsapp Number*</label> : <></>
                                         }
                                         <span className="focus-border"></span>
+
+
+
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="form-col-3 input-effect">
-                                        <input onChange={(e) => setFormFields({
-                                            ...formFields,
-                                            weight:e.target.value
-                                        })} value={formFields.weight} className="effect-16" type="text" placeholder="" required/>
+                                        <input onChange={(e) => {
+                                            if (isNumeric(e.target.value)) {
+                                                setFormFields({
+                                                    ...formFields,
+                                                    weight: e.target.value
+                                                })
+                                            }
+                                        }} value={formFields.weight} className="effect-16" type="text" placeholder="" required/>
                                         {
                                             formFields.weight == "" ? <label>Weight (kg)*</label> : <></>
                                         }
                                         <span className="focus-border"></span>
                                     </div>
                                     <div className="form-col-3 input-effect">
-                                        <input onChange={(e) => setFormFields({
-                                            ...formFields,
-                                            height:e.target.value
-                                        })} value={formFields.height} className="effect-16" type="text" placeholder="" required/>
+                                        <input onChange={(e) => {
+                                            if (isNumeric(e.target.value)) {
+                                                setFormFields({
+                                                    ...formFields,
+                                                    height: e.target.value
+                                                })
+                                            }
+                                        }} value={formFields.height} className="effect-16" type="text" placeholder="" required/>
                                         {
                                             formFields.height == "" ? <label>Height (cm)*</label> : <></>
                                         }
@@ -242,8 +283,8 @@ export function Testimonial (){
                                     <div className="form-col-1 input-effect">
                                 <textarea className="textarea-effect-16" style={{width: "92%"}} onChange={(e) => setFormFields({
                                     ...formFields,
-                                    concern:e.target.value
-                                })} value={formFields.concern} name="concerns" id="" placeholder="Your Health Goals & Concerns*"
+                                    concerns:e.target.value
+                                })} value={formFields.concerns} name="concerns" id="" placeholder="Your Health Goals & Concerns*"
                                 ></textarea>
                                         <span className="focus-border"></span>
                                     </div>
