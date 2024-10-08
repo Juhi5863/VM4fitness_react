@@ -4,19 +4,115 @@ import { GoMail } from "react-icons/go";
 import img1 from '../Assests/logo.webp'
 import  img2 from '../Assests/contact_banner.jpg'
 import React from "react";
+import { IoIosCheckmarkCircle } from "react-icons/io";
+import { FaCircleXmark } from "react-icons/fa6";
+import { LuPartyPopper } from "react-icons/lu";
+
+
+
 import img from "../Assests/banner-Privacy-Policy-1.jpg";
 export function Contact(){
     return (
         <>
-            <section id="home">
-                <div className="slider" style={{paddingTop: 0}}>
-                    <div className="slides">
-                        <img src={img2} className="slide" style={{width:"-webkit-fill-available"}} alt=""/>
-                    </div>
+            {/*<section id="home">*/}
+            {/*    <div className="slider" style={{paddingTop: 0}}>*/}
+            {/*        <div className="slides">*/}
+            {/*            <img src={img2} className="slide" style={{width: "-webkit-fill-available"}} alt=""/>*/}
+            {/*        </div>*/}
 
+            {/*    </div>*/}
+
+
+            {/*</section>*/}
+
+            <div className="default-div" style={{margin:"auto", textAlign: "center" , padding: 30}}>
+            <h1 className="contact-header"><LuPartyPopper  color="red"/>
+                 Choose the plan that fits you, and only you.</h1>
+            <p className="des-heading">
+                Dreaming about your websites coming to life in seconds? Now they can be.
+            </p>
+            </div>
+
+            <div className="wrapper-contact default-div" style={{margin: "auto"}}>
+                <div className="pricing-table">
+                    <div className="head">
+                        <h4 className="title">Basic</h4>
+                    </div>
+                    <div className="content">
+                        <div className="price">
+                            <h1><i className="fa-solid fa-euro-sign"></i>₹ 15</h1>
+                        </div>
+
+                        <ul>
+                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>
+                                One Selected Template</li>
+                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>100% Responsive Design</li>
+                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>Free Cancelation</li>
+                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>0 accounts</li>
+                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>24/7 Support</li>
+                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>Lifetime Template Updates</li>
+                        </ul>
+
+                        <div className="buy-now">
+                            <a href="#" className="btn round">Purchase Now</a>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section id="contact" className="contact-sec">
+
+                <div className="pricing-table">
+                    <div className="head">
+                        <span className="spam-popular">Popular</span>
+                        <h4 className="title">Standard</h4>
+                    </div>
+                    <div className="content">
+                        <div className="price">
+                            <h1><i className="fa-solid fa-euro-sign"></i>₹ 30</h1>
+                        </div>
+
+                        <ul>
+                            <li><FaCircleXmark className="a-solid fa-circle-xmark" />
+                                One Selected Template</li>
+                            <li><i className="fa-solid fa-circle-check"></i>100% Responsive Design</li>
+                            <li><i className="fa-solid fa-circle-check"></i>Free Cancelation</li>
+                            <li><i className="fa-solid fa-circle-check"></i>10 accounts</li>
+                            <li><i className="fa-solid fa-circle-check"></i>24/7 Support</li>
+                            <li><i className="fa-solid fa-circle-xmark"></i>Lifetime Template Updates</li>
+                        </ul>
+
+                        <div className="buy-now">
+                            <a href="#" className="btn round">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="pricing-table">
+                    <div className="head">
+
+                        <h4 className="title">Premium</h4>
+                    </div>
+                    <div className="content">
+                        <div className="price">
+                            <h1 className="pricing-amount" ><i className="fa-solid fa-euro-sign "></i>₹ 50</h1>
+                        </div>
+
+                        <ul>
+                            <li><i className="fa-solid fa-circle-check"></i>One Selected Template</li>
+                            <li><i className="fa-solid fa-circle-check"></i>100% Responsive Design</li>
+                            <li><i className="fa-solid fa-circle-check"></i>Free Cancelation</li>
+                            <li><i className="fa-solid fa-circle-check"></i>10 accounts</li>
+                            <li><i className="fa-solid fa-circle-check"></i>24/7 Support</li>
+                            <li><i className="fa-solid fa-circle-check"></i>Lifetime Template Updates</li>
+                        </ul>
+
+                        <div className="buy-now">
+                            <a href="#" className="btn round">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="contact" className="contact-sec" style={{marginTop: 20}}>
                 <div className="contact-items">
                     <div className="container-contact">
                         <div className="contactInfo">

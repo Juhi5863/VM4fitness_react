@@ -18,7 +18,7 @@ export function Service() {
     return (
         <>
             <div style={{background: "#003220"}} id="user-service">
-            <div className="default-div" style={{background: "#003220", paddingTop: 40}}>
+            <div className="default-div" style={{background: "#003220", paddingTop: 40, fontFamily: "cursive",fontWeight: "bolder",fontSize: 51}}>
                 <h2 className="service-header">Our Service </h2>
 
                 <Carousel

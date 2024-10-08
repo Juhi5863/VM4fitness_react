@@ -31,7 +31,7 @@ export function Blog() {
         <>
             <div className="blog-sec" style={{borderRadius: "5"}} id="user-blogSec">
             <div className="default-div">
-                <h2  style={{color: "black", textAlign: "center", paddingTop: 20}}>Latest Buzz</h2>
+                <h2  style={{color: "black", textAlign: "center", paddingTop: 20, fontFamily: "cursive", fontSize: 50, fontWeight: "bolder"}}>Latest Buzz</h2>
 
                 <Carousel
                     additionalTransfrom={0}

@@ -47,8 +47,9 @@ function  Home(){
         <Testimonial></Testimonial>
 
         <TestimonialSec></TestimonialSec>
-        <Profile></Profile>
         <Understand></Understand>
+        <Profile></Profile>
+
         <Service></Service>
         <Achievment></Achievment>
         <Youtube></Youtube>

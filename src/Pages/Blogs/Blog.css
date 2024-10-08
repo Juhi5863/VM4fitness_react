@@ -350,11 +350,13 @@ h1, .h1 {
 }
 
 h2, .h2 {
-    font-size: 2rem;
+    font-size: 22.5px;
+    font-weight: 600;
 }
 
 h3, .h3 {
-    font-size: 1.75rem;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 h4, .h4 {
@@ -6131,6 +6133,7 @@ a.text-dark:focus, a.text-dark:hover {
  * */
 .section {
     padding: 4rem 0;
+    padding-bottom : 0px!important;
     width: 100%;
 }
 
@@ -6170,7 +6173,9 @@ button {
     z-index: 4;
     width: 100%;
 }
-
+p{
+    text-align: justify!important;
+}
 .position-absolute .navbar {
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -6282,8 +6287,9 @@ footer {
 }
 
 .blog-post-title {
-    margin-bottom: .25rem;
-    font-size: 1.5rem;
+    margin-bottom: .25rem!important;
+    font-size: 1.7rem!important;
+    font-weight: 600;
     /*position: sticky;*/
     /*top: 12%;*/
 

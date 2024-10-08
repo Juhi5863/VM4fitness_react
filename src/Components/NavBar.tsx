@@ -7,7 +7,7 @@ const Navbar=()=>{
     return (
         <section className="nav-top1">
             <nav className="navbar fixed-top">
-                <a href="#home" className="nav-branding"><img src={img} loading="lazy" alt="Logo"/>
+                <a href="/" className="nav-branding"><img src={img} loading="lazy" alt="Logo"/>
                     <span className="heading">VM4fitness</span>
                 </a>
 

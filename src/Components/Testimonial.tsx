@@ -56,7 +56,7 @@ export function Testimonial (){
                             <h2 className="appointment">Schedule An Appointment</h2>
                         </div>
 
-                        <p className="contact-info1">
+                        <p className="contact-info11" >
                             We'd love to hear from you! Fill out the form below, and one of our fitness experts will
                             reach
                             out to you within 24 hrs.
@@ -179,7 +179,7 @@ export function Testimonial (){
                                             name:e.target.value
                                         })} value={formFields.name} className="effect-16" type="text" placeholder="" required/>
                                         {
-                                            formFields.name == "" ? <label>Name</label> : <></>
+                                            formFields.name == "" ? <label>Name*</label> : <></>
                                         }
 
                                         <span className="focus-border"></span>
@@ -190,7 +190,7 @@ export function Testimonial (){
                                             whatsaap:e.target.value
                                         })} value={formFields.whatsaap} className="effect-16" type="text" placeholder="" required/>
                                         {
-                                            formFields.whatsaap == "" ? <label>Whatsapp Number</label> : <></>
+                                            formFields.whatsaap == "" ? <label>Whatsapp Number*</label> : <></>
                                         }
                                         <span className="focus-border"></span>
                                     </div>
@@ -202,7 +202,7 @@ export function Testimonial (){
                                             weight:e.target.value
                                         })} value={formFields.weight} className="effect-16" type="text" placeholder="" required/>
                                         {
-                                            formFields.weight == "" ? <label>Weight (kg)</label> : <></>
+                                            formFields.weight == "" ? <label>Weight (kg)*</label> : <></>
                                         }
                                         <span className="focus-border"></span>
                                     </div>
@@ -212,7 +212,7 @@ export function Testimonial (){
                                             height:e.target.value
                                         })} value={formFields.height} className="effect-16" type="text" placeholder="" required/>
                                         {
-                                            formFields.height == "" ? <label>Height (cm)</label> : <></>
+                                            formFields.height == "" ? <label>Height (cm)*</label> : <></>
                                         }
                                         <span className="focus-border"></span>
                                     </div>

@@ -34,9 +34,9 @@ const responsive = {
 export function TestimonialSec (){
     return (
             <>
-                <div className="" id="user-testimonial-section" style={{paddingTop: 20}}>
+                <div className="" id="user-testimonial-section" style={{padding: 20}}>
                     <div className="default-div">
-                        <h2 className="" style={{textAlign: "center"}}>Testimonials</h2>
+                        <h2 className="" style={{textAlign: "center", fontFamily: "cursive", fontSize: "-webkit-xxx-large", fontWeight: "bolder", paddingTop: 20}}>Testimonials</h2>
 
                         <Carousel
                             additionalTransfrom={0}
