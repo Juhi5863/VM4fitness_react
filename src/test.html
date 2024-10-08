@@ -1,0 +1,146 @@
+<style>
+    /* necessary to give position: relative to parent. */
+    input[type="text"] {
+        font: 15px/24px "Muli", sans-serif;
+        color: #333;
+        width: 100%;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+    }
+
+    :focus {
+        outline: none;
+    }
+
+    .col-3 {
+        float: left;
+        width: 27.33%;
+        margin: 40px 3%;
+        position: relative;
+    } /* necessary to give position: relative to parent. */
+    input[type="text"] {
+        font: 15px/24px "Lato", Arial, sans-serif;
+        color: #333;
+        width: 100%;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+    }
+
+
+    .effect-16,
+    .effect-17,
+    .effect-18 {
+        border: 0;
+        padding: 4px 0;
+        border-bottom: 1px solid #ccc;
+        background-color: transparent;
+    }
+
+    .effect-16 ~ .focus-border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #4caf50;
+        transition: 0.4s;
+    }
+    .effect-16:focus ~ .focus-border,
+    .has-content.effect-16 ~ .focus-border {
+        width: 100%;
+        transition: 0.4s;
+    }
+    .effect-16 ~ label {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 9px;
+        color: #aaa;
+        transition: 0.3s;
+        z-index: -1;
+        letter-spacing: 0.5px;
+    }
+    .effect-16:focus ~ label,
+    .has-content.effect-16 ~ label {
+        top: -16px;
+        font-size: 12px;
+        color: #4caf50;
+        transition: 0.3s;
+    }
+
+</style>
+
+<div class="col-3 input-effect">
+    <input class="effect-16" type="text" placeholder="">
+    <label>First Name</label>
+    <span class="focus-border"></span>
+</div>
+
+
+
+<form className="appointment-form" method="post" action="">
+
+    <div className="form-group">
+        <TextField id="standard-basic" label="Name" variant="standard" onChange={(e) => setFormFields({
+        ...formFields,
+        name:e.target.value
+        })} value={formFields.name} type="text" name="name" placeholder="Name *" required/>
+        <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
+        ...formFields,
+        whatsaap:e.target.value
+        })} value={formFields.whatsaap} type="number" name="whatsapp" placeholder="WhatsApp Number *" required/>
+        <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
+        ...formFields,
+        weight:e.target.value
+        })} value={formFields.weight} type="number" name="weight" placeholder="Enter Weight (kg) *" required/>
+        <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
+        ...formFields,
+        height:e.target.value
+        })} value={formFields.height} type="number" name="height" placeholder="Enter Height (cm) *" required/>
+    </div>
+
+    <div className="form-group">
+        <TextField id="standard-basic" label="Standard" variant="standard" onChange={(e) => setFormFields({
+        ...formFields,
+        category:e.target.value
+        })} value={formFields.category} name="category">
+        <MenuItem value="" disabled selected>Select Gender</MenuItem>
+        <MenuItem value="female">Female</MenuItem>
+        <MenuItem value="male">Male</MenuItem>
+        </TextField>
+        <TextField
+                id="standard-select-currency-native"
+                select
+                label="Native select"
+                defaultValue="EUR"
+                slotProps={{
+                select: {
+                native: true,
+                },
+                }}
+                helperText="Please select your currency"
+                variant="standard"
+        >
+            {currencies.map((option) => (
+            <option key={option.value} value={option.value}>
+                {option.label}
+            </option>
+            ))}
+        </TextField>
+        <MultiSelect onChange={(e) => setFormFields({
+        ...formFields,
+        issues:e.value
+        })} value={formFields.issues} options={options} optionLabel="name"
+        placeholder="Select issues you face?" maxSelectedLabels={3} className="w-full md:w-20rem multi-select-react"/>
+
+    </div>
+
+    <div className="form-group">
+        <textarea onChange={(e) => setFormFields({
+        ...formFields,
+        concern:e.target.value
+        })} value={formFields.concern} name="concerns" id="" placeholder="Your Health Goals & Concerns*"
+        ></textarea>
+    </div>
+
+</form>
