@@ -21,7 +21,8 @@ import slide2 from "../Assests/slide2.webp";
 import slide3 from "../Assests/slide3.webp";
 import {BsFacebook, BsInstagram, BsLinkedin, BsYoutube} from "react-icons/bs";
 import {MenuItem, TextField} from "@mui/material";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export function Testimonial (){
     const [options, setOptions] = useState([{name: 'Other'},{name: 'Diabetes', id: 1},{name: 'Digestion Issues', id: 2},{name: 'Digestion Issues', id: 3},{name: 'Fatty Liver', id: 4},{name: 'Gall Bladder Issues', id: 5},{name: 'High BP', id: 6},{name: 'Kidney Stones', id: 7},{name: 'Low BP', id: 8},{name: 'PCOD', id: 9},{name: 'Uric Acid', id: 10},{name: 'Thyroid Issues', id: 11}]);
@@ -38,6 +39,17 @@ export function Testimonial (){
     })
     function onSubmi(e : any){
         console.log(formFields)
+        // toast.success('🦄 Wow so easy!', {
+        //     position: "top-right",
+        //     autoClose: 5000,
+        //     hideProgressBar: false,
+        //     closeOnClick: true,
+        //     pauseOnHover: true,
+        //     draggable: true,
+        //     progress: undefined,
+        //     theme: "light",
+        //
+        // });
         e.preventDefault();
         const urlencoded = new URLSearchParams();
         urlencoded.append("name", formFields.name);
@@ -58,7 +70,19 @@ export function Testimonial (){
         };
         fetch("https://vm4fitness.com/send_mail.php", requestOptions)
             .then((response) => response.text())
-            .then((result) => console.log(result))
+            .then((result) => {
+                toast.success('🦄 Wow so easy!', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+
+                });
+            })
             .catch((error) => console.error(error));
     }
     function isNumeric(value: string) {
@@ -410,6 +434,21 @@ export function Testimonial (){
                     </div> : <></>
 
             }
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+
+            />
+            {/* Same as */}
+            <ToastContainer />
 
         </>
     );
