@@ -103,11 +103,11 @@ export function Testimonial (){
 
                 <div className="contact-testimonial-section">
                     <motion.div className="schedule-appointment-container card"
-                                initial={{
+                                initial={!isMobile() ? {
                                     opacity: 0,
                                     // if odd index card,slide from right instead of left
                                     x: -100
-                                }}
+                                }:{}}
                                 whileInView={{
                                     opacity: 1,
                                     x: 0, // Slide in to its original position
@@ -374,11 +374,11 @@ export function Testimonial (){
                     {
                         isMobile() ? <></> :
                             <motion.div id="testimonial"
-                                        initial={{
+                                        initial={!isMobile() ? {
                                             opacity: 0,
                                             // if odd index card,slide from right instead of left
                                             x: 100
-                                        }}
+                                        }:{}}
                                         whileInView={{
                                             opacity: 1,
                                             x: 0, // Slide in to its original position
@@ -439,7 +439,7 @@ export function Testimonial (){
             </section>
             {
                 isMobile() ?
-                    <div id="">
+                    <div id="testimonial">
                         <div className="testimonial-slider">
                             <h2 className="testi">What our clients say</h2>
                             <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true}
