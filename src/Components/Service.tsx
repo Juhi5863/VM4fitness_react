@@ -23,11 +23,13 @@ export function Service() {
                     background: "#003220",
                     fontFamily: "cursive",
                     fontWeight: "bolder",
+                    textAlign: "center",
                     fontSize: 51
                 }}>
                     {/*<h2 className="service-header">Our Service </h2>*/}
-                    <img width="28%" src={img0}/>
-
+                    {
+                        isMobile() ? <img width="250px" style={{marginBottom: 20}} src={img0}/> : <img width="38%" style={{marginBottom: 20}} src={img0}/>
+                    }
                     <Carousel
                         additionalTransfrom={0}
                         arrows

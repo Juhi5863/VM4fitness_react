@@ -21,11 +21,18 @@ function  InformationBanner(){
                 <div className="hamburger-menu">
                     <ul className="nav-menu" >
 
-                                <li className="nav-item"><a href="/" className="nav-link">HOME</a></li>
-                                <li className="nav-item"><a href="/#testimonial" className="nav-link">TESTIMONIAL</a></li>
-                                <li className="nav-item"><a href="/#service" className="nav-link">SERVICE</a></li>
-                                <li className="nav-item"><a href="/#slide-section" className="nav-link">ABOUT US</a></li>
-                                <li className="nav-item"><a href="/faq" className="nav-link">FAQ</a></li>
+                                <li className="nav-item"><a href="/" onClick={() => {setMenu(!menu)}} className="nav-link">HOME</a></li>
+                        <hr style={{margin:0}}/>
+                                <li className="nav-item"><a href="/#testimonial" onClick={() => {setMenu(!menu)}} className="nav-link">TESTIMONIAL</a></li>
+                        <hr style={{margin:0}}/>
+
+                        <li className="nav-item"><a href="/#user-service" onClick={() => {setMenu(!menu)}} className="nav-link">SERVICE</a></li>
+                        <hr style={{margin:0}}/>
+
+                        <li className="nav-item"><a href="/#user-blogSec" onClick={() => {setMenu(!menu)}} className="nav-link">BLOG</a></li>
+                        <hr style={{margin:0}}/>
+
+                        <li className="nav-item"><a href="/contact" onClick={() => {setMenu(!menu)}} target="_blank" className="nav-link">CONTACT US</a></li>
                     </ul>
                 </div>
                 : <></>

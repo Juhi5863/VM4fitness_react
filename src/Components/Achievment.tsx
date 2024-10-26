@@ -11,9 +11,13 @@ export function Achievment(){
     return (
         <>
             <section className="achive-sec">
-                <div className="achive-container">
+                <div className="achive-container" style={{
+                    textAlign: "center"
+                }}>
                     {/*<h2 className="achive-header">Our Achivements</h2>*/}
-                    <img width="30%" src={img0}/>
+                    {
+                        isMobile() ? <img width="250px" style={{marginBottom: 20}} src={img0}/> : <img width="30%" style={{marginBottom: 20}} src={img0}/>
+                    }
 
                     {isMobile() ?
                         <div className="">

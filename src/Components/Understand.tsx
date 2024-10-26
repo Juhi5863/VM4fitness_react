@@ -7,20 +7,24 @@ import img6 from '../Assests/6.webp'
 import img from '../Assests/under_img.png'
 import { motion } from "framer-motion";
 import React from "react";
+import {isMobile} from "../Utility";
 export function Understand (){
     return (
         <>
             <section className="und-sec">
                 <div className="und-container">
-                    <img   width="18%" style={{marginBottom: 20}} src={img}/>
+                    {
+                        isMobile() ? <img width="250px" style={{marginBottom: 20}} src={img}/> : <img width="18%" style={{marginBottom: 20}} src={img}/>
+                    }
+
                     {/*<h2 className="und-heading" style={{margin: 0}}>Understand Our Program</h2>*/}
                     <div className="und-content">
                         <motion.div className="und-column"
-                                    initial={{
+                                    initial={!isMobile() ? {
                                         opacity: 0,
                                         // if odd index card,slide from right instead of left
                                         x: -100
-                                    }}
+                                    }:{}}
                                     whileInView={{
                                         opacity: 1,
                                         x: 0, // Slide in to its original position
@@ -72,11 +76,11 @@ export function Understand (){
                         </motion.div>
 
                         <motion.div className="und-column"
-                                    initial={{
+                                    initial={!isMobile() ? {
                                         opacity: 0,
                                         // if odd index card,slide from right instead of left
                                         x: 100
-                                    }}
+                                    }:{}}
                                     whileInView={{
                                         opacity: 1,
                                         x: 0, // Slide in to its original position

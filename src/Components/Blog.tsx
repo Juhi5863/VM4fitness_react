@@ -32,10 +32,13 @@ export function Blog() {
     return (
         <>
             <div className="blog-sec" style={{borderRadius: "5"}} id="user-blogSec">
-                <div className="default-div">
+                <div className="default-div" style={{
+                    textAlign: "center"
+                }}>
                     {/*<h2  style={{color: "black", textAlign: "center", paddingTop: 20, fontFamily: "cursive", fontSize: 50, fontWeight: "bolder"}}>Latest Buzz</h2>*/}
-                    <img width="28%" src={img0}/>
-
+                    {
+                        isMobile() ? <img width="250px" style={{marginBottom: 20}} src={img0}/> : <img width="28%" style={{marginBottom: 20}} src={img0}/>
+                    }
                     <Carousel
                         additionalTransfrom={0}
                         arrows

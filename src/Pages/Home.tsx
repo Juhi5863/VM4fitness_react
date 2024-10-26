@@ -18,6 +18,7 @@ import {TestimonialSec} from "../Components/TestimonialSec";
 import {Helmet} from "react-helmet";
 import React from "react";
 import { motion } from "framer-motion";
+import {isMobile} from "../Utility";
 
 
 
@@ -35,19 +36,19 @@ function  Home(){
             <div>
                 <img src={slide1}/>
                 <motion.h2 className="slide-imgTitle1"
-                           initial={{
+                           initial={!isMobile() ? {
                                opacity: 0,
                                // if odd index card,slide from right instead of left
                                x: -100
-                           }}
-                           whileInView={{
+                           }: {}}
+                           whileInView={!isMobile() ? {
                                opacity: 1,
                                x: 0, // Slide in to its original position
                                transition: {
                                    duration: 1 // Animation duration
                                }
-                           }}
-                           viewport={{ once: false }}
+                           } : {}}
+                           viewport={!isMobile() ? { once: false } : {}}
                 >
                     Loss <span className="green"> weight</span> not to  <span className="yellow">Regain</span>
 
@@ -56,18 +57,18 @@ function  Home(){
             <div>
                 <img src={slide2}/>
                 <motion.h2 className="slide-imgTitle"
-                    initial={{
+                    initial={!isMobile() ? {
                         opacity: 0,
                         // if odd index card,slide from right instead of left
                         x: 100
-                    }}
-                    whileInView={{
+                    }:{}}
+                    whileInView={!isMobile() ? {
                         opacity: 1,
                         x: 0, // Slide in to its original position
                         transition: {
                             duration: 1 // Animation duration
                         }
-                    }}
+                    }:{}}
                     viewport={{ once: false }}
                 >
                     <span className="green">Food</span> Your <span

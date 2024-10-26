@@ -16,11 +16,11 @@ function  Profile(){
                   showStatus={false} stopOnHover={false} swipeable={isMobile() ? false : true} className="slide-section">
             <div className="slide-about">
                 <motion.div className="slide-profile"
-                     initial={{
+                     initial={!isMobile() ? {
                          opacity: 0,
                          // if odd index card,slide from right instead of left
                          x: -100
-                     }}
+                     }:{}}
                      whileInView={{
                          opacity: 1,
                          x: 0, // Slide in to its original position
@@ -33,11 +33,11 @@ function  Profile(){
                     <img src={mimansa} className="slide-img" alt="Profile Image"/>
                 </motion.div>
                 <motion.div className="profile-contant"
-                     initial={{
+                     initial={!isMobile() ? {
                          opacity: 0,
                          // if odd index card,slide from right instead of left
                          x: 100
-                     }}
+                     }:{}}
                      whileInView={{
                          opacity: 1,
                          x: 0, // Slide in to its original position
@@ -68,11 +68,11 @@ function  Profile(){
 
             <div className="slide-about">
                 <motion.div className="slide-profile"
-                     initial={{
+                     initial={!isMobile() ? {
                          opacity: 0,
                          // if odd index card,slide from right instead of left
                          x: -100
-                     }}
+                     }:{}}
                      whileInView={{
                          opacity: 1,
                          x: 0, // Slide in to its original position
@@ -85,11 +85,11 @@ function  Profile(){
                     <img src={vikaram} className="slide-img" alt="Profile Image"/>
                 </motion.div>
                 <motion.div className="profile-contant"
-                     initial={{
+                     initial={!isMobile() ? {
                          opacity: 0,
                          // if odd index card,slide from right instead of left
                          x: 100
-                     }}
+                     }:{}}
                      whileInView={{
                          opacity: 1,
                          x: 0, // Slide in to its original position

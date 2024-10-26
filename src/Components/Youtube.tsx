@@ -1,13 +1,20 @@
 import {isMobile} from "../Utility";
 import img from '../Assests/youtube.png'
 import React from "react";
+import img0 from "../Assests/blog.png";
 export function Youtube(){
     return (
         <>
             <section id="trending-section">
-                <div className="youtube-container">
+                <div className="youtube-container"style={{
+                    textAlign: "center"
+                }}>
+                    {/*<h2  style={{color: "black", textAlign: "center", paddingTop: 20, fontFamily: "cursive", fontSize: 50, fontWeight: "bolder"}}>Latest Buzz</h2>*/}
+                    {
+                        isMobile() ? <img width="250px" style={{marginBottom: 20}} src={img}/> : <img width="28%" style={{marginBottom: 20}} src={img}/>
+                    }
                     {/*<h2 className="youtube-head">Trending on YouTube</h2>*/}
-                    <img width="28%" src={img}/>
+                    {/*<img width="28%" src={img}/>*/}
 
                     <div className="trending-container">
                         <div className="video-card">
