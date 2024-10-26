@@ -56,8 +56,8 @@ export function FooterOne(){
                     <footer id="footer2-sec">
                         <div className="footer2-container">
                             <div className="contact-footer2" style={{display: "flex"}}>
-                                <a href="/contact" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>CONTACT US</a>
-                                <a href="/faq" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>FAQ</a>
+                                <a href="/contact"  target="_blank" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>CONTACT US</a>
+                                <a href="/faq" target="_blank" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>FAQ</a>
                                 <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{lineHeight: 2,marginLeft:10, marginRight: 10}}>PRIVACY POLICY</a>
                                 <ul className="social-media-list">
                                     <li><a href="https://www.instagram.com/vm4fitness/"

@@ -4,14 +4,32 @@ import img3 from '../Assests/3.webp'
 import img4 from '../Assests/1.4.webp'
 import img5 from '../Assests/5.webp'
 import img6 from '../Assests/6.webp'
+import img from '../Assests/under_img.png'
+import { motion } from "framer-motion";
+import React from "react";
 export function Understand (){
     return (
         <>
             <section className="und-sec">
                 <div className="und-container">
-                    <h2 className="und-heading" style={{margin: 0}}>Understand Our Program</h2>
+                    <img   width="18%" style={{marginBottom: 20}} src={img}/>
+                    {/*<h2 className="und-heading" style={{margin: 0}}>Understand Our Program</h2>*/}
                     <div className="und-content">
-                        <div className="und-column">
+                        <motion.div className="und-column"
+                                    initial={{
+                                        opacity: 0,
+                                        // if odd index card,slide from right instead of left
+                                        x: -100
+                                    }}
+                                    whileInView={{
+                                        opacity: 1,
+                                        x: 0, // Slide in to its original position
+                                        transition: {
+                                            duration: 1 // Animation duration
+                                        }
+                                    }}
+                                    viewport={{once: false}}
+                        >
                             <div className="und-item">
                                 <div className="und-icon">
                                     <img src={img1} alt=""/>
@@ -45,26 +63,36 @@ export function Understand (){
                                     <img src={img3} alt=""/>
                                 </div>
                                 <div className="und-para">
-                                    <h3 className="und-head">3. Personalized <a
-                                        href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
-                                        rel="noopener noreferrer">One-on-One Consultation </a></h3>
+                                    <h3 className="und-head">3. Personalized One-on-One Consultation </h3>
                                     <p>Understand the root causes of your weight gain.
                                     </p>
                                 </div>
                             </div>
 
-                        </div>
+                        </motion.div>
 
-                        <div className="und-column">
+                        <motion.div className="und-column"
+                                    initial={{
+                                        opacity: 0,
+                                        // if odd index card,slide from right instead of left
+                                        x: 100
+                                    }}
+                                    whileInView={{
+                                        opacity: 1,
+                                        x: 0, // Slide in to its original position
+                                        transition: {
+                                            duration: 1 // Animation duration
+                                        }
+                                    }}
+                                    viewport={{once: false}}
+                        >
 
                             <div className="und-item">
                                 <div className="und-icon">
                                     <img src={img4} alt=""/>
                                 </div>
                                 <div className="und-para">
-                                    <h3 className="und-head">4. ⁠Receive plan designed for <a
-                                        href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
-                                        rel="noopener noreferrer">your body & lifestyle</a>
+                                    <h3 className="und-head">4. ⁠Receive plan designed for your body & lifestyle
                                     </h3>
                                     <p>Receive a plan specifically designed for your lifestyle.
                                     </p>
@@ -76,9 +104,7 @@ export function Understand (){
                                     <img src={img5} alt=""/>
                                 </div>
                                 <div className="und-para">
-                                    <h3 className="und-head">5. <a
-                                        href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
-                                        rel="noopener noreferrer">Weekly Tracking </a>& Ongoing Support</h3>
+                                    <h3 className="und-head">5. Weekly Tracking & Ongoing Support</h3>
                                     <p>Whatsapp Group is created for regular tracking and guidance from our coaches.
                                     </p>
                                 </div>
@@ -89,14 +115,12 @@ export function Understand (){
                                     <img src={img6} alt=""/>
                                 </div>
                                 <div className="und-para">
-                                    <h3 className="und-head">6. <a
-                                        href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
-                                        rel="noopener noreferrer">No Rebound </a>
+                                    <h3 className="und-head">6. No Rebound
                                     </h3>
                                     <p>Long lasting results with maintenance diet plan.</p>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

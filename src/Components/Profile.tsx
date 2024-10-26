@@ -7,6 +7,7 @@ import mimansa from '../Assests/Mimansa.webp'
 import vikaram from '../Assests/Vikram.webp'
 import {MdLens} from "react-icons/md";
 import {isMobile} from "../Utility";
+import { motion } from "framer-motion";
 
 
 function  Profile(){
@@ -14,10 +15,38 @@ function  Profile(){
         <Carousel showIndicators={false} showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true} interval={6000}
                   showStatus={false} stopOnHover={false} swipeable={isMobile() ? false : true} className="slide-section">
             <div className="slide-about">
-                <div className="slide-profile">
+                <motion.div className="slide-profile"
+                     initial={{
+                         opacity: 0,
+                         // if odd index card,slide from right instead of left
+                         x: -100
+                     }}
+                     whileInView={{
+                         opacity: 1,
+                         x: 0, // Slide in to its original position
+                         transition: {
+                             duration: 1 // Animation duration
+                         }
+                     }}
+                     viewport={{ once: false }}
+                >
                     <img src={mimansa} className="slide-img" alt="Profile Image"/>
-                </div>
-                <div className="profile-contant">
+                </motion.div>
+                <motion.div className="profile-contant"
+                     initial={{
+                         opacity: 0,
+                         // if odd index card,slide from right instead of left
+                         x: 100
+                     }}
+                     whileInView={{
+                         opacity: 1,
+                         x: 0, // Slide in to its original position
+                         transition: {
+                             duration: 1 // Animation duration
+                         }
+                     }}
+                     viewport={{ once: false }}
+                >
                     <h2 className="profile-heading">Mimansa - Nutritionist</h2>
                     <ul className="profile-details">
                         <li><i className="fa-solid fa-circle"></i><MdLens />
@@ -34,14 +63,42 @@ function  Profile(){
                             live healthier, happier lives by offering personalized guidance and unwavering support.
                         </li>
                     </ul>
-                </div>
+                </motion.div>
             </div>
 
             <div className="slide-about">
-                <div className="slide-profile">
+                <motion.div className="slide-profile"
+                     initial={{
+                         opacity: 0,
+                         // if odd index card,slide from right instead of left
+                         x: -100
+                     }}
+                     whileInView={{
+                         opacity: 1,
+                         x: 0, // Slide in to its original position
+                         transition: {
+                             duration: 1 // Animation duration
+                         }
+                     }}
+                     viewport={{ once: false }}
+                >
                     <img src={vikaram} className="slide-img" alt="Profile Image"/>
-                </div>
-                <div className="profile-contant">
+                </motion.div>
+                <motion.div className="profile-contant"
+                     initial={{
+                         opacity: 0,
+                         // if odd index card,slide from right instead of left
+                         x: 100
+                     }}
+                     whileInView={{
+                         opacity: 1,
+                         x: 0, // Slide in to its original position
+                         transition: {
+                             duration: 1 // Animation duration
+                         }
+                     }}
+                     viewport={{ once: false }}
+                >
                     <h2 className="profile-heading">Vikram- Body transformational coach</h2>
                     <ul className="profile-details">
                         <li><i className="fa-solid fa-circle"></i><MdLens />
@@ -58,7 +115,7 @@ function  Profile(){
                             uplifts and empowers everyone on their journey to better health.
                         </li>
                     </ul>
-                </div>
+                </motion.div>
             </div>
         </Carousel>
 

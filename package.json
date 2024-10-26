@@ -14,6 +14,7 @@
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
     "@types/react-helmet": "^6.1.11",
+    "framer-motion": "^11.11.10",
     "multiselect-react-dropdown": "^2.0.25",
     "primereact": "^10.8.3",
     "react": "^18.3.1",

@@ -18,7 +18,7 @@ const Navbar=()=>{
                             <li className="nav-item"><a href="/#user-testimonial-section" className="nav-link">TESTIMONIAL</a></li>
                             <li className="nav-item"><a href="/#user-service" className="nav-link">SERVICE</a></li>
                             <li className="nav-item"><a href="/#user-blogSec" className="nav-link">BLOG</a></li>
-                            <li className="nav-item"><a href="/#user-profile" className="nav-link">ABOUT US</a></li>
+                            <li className="nav-item"><a href="/contact"  target="_blank" className="nav-link">CONTACT US</a></li>
                         </>}
 
                     <li className="nav-item"><a href="https://calendly.com/vik4fitness/consultation-appointment"

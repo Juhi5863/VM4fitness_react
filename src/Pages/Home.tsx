@@ -1,8 +1,9 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import  slide1 from '../Assests/slide1.webp'
-import  slide2 from '../Assests/slide2.webp'
+import  slide1 from '../Assests/Slidee1.png'
+import  slide2 from '../Assests/Slidee2.webp'
 import  slide3 from '../Assests/slide3.webp'
+
 import {Testimonial} from "../Components/Testimonial";
 import Profile from "../Components/Profile";
 import {Understand} from "../Components/Understand";
@@ -16,7 +17,7 @@ import {FooterOne} from "../Components/FooterOne";
 import {TestimonialSec} from "../Components/TestimonialSec";
 import {Helmet} from "react-helmet";
 import React from "react";
-
+import { motion } from "framer-motion";
 
 
 
@@ -33,16 +34,50 @@ function  Home(){
                   showStatus={false} stopOnHover={false}>
             <div>
                 <img src={slide1}/>
+                <motion.h2 className="slide-imgTitle1"
+                           initial={{
+                               opacity: 0,
+                               // if odd index card,slide from right instead of left
+                               x: -100
+                           }}
+                           whileInView={{
+                               opacity: 1,
+                               x: 0, // Slide in to its original position
+                               transition: {
+                                   duration: 1 // Animation duration
+                               }
+                           }}
+                           viewport={{ once: false }}
+                >
+                    Loss <span className="green"> weight</span> not to  <span className="yellow">Regain</span>
 
+                </motion.h2>
             </div>
             <div>
                 <img src={slide2}/>
+                <motion.h2 className="slide-imgTitle"
+                    initial={{
+                        opacity: 0,
+                        // if odd index card,slide from right instead of left
+                        x: 100
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                        x: 0, // Slide in to its original position
+                        transition: {
+                            duration: 1 // Animation duration
+                        }
+                    }}
+                    viewport={{ once: false }}
+                >
+                    <span className="green">Food</span> Your <span
+                    className="yellow">medicine</span></motion.h2>
 
             </div>
-            <div>
-                <img src={slide3}/>
+            {/*<div>*/}
+            {/*    <img src={slide3}/>*/}
 
-            </div>
+            {/*</div>*/}
         </Carousel>
         <Testimonial></Testimonial>
 

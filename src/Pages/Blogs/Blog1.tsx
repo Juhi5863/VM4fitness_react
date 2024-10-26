@@ -4,6 +4,7 @@ import React, {useEffect} from "react";
 import { BsInstagram , BsFacebook, BsTwitterX, BsLinkedin, BsYoutube} from "react-icons/bs";
 import {Helmet} from "react-helmet";
 
+
 export function Blog1(){
 
         // useEffect(() => {
@@ -327,6 +328,7 @@ export function Blog1(){
                     </div>
                 </div>
             </div>
+
 
         </>
     )

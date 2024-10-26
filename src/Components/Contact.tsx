@@ -25,7 +25,7 @@ export function Contact(){
 
             {/*</section>*/}
 
-            <div className="default-div" style={{margin:"auto", textAlign: "center" , padding: 30}}>
+            <div id="user-profile" className="default-div" style={{margin:"auto", textAlign: "center" , padding: 30}}>
             <h1 className="contact-header"><LuPartyPopper  color="red"/>
                  Choose the plan that fits you, and only you.</h1>
             <p className="des-heading">

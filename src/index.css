@@ -20,6 +20,31 @@ code {
   font-family: 'Nunito', sans-serif;
   font-weight:900;
 }
+.slide-imgTitle1{
+  font-size: 44px;
+  position: absolute;
+  top: 33%;
+  left: 17%;
+  color: #fff;
+  width: 423px;
+  text-align: left;
+}
+.slide-imgTitle{
+  font-size: 44px;
+  position: absolute;
+  top: 37%;
+  right: 13%;
+  color: #fff;
+}
+.green{
+  color : #c2fe6b!important;
+}
+.green-bg{
+  background-color : #c2fe6b!important;
+}
+.yellow{
+  color : #ffdb3a!important;
+}
 .nav1-link{
   text-decoration: none;
 }
@@ -123,7 +148,7 @@ code {
 }
 
 a {
-  color: #f47b2f;
+  color: #c2fe6b;
   text-decoration: none;
 }
 
@@ -338,7 +363,10 @@ a:hover {
     justify-content: space-between;
     margin-bottom: 15px;
 }
-
+.contact-info11{
+  padding-left : 27px!important;
+  padding-right : 27px!important;
+}
 
   .multi-select-react {
     width: 100%!important;
@@ -558,6 +586,7 @@ a:hover {
 }
 .schedule-appointment{
   text-align: center;
+  padding : 20px!important;
 }
 .schedule-header{
   position: relative;
@@ -599,7 +628,8 @@ a:hover {
 }
 .contact-info11{
   text-align : center!important;
-
+  padding-top: 20px;
+  line-height: 24px;
   color: #ff914d;
   font-size: 20px;
   padding-left: 48px;
@@ -827,10 +857,10 @@ a:hover {
   color: black;
   font-size: 15px;
   padding: 10px;
-  background-color: #dbffd9;
+  background-color: #a7ee3a;
   border-radius: 20px;
-  margin-left: 60px;
-  margin-right: 60px;
+  width : 62%;
+  margin: auto!important;
   font-weight: bolder;
 
 }
@@ -842,9 +872,7 @@ a:hover {
 #testimonial {
   width: 28%;
 }
-.react-multi-carousel-list{
-  padding-top: 20px!important;
-}
+
 .p-multiselect .p-multiselect-label.p-placeholder {
   color: #dbffd9!important;
 }
@@ -1046,6 +1074,7 @@ a:hover {
 .und-container{
   color: white;
   margin: 0 auto;
+  text-align : center;
 }
 .und-heading{
   padding: 30px;
@@ -1063,6 +1092,7 @@ a:hover {
   justify-content: space-between;
   gap: 10px;
   padding-top: 20px;
+  text-align: left;
 }
 .und-column{
   flex: 1;
