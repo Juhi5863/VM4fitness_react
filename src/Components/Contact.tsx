@@ -1,8 +1,6 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { MdLocalPhone } from "react-icons/md";
 import { GoMail } from "react-icons/go";
-import img1 from '../Assests/logo.webp'
-import  img2 from '../Assests/contact_banner.jpg'
 import React from "react";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { FaCircleXmark } from "react-icons/fa6";
@@ -26,61 +24,86 @@ export function Contact(){
             {/*</section>*/}
 
             <div id="user-profile" className="default-div" style={{margin:"auto", textAlign: "center" , padding: 30}}>
-            <h1 className="contact-header"><LuPartyPopper  color="red"/>
-                 Choose the plan that fits you, and only you.</h1>
-            <p className="des-heading">
-                Dreaming about your websites coming to life in seconds? Now they can be.
+            <h1 className="contact-header">
+                ARE YOU SOMEONE WHO LOSE WEIGHT
+                ONLY TO REGAIN IT BACK?</h1>
+            <p className="des-heading green">
+                Get out of this cycle with the help of
             </p>
+                <h2> <span className="yellow">VM</span> Subscription Plans</h2>
             </div>
 
             <div className="wrapper-contact default-div" style={{margin: "auto"}}>
                 <div className="pricing-table">
                     <div className="head">
-                        <h4 className="title">Basic</h4>
+                        <h4 className="title">Basic Plan
+                        <span>(INR)</span></h4>
+
                     </div>
                     <div className="content">
-                        <div className="price">
-                            <h1><i className="fa-solid fa-euro-sign"></i>₹ 15</h1>
+                    <div className="price">
+                            <h1><i className="fa-solid fa-euro-sign"></i>₹3000</h1>
                         </div>
 
                         <ul>
-                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>
-                                One Selected Template</li>
-                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>100% Responsive Design</li>
-                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>Free Cancelation</li>
-                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>0 accounts</li>
-                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>24/7 Support</li>
-                            <li><IoIosCheckmarkCircle  className="fa-solid fa-circle-check"/>Lifetime Template Updates</li>
+
+                            <li><IoIosCheckmarkCircle style={{marginRight: 8}} className="fa-solid fa-circle-check"/>Personalised
+                                Group & Weekly Tracking
+                            </li>
+                            <li><IoIosCheckmarkCircle style={{marginRight: 8}} className="fa-solid fa-circle-check"/>Diet
+                                & Nutrition Plan
+                            </li>
+                            <li><IoIosCheckmarkCircle style={{marginRight: 8}} className="fa-solid fa-circle-check"/>Monthly
+                                2 #VM-online Session
+                            </li>
+                            <li><FaCircleXmark style={{marginRight: 8}} className="a-solid fa-circle-xmark"/>No
+                                Maintenance Plan
+                            </li>
+                            <li><FaCircleXmark style={{marginRight: 8}} className="a-solid fa-circle-xmark"/>Universal Time Zone
+                                Support
+                            </li>
+
                         </ul>
 
                         <div className="buy-now">
-                            <a href="#" className="btn round">Purchase Now</a>
+                            <a href="#" className="btn round">SELECT BASIC</a>
                         </div>
                     </div>
                 </div>
 
                 <div className="pricing-table">
                     <div className="head">
-                        <span className="spam-popular">Popular</span>
-                        <h4 className="title">Standard</h4>
+                        <span className="spam-popular yellow">POPULAR</span>
+                        <h4 className="title">Standard Plan</h4>
                     </div>
                     <div className="content">
                         <div className="price">
-                            <h1><i className="fa-solid fa-euro-sign"></i>₹ 30</h1>
+                            <h1><i className="fa-solid fa-euro-sign"></i>₹6000</h1>
                         </div>
 
                         <ul>
-                            <li><FaCircleXmark className="a-solid fa-circle-xmark" />
-                                One Selected Template</li>
-                            <li><i className="fa-solid fa-circle-check"></i>100% Responsive Design</li>
-                            <li><i className="fa-solid fa-circle-check"></i>Free Cancelation</li>
-                            <li><i className="fa-solid fa-circle-check"></i>10 accounts</li>
-                            <li><i className="fa-solid fa-circle-check"></i>24/7 Support</li>
-                            <li><i className="fa-solid fa-circle-xmark"></i>Lifetime Template Updates</li>
+                            <li><IoIosCheckmarkCircle style={{marginRight: 8}} className="fa-solid fa-circle-check"/>Personalised
+                                Group & Weekly
+                                Tracking
+                            </li>
+                            <li><IoIosCheckmarkCircle style={{marginRight: 8}} className="fa-solid fa-circle-check"/>Diet
+                                & Nutrition Plan
+                            </li>
+                            <li><IoIosCheckmarkCircle style={{marginRight: 8}} className="fa-solid fa-circle-check"/>Unlimited
+                                #VM-online
+                                Session
+                            </li>
+                            <li><IoIosCheckmarkCircle style={{marginRight: 8}} className="fa-solid fa-circle-check"/><i
+                                className="fa-solid fa-circle-check"></i>Maintenance Plan
+                            </li>
+                            <li><FaCircleXmark style={{marginRight: 8}} className="a-solid fa-circle-xmark"/>Universal Time Zone
+                                Support
+                            </li>
+
                         </ul>
 
                         <div className="buy-now">
-                            <a href="#" className="btn round">Purchase Now</a>
+                            <a href="#" className="btn round">SELECT STANDARD</a>
                         </div>
                     </div>
                 </div>
@@ -88,24 +111,33 @@ export function Contact(){
                 <div className="pricing-table">
                     <div className="head">
 
-                        <h4 className="title">Premium</h4>
+                        <h4 className="title">Global Plan</h4>
                     </div>
                     <div className="content">
                         <div className="price">
-                            <h1 className="pricing-amount" ><i className="fa-solid fa-euro-sign "></i>₹ 50</h1>
+                            <h1 className="pricing-amount" ><i className="fa-solid fa-euro-sign "></i>100$</h1>
                         </div>
 
                         <ul>
-                            <li><i className="fa-solid fa-circle-check"></i>One Selected Template</li>
-                            <li><i className="fa-solid fa-circle-check"></i>100% Responsive Design</li>
-                            <li><i className="fa-solid fa-circle-check"></i>Free Cancelation</li>
-                            <li><i className="fa-solid fa-circle-check"></i>10 accounts</li>
-                            <li><i className="fa-solid fa-circle-check"></i>24/7 Support</li>
-                            <li><i className="fa-solid fa-circle-check"></i>Lifetime Template Updates</li>
+                            <li><IoIosCheckmarkCircle  style={{marginRight: 8}} className="fa-solid fa-circle-check"/>Personalised Group & Weekly
+                                Tracking
+                            </li>
+                            <li><IoIosCheckmarkCircle  style={{marginRight: 8}} className="fa-solid fa-circle-check"/>Diet & Nutrition Plan</li>
+                            <li><IoIosCheckmarkCircle  style={{marginRight: 8}} className="fa-solid fa-circle-check"/>Unlimited #VM-online
+                                Session
+                            </li>
+                            <li><IoIosCheckmarkCircle   style={{marginRight: 8}} className="fa-solid fa-circle-check"/><i
+                                className="fa-solid fa-circle-check"></i>Maintenance Plan
+                            </li>
+                            <li><IoIosCheckmarkCircle   style={{marginRight: 8}} className="fa-solid fa-circle-check"/><i
+                                className="fa-solid fa-circle-check"></i>Universal Time Zone
+                                Support
+                            </li>
+
                         </ul>
 
                         <div className="buy-now">
-                            <a href="#" className="btn round">Purchase Now</a>
+                            <a href="#" className="btn round">SELECT PRO</a>
                         </div>
                     </div>
                 </div>

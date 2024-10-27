@@ -85,7 +85,7 @@ export function Service() {
 
                     >
                         <div className="service-slide">
-                            <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
+                            <a href="https://www.instagram.com/reel/DABYndRPSwn/" target="_blank"
                                rel="noopener noreferrer">
                                 <div className="box">
                                     <div className="image-content">
@@ -93,7 +93,11 @@ export function Service() {
                                         <div className="box-image">
                                             <img src={img1} alt="" className="box-img "/>
                                             {
-                                                isMobile() ? <></> :
+                                                isMobile() ? <>
+                                                        <button style={{marginTop: 10}} className="blog-button"
+                                                                data-modal-id="1">Read More
+                                                        </button>
+                                                  </> :
                                                     <button
                                                         className="testimonial-img-button testimonial-btn fourth">Read
                                                         More
@@ -109,7 +113,7 @@ export function Service() {
                         </div>
 
                         <div className="service-slide">
-                            <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
+                            <a href="https://www.instagram.com/reel/C_vPzs0vdrU/" target="_blank"
                                rel="noopener noreferrer">
                                 <div className="box">
                                     <div className="image-content">
@@ -133,7 +137,7 @@ export function Service() {
                         </div>
 
                         <div className="service-slide">
-                            <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
+                            <a href="https://www.instagram.com/reel/C_YFOebP3OH/" target="_blank"
                                rel="noopener noreferrer">
                                 <div className="box">
                                     <div className="image-content">
@@ -157,7 +161,7 @@ export function Service() {
                         </div>
 
                         <div className="service-slide">
-                            <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
+                            <a href="https://www.instagram.com/p/DATbeCsvuLR/" target="_blank"
                                rel="noopener noreferrer">
                                 <div className="box">
                                     <div className="image-content">
@@ -181,7 +185,7 @@ export function Service() {
                         </div>
 
                         <div className="service-slide">
-                            <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
+                            <a href="https://www.instagram.com/reel/C_iT7eyvgSF/" target="_blank"
                                rel="noopener noreferrer">
                                 <div className="box">
                                     <div className="image-content">
@@ -205,7 +209,7 @@ export function Service() {
                         </div>
 
                         <div className="service-slide">
-                            <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
+                            <a href="https://www.instagram.com/reel/C_fvgFiv1N5/" target="_blank"
                                rel="noopener noreferrer">
                                 <div className="box">
                                     <div className="image-content">
@@ -229,7 +233,7 @@ export function Service() {
                         </div>
 
                         <div className="service-slide">
-                            <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
+                            <a href="https://www.instagram.com/reel/ChboTHcgNyi/" target="_blank"
                                rel="noopener noreferrer">
                                 <div className="box">
                                     <div className="image-content">
@@ -253,7 +257,7 @@ export function Service() {
                         </div>
 
                         <div className="service-slide">
-                            <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
+                            <a href="https://www.instagram.com/reel/CheZTFIg9sE/" target="_blank"
                                rel="noopener noreferrer">
                                 <div className="box">
                                     <div className="image-content">
@@ -277,7 +281,7 @@ export function Service() {
                         </div>
 
                         <div className="service-slide">
-                            <a href="https://calendly.com/vik4fitness/consultation-appointment" target="_blank"
+                            <a href="https://www.instagram.com/reel/C_iT7eyvgSF/" target="_blank"
                                rel="noopener noreferrer">
                                 <div className="box">
                                     <div className="image-content">

@@ -2,24 +2,21 @@ import React, {useState} from "react";
 import {MultiSelect} from "primereact/multiselect";
 import 'primereact/resources/themes/lara-light-cyan/theme.css';
 import {isMobile} from "../Utility";
-import  facebook from "../Assests/facebook.webp"
-import  linkdin from "../Assests/linkdin.webp"
-import  twitter from "../Assests/twitter.webp"
-import  instagram from "../Assests/insta.svg"
-    import img1 from '../Assests/2.1.webp'
-    import img2 from '../Assests/2.2.webp'
-    import img3 from '../Assests/2.3.webp'
-    import img4 from '../Assests/2.4.webp'
-    import img5 from '../Assests/2.5.webp'
-    import img6 from '../Assests/2.6.webp'
-    import img7 from '../Assests/2.7.webp'
-    import img8 from '../Assests/2.8.webp'
-    import img9 from '../Assests/2.9.webp'
-    import img from '../Assests/img.png'
+import img1 from '../Assests/3.1.png'
+import img2 from '../Assests/3.2.png'
+import img3 from '../Assests/3.3.png'
+import img4 from '../Assests/3.4.png'
+import img5 from '../Assests/3.5.png'
+import img6 from '../Assests/3.6.png'
+import img7 from '../Assests/3.8.png'
+import img8 from '../Assests/3.9.png'
+import img9 from '../Assests/3.10.png'
+import img10 from '../Assests/3.10.png'
+import img11 from '../Assests/3.11.png'
+import img12 from '../Assests/3.12.png'
+import img from '../Assests/img.png'
 import {Carousel} from "react-responsive-carousel";
-import slide1 from "../Assests/slide1.webp";
-import slide2 from "../Assests/slide2.webp";
-import slide3 from "../Assests/slide3.webp";
+
 import {BsFacebook, BsInstagram, BsLinkedin, BsYoutube} from "react-icons/bs";
 import {MenuItem, TextField} from "@mui/material";
 import { ToastContainer, toast } from 'react-toastify';
@@ -42,9 +39,9 @@ export function Testimonial (){
     })
     function onSubmi(e : any){
         console.log(formFields)
-        toast.success('🦄 Wow so easy!', {
+        toast.success('😉Thank you for reaching out! We\'ll get back to you shortly.', {
             position: "top-right",
-            autoClose: 5000,
+            autoClose: 6000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -74,7 +71,7 @@ export function Testimonial (){
         fetch("https://vm4fitness.com/send_mail.php", requestOptions)
             .then((response) => response.text())
             .then((result) => {
-                toast.success('🦄 Wow so easy!', {
+                toast.success('😉Thank you for reaching out! We\'ll get back to you shortly.', {
                     position: "top-right",
                     autoClose: 5000,
                     hideProgressBar: false,
@@ -119,9 +116,6 @@ export function Testimonial (){
                     >
                         <div className="schedule-appointment" >
                             <img width="60%" src={img}/>
-                            {/*<div className="schedule-header">*/}
-                            {/*    <h2 className="appointment">Schedule An Appointment</h2>*/}
-                            {/*</div>*/}
 
                             <p className="contact-info11 green">
                                 We'd love to hear from you! Fill out the form below, and one of our fitness experts will
@@ -373,7 +367,7 @@ export function Testimonial (){
                     </motion.div>
                     {
                         isMobile() ? <></> :
-                            <motion.div id="testimonial"
+                            <motion.div id="testimonial" className="testimonial_seecccc"
                                         initial={!isMobile() ? {
                                             opacity: 0,
                                             // if odd index card,slide from right instead of left
@@ -392,42 +386,42 @@ export function Testimonial (){
                                     <h2 className="testi">What our clients say</h2>
                                     <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true}
                                               infiniteLoop={true}
-                                              interval={3000} showStatus={false} stopOnHover={false}>
+                                              interval={5000} showStatus={false} stopOnHover={false}>
                                         <div className="slide2">
-                                            <img src={img1} alt="Client 1"/>
-                                            <p className="paragraph">Great service, highly recommend!</p>
+                                            <img src={img1} alt="Client 1" style={{height: 357}}/>
                                         </div>
                                         <div className="slide2">
-                                            <img src={img2} alt="Client 2"/>
-                                            <p className="paragraph">Fantastic experience, will come back again!</p>
+                                            <img src={img2} alt="Client 2" style={{height: 369}}/>
                                         </div>
                                         <div className="slide2">
-                                            <img src={img3} alt="Client 4"/>
-                                            <p className="paragraph">Excellent service and support!</p>
+                                            <img src={img3} alt="Client 3" style={{height: 369}}/>
                                         </div>
                                         <div className="slide2">
-                                            <img src={img4} alt="Client 5"/>
-                                            <p className="paragraph">Highly professional and reliable!</p>
+                                            <img src={img4} alt="Client 4" style={{height: 369}}/>
                                         </div>
                                         <div className="slide2">
-                                            <img src={img5} alt="Client 5"/>
-                                            <p className="paragraph">Highly professional and reliable!</p>
+                                            <img src={img5} alt="Client 5" style={{height: 369}}/>
                                         </div>
                                         <div className="slide2">
-                                            <img src={img6} alt="Client 5"/>
-                                            <p className="paragraph">Highly professional and reliable!</p>
+                                            <img src={img6} alt="Client 6" style={{height: 369}}/>
                                         </div>
                                         <div className="slide2">
-                                            <img src={img7} alt="Client 5"/>
-                                            <p className="paragraph">Highly professional and reliable!</p>
+                                            <img src={img7} alt="Client 7" style={{height: 369}}/>
                                         </div>
                                         <div className="slide2">
-                                            <img src={img8} alt="Client 5"/>
-                                            <p className="paragraph">Highly professional and reliable!</p>
+                                            <img src={img8} alt="Client 8" style={{height: 369}}/>
                                         </div>
                                         <div className="slide2">
-                                            <img src={img9} alt="Client 5"/>
-                                            <p className="paragraph">Highly professional and reliable!</p>
+                                            <img src={img9} alt="Client 9" style={{height: 369}}/>
+                                        </div>
+                                        <div className="slide2">
+                                            <img src={img10} alt="Client 10" style={{height: 369}}/>
+                                        </div>
+                                        <div className="slide2">
+                                            <img src={img11} alt="Client 11" style={{height: 369}}/>
+                                        </div>
+                                        <div className="slide2">
+                                            <img src={img12} alt="Client 12" style={{height: 369}}/>
                                         </div>
                                     </Carousel>
 
@@ -443,43 +437,41 @@ export function Testimonial (){
                         <div className="testimonial-slider">
                             <h2 className="testi">What our clients say</h2>
                             <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true}
-                                      interval={3000} showStatus={false} stopOnHover={false}>
+                                      interval={5000} showStatus={false} stopOnHover={false}>
                                 <div className="slide2">
-                                    <img src={img1} alt="Client 1"/>
-                                    <p className="paragraph">Great service, highly recommend!</p>
+                                    <img src={img1} className="slide-height" alt="Client 1"/>
                                 </div>
                                 <div className="slide2">
-                                    <img src={img2} alt="Client 2"/>
-                                    <p className="paragraph">Fantastic experience, will come back again!</p>
+                                    <img src={img2}  className="slide-height" alt="Client 2"/>
                                 </div>
                                 <div className="slide2">
-                                    <img src={img3} alt="Client 4"/>
-                                    <p className="paragraph">Excellent service and support!</p>
+                                    <img src={img4}  className="slide-height" alt="Client 5"/>
                                 </div>
                                 <div className="slide2">
-                                    <img src={img4} alt="Client 5"/>
-                                    <p className="paragraph">Highly professional and reliable!</p>
+                                    <img src={img5}  className="slide-height" alt="Client 5"/>
                                 </div>
                                 <div className="slide2">
-                                    <img src={img5} alt="Client 5"/>
-                                    <p className="paragraph">Highly professional and reliable!</p>
+                                    <img src={img6}  className="slide-height" alt="Client 5"/>
                                 </div>
                                 <div className="slide2">
-                                    <img src={img6} alt="Client 5"/>
-                                    <p className="paragraph">Highly professional and reliable!</p>
+                                    <img src={img7}  className="slide-height" alt="Client 5"/>
                                 </div>
                                 <div className="slide2">
-                                    <img src={img7} alt="Client 5"/>
-                                    <p className="paragraph">Highly professional and reliable!</p>
+                                    <img src={img8}  className="slide-height" alt="Client 5"/>
                                 </div>
                                 <div className="slide2">
-                                    <img src={img8} alt="Client 5"/>
-                                    <p className="paragraph">Highly professional and reliable!</p>
+                                    <img src={img9}  className="slide-height" alt="Client 5"/>
                                 </div>
                                 <div className="slide2">
-                                    <img src={img9} alt="Client 5"/>
-                                    <p className="paragraph">Highly professional and reliable!</p>
+                                    <img src={img10}  className="slide-height" alt="Client 5"/>
                                 </div>
+                                <div className="slide2">
+                                    <img src={img11}  className="slide-height" alt="Client 5"/>
+                                </div>
+                                <div className="slide2">
+                                    <img src={img12}  className="slide-height" alt="Client 5"/>
+                                </div>
+
                             </Carousel>
                         </div>
                     </div> : <></>

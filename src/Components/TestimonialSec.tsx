@@ -10,8 +10,11 @@ import img7 from '../Assests/2.7.webp'
 import img8 from '../Assests/2.8.webp'
 import img9 from '../Assests/2.9.webp'
 import {isMobile} from "../Utility";
+
+import img0 from '../Assests/testi.png'
 import {BsInstagram} from "react-icons/bs";
 import React from "react";
+import img from "../Assests/youtube.png";
 const responsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
@@ -35,8 +38,14 @@ export function TestimonialSec (){
     return (
             <>
                 <div className="" id="user-testimonial-section" style={{padding: 20}}>
-                    <div className="default-div">
-                        <h2 className="" style={{textAlign: "center", fontFamily: "cursive", fontSize: "-webkit-xxx-large", fontWeight: "bolder", paddingTop: 20}}>Testimonials</h2>
+                    <div className="default-div" style={{
+                        textAlign: "center"
+                    }}>
+                        {/*<h2 className="" style={{textAlign: "center", fontFamily: "cursive", fontSize: "-webkit-xxx-large", fontWeight: "bolder", paddingTop: 20}}>Testimonials</h2>*/}
+
+                        {
+                            isMobile() ? <img width="250px" style={{marginBottom: 20}} src={img0}/> : <img width="28%" style={{marginBottom: 20}} src={img0}/>
+                        }
 
                         <Carousel
                             additionalTransfrom={0}
@@ -92,32 +101,7 @@ export function TestimonialSec (){
                             swipeable
 
                         >
-                            {/*<div className="flip-box">*/}
-                            {/*    <div className="flip-box-inner">*/}
-                            {/*        <div className="flip-box-front">*/}
-                            {/*            <img src="img_paris.jpg" alt="Paris" style={{width: 300, height: 200}}/>*/}
-                            {/*        </div>*/}
-                            {/*        <div className="flip-box-back">*/}
-                            {/*            <h2>Paris</h2>*/}
-                            {/*            <p>What an amazing city</p>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
 
-                            {/*<div className="flip-box">*/}
-                            {/*    <div className="testimonial-slide flip-box-inner">*/}
-                            {/*        <div className="testimonial-box flip-box-front">*/}
-                            {/*            <img src={img1} alt="Testimonial Image" className="testimonial-img"*/}
-                            {/*                 style={{color: "white"}}/>*/}
-                            {/*            <h2 className="testimonial-name">Divya Tiwari From Bengalore</h2>*/}
-                            {/*        </div>*/}
-                            {/*        <div className="flip-box-back">*/}
-                            {/*            <h2 style={{padding: 10}}>Divya Tiwari From Bengalore</h2>*/}
-                            {/*            <button style={{borderRadius: 5}}><a href="https://www.instagram.com/vm4fitness/"*/}
-                            {/*               target="_blank">Read More</a> </button>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
 
 
 
@@ -125,92 +109,151 @@ export function TestimonialSec (){
                             <div className="testimonial-slide">
                                 <div className="testimonial-box">
                                     <img src={img2} alt="Testimonial Image" className="testimonial-img"/>
+                                    <h2 className="testimonial-name">Kamla From Delhi</h2>
                                     {
-                                        isMobile() ? <></> :
-                                            <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                        isMobile() ? <><a className="blog-button" target="_blank"
+                                                          href="https://www.instagram.com/p/C2UC9livkD7/?img_index=1">
+                                                <button style={{marginTop: 10}} className="blog-button"
+                                                        data-modal-id="1">Read More
                                                 </button>
+                                            </a></> :
+                                            <button
+                                                onClick={() => window.open('https://www.instagram.com/p/C2UC9livkD7/?img_index=1', 'mywindow')}
+                                                className="testimonial-img-button testimonial-btn fourth">Read More
+                                            </button>
                                     }
 
-                                    <h2 className="testimonial-name">Kamla From Delhi</h2>
                                 </div>
                             </div>
                             <div className="testimonial-slide">
                                 <div className="testimonial-box">
                                     <img src={img3} alt="Testimonial Image" className="testimonial-img"/>
+                                    <h2 className="testimonial-name">Mayank Agarwal form Prayagraj</h2>
                                     {
-                                        isMobile() ? <></> :
-                                            <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                        isMobile() ? <><a target="_blank"
+                                                          href="https://www.instagram.com/p/CO-iuLkh3-v/">
+                                                <button style={{marginTop: 10}} className="blog-button"
+                                                        data-modal-id="1">Read More
+                                                </button>
+                                            </a></> :
+                                            <button
+                                                onClick={() => window.open('https://www.instagram.com/p/CO-iuLkh3-v/', 'mywindow')}
+                                                className="testimonial-img-button testimonial-btn fourth">Read More
                                             </button>
                                     }
-                                    <h2 className="testimonial-name">Mayank Agarwal form Prayagraj</h2>
-                                    </div>
                                 </div>
+                            </div>
                             <div className="testimonial-slide">
-                                    <div className="testimonial-box">
-                                        <img src={img4} alt="Testimonial Image" className="testimonial-img"/>
-                                        {
-                                            isMobile() ? <></> :
-                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                            <div className="testimonial-box">
+                                    <img src={img4} alt="Testimonial Image" className="testimonial-img"/>
+                                    <h2 className="testimonial-name">Sahil Kamran From Aligarh</h2>
+                                    {
+                                        isMobile() ? <><a target="_blank"
+                                                          href="https://www.instagram.com/p/CnuLRY_AtmQ/?img_index=1">
+                                                <button style={{marginTop: 10}} className="blog-button"
+                                                        data-modal-id="1">Read More
                                                 </button>
-                                        }
-                                        <h2 className="testimonial-name">Sahil Kamran From Aligarh</h2>
-                                    </div>
+                                            </a></> :
+                                            <button
+                                                onClick={() => window.open('https://www.instagram.com/p/CnuLRY_AtmQ/', 'mywindow')}
+                                                className="testimonial-img-button testimonial-btn fourth">Read More
+                                            </button>
+                                    }
                                 </div>
+                            </div>
                             <div className="testimonial-slide">
-                                    <div className="testimonial-box">
+                            <div className="testimonial-box">
                                         <img src={img5} alt="Testimonial Image" className="testimonial-img"/>
-                                        {
-                                            isMobile() ? <></> :
-                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
-                                                </button>
-                                        }
                                         <h2 className="testimonial-name">Surbhi Purwar From Bengalore</h2>
-                                    </div>
-                                </div>
-                            <div className="testimonial-slide">
-                                    <div className="testimonial-box">
-                                        <img src={img6} alt="Testimonial Image" className="testimonial-img"/>
                                         {
-                                            isMobile() ? <></> :
-                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                            isMobile() ? <><a target="_blank"
+                                                              href="https://www.youtube.com/watch?v=fsD0Sjtb-9w&t=1s">
+                                                    <button style={{marginTop: 10}} className="blog-button"
+                                                            data-modal-id="1">Read More
+                                                    </button>
+                                                </a></> :
+                                                <button
+                                                    onClick={() => window.open('https://www.youtube.com/watch?v=fsD0Sjtb-9w&t=1s', 'mywindow')}
+                                                    className="testimonial-img-button testimonial-btn fourth">Read More
                                                 </button>
                                         }
-                                        <h2 className="testimonial-name">Saikat Sinha From Kolkata</h2>
                                     </div>
-                                </div>
+                            </div>
                             <div className="testimonial-slide">
-                                    <div className="testimonial-box">
-                                        <img src={img7} alt="Testimonial Image" className="testimonial-img"/>
-                                        {
-                                            isMobile() ? <></> :
-                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                                <div className="testimonial-box">
+                                    <img src={img6} alt="Testimonial Image" className="testimonial-img"/>
+                                    <h2 className="testimonial-name">Saikat Sinha From Kolkata</h2>
+                                    {
+                                        isMobile() ? <><a target="_blank"
+                                                          href="https://www.instagram.com/p/CPD855osPUg/?img_index=1">
+                                                <button style={{marginTop: 10}} className="blog-button"
+                                                        data-modal-id="1">Read More
                                                 </button>
-                                        }
-                                        <h2 className="testimonial-name">Shakti Pandey From Dehradun</h2>
-                                    </div>
+                                            </a></> :
+                                            <button
+                                                onClick={() => window.open('https://www.instagram.com/p/CPD855osPUg/', 'mywindow')}
+                                                className="testimonial-img-button testimonial-btn fourth">Read More
+                                            </button>
+                                    }
                                 </div>
+                            </div>
                             <div className="testimonial-slide">
-                                    <div className="testimonial-box">
-                                        <img src={img8} alt="Testimonial Image" className="testimonial-img"/>
-                                        {
-                                            isMobile() ? <></> :
-                                                <button className="testimonial-img-button testimonial-btn fourth">Read More
+                            <div className="testimonial-box">
+                                    <img src={img7} alt="Testimonial Image" className="testimonial-img"/>
+                                    <h2 className="testimonial-name">Shakti Pandey From Dehradun</h2>
+
+                                    {
+                                        isMobile() ? <><a target="_blank"
+                                                          href="https://www.instagram.com/p/DA8vftsPBFW/?img_index=1">
+                                                <button style={{marginTop: 10}} className="blog-button"
+                                                        data-modal-id="1">Read More
                                                 </button>
-                                        }
-                                        <h2 className="testimonial-name">Shrey Pahwa From Haryana</h2>
-                                    </div>
+                                            </a></> :
+                                            <button
+                                                onClick={() => window.open('https://www.instagram.com/p/DA8vftsPBFW/', 'mywindow')}
+                                                className="testimonial-img-button testimonial-btn fourth">Read More
+                                            </button>
+                                    }
                                 </div>
+                            </div>
                             <div className="testimonial-slide">
-                                    <div className="testimonial-box">
-                                        <img src={img9} alt="Testimonial Image" className="testimonial-img"/>
-                                        {
-                                            isMobile() ? <></> :
-                                                <button onClick={() => window.open('https://calendly.com/vik4fitness/consultation-appointment', 'mywindow')} className="testimonial-img-button testimonial-btn fourth">Read More
+                            <div className="testimonial-box">
+                                    <img src={img8} alt="Testimonial Image" className="testimonial-img"/>
+                                    <h2 className="testimonial-name">Shrey Pahwa From Haryana</h2>
+
+                                    {
+                                        isMobile() ? <><a target="_blank"
+                                                          href="https://www.instagram.com/p/DA8vftsPBFW/?img_index=1">
+                                                <button style={{marginTop: 10}} className="blog-button"
+                                                        data-modal-id="1">Read More
                                                 </button>
-                                        }
-                                        <h2 className="testimonial-name">Deepti From Dhanbad</h2>
-                                    </div>
+                                            </a></> :
+                                            <button
+                                                onClick={() => window.open('https://www.instagram.com/p/DA8vftsPBFW/', 'mywindow')}
+                                                className="testimonial-img-button testimonial-btn fourth">Read More
+                                            </button>
+                                    }
                                 </div>
+                            </div>
+                            <div className="testimonial-slide">
+                                <div className="testimonial-box">
+                                    <img src={img9} alt="Testimonial Image" className="testimonial-img"/>
+                                    <h2 className="testimonial-name">Deepti From Dhanbad</h2>
+
+                                    {
+                                        isMobile() ? <><a target="_blank"
+                                                          href="https://www.instagram.com/p/DA8vftsPBFW/?img_index=1">
+                                                <button style={{marginTop: 10}} className="blog-button"
+                                                        data-modal-id="1">Read More
+                                                </button>
+                                            </a></> :
+                                            <button
+                                                onClick={() => window.open('https://www.instagram.com/p/DA8vftsPBFW/', 'mywindow')}
+                                                className="testimonial-img-button testimonial-btn fourth">Read More
+                                            </button>
+                                    }
+                                </div>
+                            </div>
 
 
                         </Carousel>

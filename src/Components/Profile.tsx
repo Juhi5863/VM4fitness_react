@@ -3,12 +3,15 @@ import { Carousel } from 'react-responsive-carousel';
 import  slide1 from '../Assests/slide1.webp'
 import  slide2 from '../Assests/slide2.webp'
 import  slide3 from '../Assests/slide3.webp'
-import mimansa from '../Assests/Mimansa.webp'
-import vikaram from '../Assests/Vikram.webp'
+import mimansa from '../Assests/Mimansa.png'
+import vikaram from '../Assests/Vikram.png'
 import {MdLens} from "react-icons/md";
 import {isMobile} from "../Utility";
 import { motion } from "framer-motion";
-
+import img from "../Assests/youtube.png";
+import img0 from "../Assests/profile1.png";
+import React from "react";
+import imggg from '../Assests/profile2.png'
 
 function  Profile(){
     return <div  style={{background: "white"}} id="user-profile">
@@ -47,7 +50,10 @@ function  Profile(){
                      }}
                      viewport={{ once: false }}
                 >
-                    <h2 className="profile-heading">Mimansa - Nutritionist</h2>
+                    {/*<h2 className="profile-heading">Mimansa - Nutritionist</h2>*/}
+                    {
+                        isMobile() ? <img width="250px" style={{marginBottom: 20}} src={img0}/> : <img width="28%" style={{marginBottom: 20}} src={img0}/>
+                    }
                     <ul className="profile-details">
                         <li><i className="fa-solid fa-circle"></i><MdLens />
                             A passionate Nutritionist, Mimansa has helped
@@ -99,7 +105,10 @@ function  Profile(){
                      }}
                      viewport={{ once: false }}
                 >
-                    <h2 className="profile-heading">Vikram- Body transformational coach</h2>
+                    {/*<h2 className="profile-heading">Vikram- Body transformational coach</h2>*/}
+                    {
+                        isMobile() ? <img width="250px" style={{marginBottom: 20}} src={imggg}/> : <img width="28%" style={{marginBottom: 20}} src={imggg}/>
+                    }
                     <ul className="profile-details">
                         <li><i className="fa-solid fa-circle"></i><MdLens />
                             A dedicated entrepreneur, Vikram ensures the smooth

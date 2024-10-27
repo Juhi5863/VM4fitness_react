@@ -111,6 +111,9 @@ code {
   box-sizing: border-box;
 }
 
+.testimonial_seecccc{
+  width : 70%;
+}
 .container-privacy {
   max-width: 800px;
   padding: 20px;
@@ -239,10 +242,15 @@ a:hover {
   .submit-button {
     width: auto!important;
   }
+  .faq-slide{
+    height : 200px;
+  }
   .textarea-effect-16 {
     width: 100%!important;
   }
-
+  .slide-height {
+    height: 414px!important;
+  }
 .appointment{
   font-size: 18px!important;
 }
@@ -760,8 +768,7 @@ a:hover {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   text-align: center;
-  /*width: 25px;*/
-  /*margin: auto;*/
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .submit-button:hover{
   background-color: #00b300!important;
@@ -903,7 +910,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 25px;
+  /*padding: 25px;*/
 }
 
 .slide2 img {
@@ -956,7 +963,7 @@ a:hover {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  /*padding: 20px;*/
   overflow: hidden;
 }
 
@@ -1315,7 +1322,7 @@ a:hover {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  /*padding: 20px;*/
   overflow: hidden;
 }
 
@@ -1332,7 +1339,7 @@ a:hover {
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
-  padding: 20px 0;
+  /*padding: 20px 0;*/
   flex-shrink: 0;
 }
 
@@ -1942,8 +1949,8 @@ a:hover {
 .blog-button{
   border: none;
   font-size: 15px;
-  color: white;
-  background-color: #ff914d;
+  color: black;
+  background-color: #c2fe6b;
   border-radius: 20px;
   margin: 0 auto;
   /*margin-top: 20px;*/
@@ -1951,6 +1958,7 @@ a:hover {
   transition: all 0.3s ease;
   width: 30%;
   height:39px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
 .blog-button:hover{
@@ -2922,9 +2930,9 @@ select {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 15px;
-  margin: 50px;
+  /*margin: 50px;*/
   padding: 0px 20px;
-  background-color: rgb(241, 245, 248);
+  /*background-color: rgb(241, 245, 248);*/
 }
 .pricing-table {
   -webkit-box-shadow: 1px 2px 20px 11px rgba(126,151,161,1);
@@ -2978,10 +2986,10 @@ select {
   list-style-type: none;
   margin-bottom: 20px;
   padding-top: 13px;
+  text-align : left;
 }
 
 .pricing-table .content ul li {
-  margin: 20px 0px;
   font-size: 15px;
 }
 

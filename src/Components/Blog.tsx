@@ -122,7 +122,7 @@ export function Blog() {
                                 </div>
                                 <div className="blog-img-content">
                                     <p className="blog-description">
-                                        Embrace Your Journey: How a Life-Changing Diet Empowers Women's Weight Loss
+                                        Start Your Journey: How a Life-Changing Diet Empowers Women's Weight Loss
 
                                     </p>
                                     <a href="/blog/blog2" target="_blank">
@@ -150,59 +150,6 @@ export function Blog() {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="blog-slide">
-                            <div className="blog-box">
-                                <div className="blog-image-content">
-                                    <span className="blog-overlay"></span>
-                                    <div className="blog-box-image">
-                                        <img src="images/VM_Logo.webp" alt=""/>
-                                    </div>
-                                </div>
-                                <div className="blog-img-content">
-                                    <p className="blog-description">
-                                        Top 10 Emotional Triggers for Weight Gain and How to Overcome Them </p>
-                                    <button className="blog-button" data-modal-id="4">Read More</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="blog-slide">
-                            <div className="blog-box">
-                                <div className="blog-image-content">
-                                    <span className="blog-overlay"></span>
-                                    <div className="blog-box-image">
-                                        <img src="images/VM_Logo.webp" alt=""/>
-                                    </div>
-                                </div>
-                                <div className="blog-img-content">
-                                    <p className="blog-description">
-                                        Discover 12 delicious homemade gut health drinks to maintain optimal gut health.
-                                        Explore recipes for nourishing beverages packed with probiotics & nutrients.
-                                    </p>
-                                    <button className="blog-button" data-modal-id="5">Read More</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="blog-slide">
-                            <div className="blog-box">
-                                <div className="blog-image-content">
-                                    <span className="blog-overlay"></span>
-                                    <div className="blog-box-image">
-                                        <img src="images/VM_Logo.webp" alt=""/>
-                                    </div>
-                                </div>
-                                <div className="blog-img-content">
-                                    <p className="blog-description">
-                                        Discover 12 delicious homemade gut health drinks to maintain optimal gut health.
-                                        Explore recipes for nourishing beverages packed with probiotics & nutrients.
-                                    </p>
-                                    <button className="blog-button" data-modal-id="6">Read More</button>
-                                </div>
-                            </div>
-                        </div>
-
 
                     </Carousel>
                 </div>

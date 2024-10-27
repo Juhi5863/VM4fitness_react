@@ -6,7 +6,7 @@ export function Frequent(){
             <section id="home">
                 <div className="slider" style={{paddingTop:0}}>
                     <div className="slides">
-                        <img src={img} className="slide" alt=""/>
+                        <img src={img} className="slide faq-slide" alt=""/>
 
                     </div>
 

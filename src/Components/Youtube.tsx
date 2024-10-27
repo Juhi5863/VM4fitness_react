@@ -46,7 +46,7 @@ export function Youtube(){
 
                     <a href="https://www.youtube.com/@vm4fitness" target="_blank" rel="noopener noreferrer"
                        className="view-more-video">
-                        <button className="youtube-button">View More Video</button>
+                        <button className="youtube-button green-bg" style={{color: "black"}}>View More Video</button>
                     </a>
                 </div>
 
