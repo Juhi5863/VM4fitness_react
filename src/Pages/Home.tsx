@@ -25,6 +25,8 @@ function  Home(){
                   content="VM4fitness offers personalized fitness training, nutrition guidance, and wellness programs to help you achieve your health goals, With expert trainers, tailored workout plans, and a supportive community, VM4fitness is your go-to destination for sustainable fitness and well-being."/>
             <meta name="keywords"
                   content="vm4fitness,fitness,training,nutrition,guidance,wellness-programs,sustainable,fitness,Healthly weight-loss,Diabetes-Reversal,Fatty-Liver Reversal,Gut Health,Cholesterol control,High BP Regulation,PCOD Reversal,Thyroid Reversal,Uric Acid Reversal"/>
+            <meta property="og:title" content="VM4fitness"/>
+            <meta property="og:image" content="https://vm4fitness.com/static/media/VM4fitness3.d7049fdce42cb5f3a8ed.webp"/>
         </Helmet>
         <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true} interval={4000}
                   showStatus={false} stopOnHover={false}>
