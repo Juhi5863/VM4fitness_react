@@ -1956,7 +1956,8 @@ a:hover {
   /*margin-top: 20px;*/
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 30%;
+  width: 35%;
+  font-family: "Lato", sans-serif;
   height:39px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
@@ -2318,7 +2319,9 @@ a:hover {
 .contact-link{
   cursor: pointer;
   color: #000;
-
+}
+.pointer{
+  cursor: pointer;
 }
 .contactForm {
   background-color: #dbffd9;

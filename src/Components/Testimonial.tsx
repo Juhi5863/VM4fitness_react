@@ -36,21 +36,29 @@ export function Testimonial (){
         category : "",
         issues : [],
         concerns : ""
-    })
+    } as any)
     function onSubmi(e : any){
         console.log(formFields)
-        toast.success('😉Thank you for reaching out! We\'ll get back to you shortly.', {
-            position: "top-right",
-            autoClose: 6000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
 
-        });
         e.preventDefault();
+        for (let i = 0; i < Object.keys(formFields).length; i++) {
+            let data = Object.keys(formFields)[i]
+            if (formFields[data] == "") {
+                toast.error(data + " can't be empty", {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
+                return false;
+            }
+
+        }
+
         const urlencoded = new URLSearchParams();
         urlencoded.append("name", formFields.name);
         urlencoded.append("whatsapp", formFields.whatsapp);
@@ -477,21 +485,6 @@ export function Testimonial (){
                     </div> : <></>
 
             }
-            <ToastContainer
-                position="top-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="light"
-
-            />
-            {/* Same as */}
-            <ToastContainer/>
 
         </>
     );
