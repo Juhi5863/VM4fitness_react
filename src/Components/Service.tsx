@@ -94,9 +94,6 @@ export function Service() {
                                             <img src={img1} alt="" className="box-img "/>
                                             {
                                                 isMobile() ? <>
-                                                        <button style={{marginTop: 10}} className="blog-button"
-                                                                data-modal-id="1">Read More
-                                                        </button>
                                                   </> :
                                                     <button
                                                         className="testimonial-img-button testimonial-btn fourth">Read
@@ -106,6 +103,12 @@ export function Service() {
                                         </div>
                                         <div className="img-content">
                                             <h2 className="h2-name">Healthy Weightloss</h2>
+                                            {
+                                                isMobile() ? <><button style={{marginTop: 10}} className="blog-button"
+                                                                       data-modal-id="1">Read More
+                                                </button></> : <></>
+                                            }
+
                                         </div>
                                     </div>
                                 </div>
@@ -130,6 +133,11 @@ export function Service() {
                                         </div>
                                         <div className="img-content">
                                             <h2 className="h2-name">Diabetes Reversal</h2>
+                                            {
+                                                isMobile() ? <><button style={{marginTop: 10}} className="blog-button"
+                                                                       data-modal-id="1">Read More
+                                                </button></> : <></>
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -154,6 +162,11 @@ export function Service() {
                                         </div>
                                         <div className="img-content">
                                             <h2 className="h2-name">Fatty Liver Reversal</h2>
+                                            {
+                                                isMobile() ? <><button style={{marginTop: 10}} className="blog-button"
+                                                                       data-modal-id="1">Read More
+                                                </button></> : <></>
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -178,6 +191,11 @@ export function Service() {
                                         </div>
                                         <div className="img-content">
                                             <h2 className="h2-name">Gut Health</h2>
+                                            {
+                                                isMobile() ? <><button style={{marginTop: 10}} className="blog-button"
+                                                                       data-modal-id="1">Read More
+                                                </button></> : <></>
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -202,6 +220,11 @@ export function Service() {
                                         </div>
                                         <div className="img-content">
                                             <h2 className="h2-name">Cholesterol control</h2>
+                                            {
+                                                isMobile() ? <><button style={{marginTop: 10}} className="blog-button"
+                                                                       data-modal-id="1">Read More
+                                                </button></> : <></>
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -226,6 +249,11 @@ export function Service() {
                                         </div>
                                         <div className="img-content">
                                             <h2 className="h2-name">High BP Regulation</h2>
+                                            {
+                                                isMobile() ? <><button style={{marginTop: 10}} className="blog-button"
+                                                                       data-modal-id="1">Read More
+                                                </button></> : <></>
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -250,6 +278,11 @@ export function Service() {
                                         </div>
                                         <div className="img-content">
                                             <h2 className="h2-name">PCOD Reversal</h2>
+                                            {
+                                                isMobile() ? <><button style={{marginTop: 10}} className="blog-button"
+                                                                       data-modal-id="1">Read More
+                                                </button></> : <></>
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -274,6 +307,11 @@ export function Service() {
                                         </div>
                                         <div className="img-content">
                                             <h2 className="h2-name">Thyroid Reversal</h2>
+                                            {
+                                                isMobile() ? <><button style={{marginTop: 10}} className="blog-button"
+                                                                       data-modal-id="1">Read More
+                                                </button></> : <></>
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -298,6 +336,11 @@ export function Service() {
                                         </div>
                                         <div className="img-content">
                                             <h2 className="h2-name">Uric Acid Reversal</h2>
+                                            {
+                                                isMobile() ? <><button style={{marginTop: 10}} className="blog-button"
+                                                                       data-modal-id="1">Read More
+                                                </button></> : <></>
+                                            }
                                         </div>
                                     </div>
                                 </div>

@@ -78,7 +78,8 @@ export function FooterOne(){
 
                 </>}
             <section className="footer3">
-                <p>© Copyright 2024. All Rights Reserved</p>
+                <p>© Copyright 2024. All Rights Reserved . <span className="pointer yellow"
+                    onClick={() => window.open('https://www.linkedin.com/in/juhi13/', 'mywindow')}><BsLinkedin/> Designed by Juhi</span></p>
             </section>
         </>
     )

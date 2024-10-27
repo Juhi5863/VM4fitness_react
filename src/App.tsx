@@ -13,6 +13,7 @@ import {Privacy} from "./Pages/Privacy";
 import {Blog1} from "./Pages/Blogs/Blog1"
 import Blog2 from "./Pages/Blogs/Blog2";
 import {Blog3} from "./Pages/Blogs/Blog3";
+import {ToastContainer} from "react-toastify";
 
 function App() {
   return (
@@ -29,6 +30,21 @@ function App() {
             <Route path="/blog/blog3" element={<Blog3/>}></Route>
         </Routes>
         <FooterOne></FooterOne>
+          <ToastContainer
+              position="top-right"
+              autoClose={2000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+
+          />
+          {/* Same as */}
+          <ToastContainer/>
           <div className="whatsapp-btn-container">
               <a href="https://api.whatsapp.com/send?phone=918396952909&text=Hello%20VM4fitness%2C%0A%0AI%20need%20to%20lose%20weight.%20May%20I%20know%20about%20your%20Weightloss%20program%3F"
                  target="_blank" rel="noopener noreferrer" className="whatsapp-btn floating btn">
